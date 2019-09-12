@@ -1,0 +1,6 @@
+main.cpp:45:13:void prvSetupHardware()	8	static
+main.cpp:56:13:void TypeInTask(void*)	24	static
+main.cpp:89:13:void EnderTask(void*)	40	static
+main.cpp:105:13:void AdderUpTask(void*)	24	static
+main.cpp:141:6:void vConfigureTimerForRunTimeStats()	8	static
+main.cpp:154:5:int main()	16	static

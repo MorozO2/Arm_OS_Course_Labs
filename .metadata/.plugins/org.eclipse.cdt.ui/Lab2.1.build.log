@@ -1,0 +1,32 @@
+12:31:03 **** Build of configuration Debug for project Lab2.1 ****
+make -r -j4 all 
+Building file: ../src/Lab2.1.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/Lab2.1.d" -MT"src/Lab2.1.o" -MT"src/Lab2.1.d" -o "src/Lab2.1.o" "../src/Lab2.1.cpp"
+../src/Lab2.1.cpp:138:3: warning: "/*" within comment [-Wcomment]
+   /* About a 1s delay here */
+    
+../src/Lab2.1.cpp:115:13: warning: 'void vUARTTask(void*)' defined but not used [-Wunused-function]
+ static void vUARTTask(void *pvParameters) {
+             ^~~~~~~~~
+Finished building: ../src/Lab2.1.cpp
+ 
+Building target: Lab2.1.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug" -Xlinker -Map="Lab2.1.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Lab2_1_Debug.ld" -o "Lab2.1.axf"  ./src/DigitalIoPin.o ./src/Lab2.1.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx -lFreeRTOS
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       39080 B       256 KB     14.91%
+         Ram0_16:        2936 B        16 KB     17.92%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: Lab2.1.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Lab2.1.axf"; # arm-none-eabi-objcopy -v -O binary "Lab2.1.axf" "Lab2.1.bin" ; # checksum -p LPC1549 -d "Lab2.1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  36604	   2476	    460	  39540	   9a74	Lab2.1.axf
+ 
+
+12:31:04 Build Finished. 0 errors, 2 warnings. (took 862ms)
+

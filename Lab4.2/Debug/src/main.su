@@ -1,0 +1,7 @@
+main.cpp:46:13:void prvSetupHardware()	8	static
+main.cpp:61:13:void SwitchCheckTask(void*)	24	static
+main.cpp:102:13:void StepTask(void*)	56	static
+main.cpp:169:6:void vConfigureTimerForRunTimeStats()	8	static
+main.cpp:182:5:int main()	16	static
+main.cpp:205:1:void __static_initialization_and_destruction_0(int, int)	24	static
+main.cpp:205:1:cpp)	8	static

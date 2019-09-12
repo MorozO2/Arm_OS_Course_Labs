@@ -1,0 +1,4 @@
+mDrawTest.cpp:46:13:void prvSetupHardware()	8	static
+mDrawTest.cpp:56:13:void mDrawTestTask(void*)	24	static
+mDrawTest.cpp:79:6:void vConfigureTimerForRunTimeStats()	8	static
+mDrawTest.cpp:92:5:int main()	16	static

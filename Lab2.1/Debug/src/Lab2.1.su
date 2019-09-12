@@ -1,0 +1,7 @@
+Lab2.1.cpp:44:13:void prvSetupHardware()	8	static
+Lab2.1.cpp:57:13:void sw1Task(void*)	40	static
+Lab2.1.cpp:75:13:void sw2Task(void*)	40	static
+Lab2.1.cpp:95:13:void sw3Task(void*)	40	static
+Lab2.1.cpp:115:13:void vUARTTask(void*)	16	static
+Lab2.1.cpp:151:6:void vConfigureTimerForRunTimeStats()	8	static
+Lab2.1.cpp:164:5:int main()	16	static

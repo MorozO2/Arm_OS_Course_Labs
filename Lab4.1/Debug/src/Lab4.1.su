@@ -1,0 +1,5 @@
+Lab4.1.cpp:46:13:void prvSetupHardware()	8	static
+Lab4.1.cpp:59:13:void SwitchCheckTask(void*)	48	static
+Lab4.1.cpp:92:13:void StepTask(void*)	72	static
+Lab4.1.cpp:141:6:void vConfigureTimerForRunTimeStats()	8	static
+Lab4.1.cpp:154:5:int main()	16	static

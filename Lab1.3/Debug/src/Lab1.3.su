@@ -1,0 +1,6 @@
+Lab1.3.cpp:43:13:void prvSetupHardware()	8	static
+Lab1.3.cpp:53:13:void vLEDTask1(void*)	32	static
+Lab1.3.cpp:90:13:void vLEDTask2(void*)	24	static
+Lab1.3.cpp:103:13:void vUARTTask(void*)	56	static
+Lab1.3.cpp:138:6:void vConfigureTimerForRunTimeStats()	8	static
+Lab1.3.cpp:151:5:int main()	16	static

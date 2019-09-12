@@ -1,0 +1,6 @@
+blinky.cpp:41:13:void prvSetupHardware()	8	static
+blinky.cpp:51:13:void vLEDTask1(void*)	24	static
+blinky.cpp:64:13:void vLEDTask2(void*)	24	static
+blinky.cpp:77:13:void vUARTTask(void*)	24	static
+blinky.cpp:96:6:void vConfigureTimerForRunTimeStats()	8	static
+blinky.cpp:109:5:int main()	16	static

@@ -1,0 +1,6 @@
+main.cpp:46:13:void prvSetupHardware()	8	static
+main.cpp:57:13:void SendNumTask(void*)	24	static
+main.cpp:73:13:void Send112Task(void*)	40	static
+main.cpp:88:13:void Check112Task(void*)	24	static
+main.cpp:119:6:void vConfigureTimerForRunTimeStats()	8	static
+main.cpp:132:5:int main()	16	static

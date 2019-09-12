@@ -1,0 +1,5 @@
+main.cpp:43:13:void prvSetupHardware()	8	static
+main.cpp:56:13:void readingTask(void*)	24	static
+main.cpp:71:13:void indicatingTask(void*)	16	static
+main.cpp:97:6:void vConfigureTimerForRunTimeStats()	8	static
+main.cpp:110:5:int main()	16	static
