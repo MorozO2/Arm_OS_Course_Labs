@@ -75,9 +75,9 @@ static void askingTask(void *pvParameters)
 
 				}
 
-				you.push_back(c);
-				if(c == 63) {xSemaphoreGive(countingSem); you.erase(6, count); c = 13;}
-				count++;
+					you.push_back(c);
+					if(c == 63) {xSemaphoreGive(countingSem); you.erase(6, count); c = 13;}
+					count++;
 
 			}
 			else

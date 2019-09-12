@@ -71,14 +71,12 @@ static void askingTask(void *pvParameters)
 				{
 					Board_UARTPutChar(c);
 					xSemaphoreGive(mutx);
-					 // Check whether "?" was entered
+					if(c == 63) {xSemaphoreGive(countingSem); you.erase(6, count); c == 13;} // Check whether "?" was entered
 
 				}
 
 				you.push_back(c);
-				if(c == 63) {xSemaphoreGive(countingSem); you.erase(6, count); c = 13;}
 				count++;
-
 			}
 			else
 			{
