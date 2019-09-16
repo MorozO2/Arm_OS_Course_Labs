@@ -1,0 +1,44 @@
+"FreeRTOS Task Aware Debugger for GDB" version 11.0.0 (201905201323)
+(c) 2016-2018 NXP Semiconductors, Inc.
+==================================
+11:13:16.619 INFO: [TadModel] DSF session ID 37 has started.
+11:13:23.106 INFO: [TadState] TAD state changed:  DEBUG_STARTED -> DEBUG_INIT_0 (SUSPENDED, USER_REQUEST)
+11:13:24.495 INFO: [TadState] TAD state changed:  DEBUG_INIT_0 -> DEBUG_INIT_1 (RESUMED, USER_REQUEST)
+11:13:24.590 INFO: [TadState] TAD state changed:  DEBUG_INIT_1 -> DEBUG_SUSPENDED (SUSPENDED, BREAKPOINT)
+11:13:26.571 INFO: [TadState] TAD state changed:  DEBUG_SUSPENDED -> DEBUG_RESUMED (RESUMED, USER_REQUEST)
+11:15:50.342 INFO: [TadState] TAD state changed:  DEBUG_RESUMED -> READY (SUSPENDED, SIGNAL)
+11:15:50.435 INFO: [Benchmark] Loading data for "Determine FreeRTOS version" has started.
+11:15:50.467 INFO: [TadModel] Heap type (memory allocation scheme) has been identified from FreeRTOSDebugConfig structure as Heap #3. 
+11:15:50.467 INFO: [TadModel] FreeRTOS version has been identified from FreeRTOSDebugConfig structure as 10.2.0.
+11:15:50.467 INFO: [Benchmark] Loading data for "Determine FreeRTOS version" took 32 ms.
+11:15:50.467 INFO: [Benchmark] Loading data for "Task List" has started.
+11:15:50.597 ERROR: [VariableReader] Could not read variable expression: "ulTotalRunTime".
+11:15:50.597 ERROR: [TaskFactory] ulTotalRunTime not available
+11:15:51.691 INFO: [FreeRTOS] FreeRTOS macro "configUSE_MUTEXES" is disabled.
+11:15:51.752 ERROR: [VariableReader] Could not read variable expression: "(((struct tskTaskControlBlock *) 0x2001fd0)->uxBasePriority)".
+11:15:51.757 ERROR: [VariableReader] Could not read variable expression: "(((struct tskTaskControlBlock *) 0x2001fd0)->uxPriority)".
+11:15:51.757 ERROR: [TaskFactory] Cannot read information from "pxReadyTasksLists[0]".
+11:15:51.764 ERROR: [VariableReader] Could not read variable expression: "pxReadyTasksLists[1].uxNumberOfItems".
+11:15:51.764 ERROR: [TaskFactory] Cannot read information from "pxReadyTasksLists[1]".
+11:15:51.770 ERROR: [VariableReader] Could not read variable expression: "pxReadyTasksLists[2].uxNumberOfItems".
+11:15:51.770 ERROR: [TaskFactory] Cannot read information from "pxReadyTasksLists[2]".
+11:15:51.776 ERROR: [VariableReader] Could not read variable expression: "pxReadyTasksLists[3].uxNumberOfItems".
+11:15:51.776 ERROR: [TaskFactory] Cannot read information from "pxReadyTasksLists[3]".
+11:15:51.784 ERROR: [VariableReader] Could not read variable expression: "pxReadyTasksLists[4].uxNumberOfItems".
+11:15:51.784 ERROR: [TaskFactory] Cannot read information from "pxReadyTasksLists[4]".
+11:15:51.791 ERROR: [VariableReader] Could not read variable expression: "pxReadyTasksLists[5].uxNumberOfItems".
+11:15:51.791 ERROR: [TaskFactory] Cannot read information from "pxReadyTasksLists[5]".
+11:15:51.799 ERROR: [VariableReader] Could not read variable expression: "pxReadyTasksLists[6].uxNumberOfItems".
+11:15:51.799 ERROR: [TaskFactory] Cannot read information from "pxReadyTasksLists[6]".
+11:15:51.807 ERROR: [VariableReader] Could not read variable expression: "pxReadyTasksLists[7].uxNumberOfItems".
+11:15:51.807 ERROR: [TaskFactory] Cannot read information from "pxReadyTasksLists[7]".
+11:15:51.814 ERROR: [VariableReader] Could not read variable expression: "xSuspendedTaskList.uxNumberOfItems".
+11:15:51.815 ERROR: [TaskFactory] Cannot read information from "xSuspendedTaskList".
+11:15:51.822 ERROR: [VariableReader] Could not read variable expression: "xPendingReadyList.uxNumberOfItems".
+11:15:51.822 ERROR: [TaskFactory] Cannot read information from "xPendingReadyList".
+11:15:51.828 ERROR: [VariableReader] Could not read variable expression: "pxDelayedTaskList.uxNumberOfItems".
+11:15:51.828 ERROR: [TaskFactory] Cannot read information from "pxDelayedTaskList".
+11:15:51.834 ERROR: [VariableReader] Could not read variable expression: "pxOverflowDelayedTaskList.uxNumberOfItems".
+11:15:51.834 ERROR: [TaskFactory] Cannot read information from "pxOverflowDelayedTaskList".
+11:15:51.834 INFO: [Benchmark] Loading data for "Task List" took 1367 ms.
+11:15:51.837 INFO: [TadModel] DSF session ID 37 has ended.

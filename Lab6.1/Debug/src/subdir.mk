@@ -10,11 +10,13 @@ CPP_SRCS += \
 ../src/main.cpp 
 
 C_SRCS += \
+../src/ITM_write.c \
 ../src/crp.c \
 ../src/sysinit.c 
 
 OBJS += \
 ./src/DigitalIoPin.o \
+./src/ITM_write.o \
 ./src/cr_cpp_config.o \
 ./src/cr_startup_lpc15xx.o \
 ./src/crp.o \
@@ -28,6 +30,7 @@ CPP_DEPS += \
 ./src/main.d 
 
 C_DEPS += \
+./src/ITM_write.d \
 ./src/crp.d \
 ./src/sysinit.d 
 

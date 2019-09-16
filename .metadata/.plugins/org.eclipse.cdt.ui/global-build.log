@@ -6051,3 +6051,2238 @@ arm-none-eabi-size "Lab6.1.axf"; # arm-none-eabi-objcopy -v -O binary "Lab6.1.ax
    text	   data	    bss	    dec	    hex	filename
   37400	   2480	    476	  40356	   9da4	Lab6.1.axf
  
+09:44:03 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+09:44:03 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+09:44:03 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+09:44:03 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/ITM_write.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=c11 -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/ITM_write.d" -MT"src/ITM_write.o" -MT"src/ITM_write.d" -o "src/ITM_write.o" "../src/ITM_write.c"
+Finished building: ../src/ITM_write.c
+ 
+Building target: Lab6.1.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug" -Xlinker -Map="Lab6.1.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Lab6_1_Debug.ld" -o "Lab6.1.axf"  ./src/DigitalIoPin.o ./src/ITM_write.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/main.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx -lFreeRTOS
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       39880 B       256 KB     15.21%
+         Ram0_16:        2956 B        16 KB     18.04%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: Lab6.1.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Lab6.1.axf"; # arm-none-eabi-objcopy -v -O binary "Lab6.1.axf" "Lab6.1.bin" ; # checksum -p LPC1549 -d "Lab6.1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  37400	   2480	    476	  40356	   9da4	Lab6.1.axf
+ 
+09:49:21 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+09:49:21 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+09:49:21 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+09:49:22 **** Build of configuration Debug for project Lab4.3 ****
+make -r -j4 all 
+Building file: ../src/Lab4.3.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/Lab4.3.d" -MT"src/Lab4.3.o" -MT"src/Lab4.3.d" -o "src/Lab4.3.o" "../src/Lab4.3.cpp"
+../src/Lab4.3.cpp:57:1: error: 'xSemaphoreHandle' does not name a type; did you mean 'SemaphoreHandle_t'?
+ xSemaphoreHandle sbRIT;
+ ^~~~~~~~~~~~~~~~
+ SemaphoreHandle_t
+In file included from ../src/Lab4.3.cpp:29:
+../src/Lab4.3.cpp: In function 'void RIT_IRQHandler()':
+../src/Lab4.3.cpp:78:24: error: 'sbRIT' was not declared in this scope
+  xSemaphoreGiveFromISR(sbRIT, &xHigherPriorityWoken);
+                        ^~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include/semphr.h:624:111: note: in definition of macro 'xSemaphoreGiveFromISR'
+ #define xSemaphoreGiveFromISR( xSemaphore, pxHigherPriorityTaskWoken ) xQueueGiveFromISR( ( QueueHandle_t ) ( xSemaphore ), ( pxHigherPriorityTaskWoken ) )
+                                                                                                               ^~~~~~~~~~
+../src/Lab4.3.cpp: In function 'void RIT_start(int, int)':
+../src/Lab4.3.cpp:104:20: error: 'sbRIT' was not declared in this scope
+  if(xSemaphoreTake(sbRIT, portMAX_DELAY) == pdTRUE) {
+                    ^~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include/semphr.h:289:74: note: in definition of macro 'xSemaphoreTake'
+ #define xSemaphoreTake( xSemaphore, xBlockTime )  xQueueSemaphoreTake( ( xSemaphore ), ( xBlockTime ) )
+                                                                          ^~~~~~~~~~
+../src/Lab4.3.cpp: In function 'void SwitchCheckTask(void*)':
+../src/Lab4.3.cpp:118:10: error: 'c' was not declared in this scope
+   while((c = Board_UARTGetChar()) != EOF && != 13)
+          ^
+../src/Lab4.3.cpp:118:45: error: expected primary-expression before '!=' token
+   while((c = Board_UARTGetChar()) != EOF && != 13)
+                                             ^~
+../src/Lab4.3.cpp: In function 'int main()':
+../src/Lab4.3.cpp:166:2: error: 'binar' was not declared in this scope
+  binar = xSemaphoreCreateBinary();
+  ^~~~~
+make: *** [src/subdir.mk:39: src/Lab4.3.o] Error 1
+"make -r -j4 all" terminated with exit code 2. Build might be incomplete.
+09:49:47 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+09:49:47 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+09:49:47 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+09:49:47 **** Incremental Build of configuration Debug for project Lab4.3 ****
+make -r -j4 all 
+Building file: ../src/Lab4.3.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/Lab4.3.d" -MT"src/Lab4.3.o" -MT"src/Lab4.3.d" -o "src/Lab4.3.o" "../src/Lab4.3.cpp"
+../src/Lab4.3.cpp:57:1: error: 'xSemaphoreHandle' does not name a type; did you mean 'SemaphoreHandle_t'?
+ xSemaphoreHandle sbRIT;
+ ^~~~~~~~~~~~~~~~
+ SemaphoreHandle_t
+In file included from ../src/Lab4.3.cpp:29:
+../src/Lab4.3.cpp: In function 'void RIT_IRQHandler()':
+../src/Lab4.3.cpp:78:24: error: 'sbRIT' was not declared in this scope
+  xSemaphoreGiveFromISR(sbRIT, &xHigherPriorityWoken);
+                        ^~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include/semphr.h:624:111: note: in definition of macro 'xSemaphoreGiveFromISR'
+ #define xSemaphoreGiveFromISR( xSemaphore, pxHigherPriorityTaskWoken ) xQueueGiveFromISR( ( QueueHandle_t ) ( xSemaphore ), ( pxHigherPriorityTaskWoken ) )
+                                                                                                               ^~~~~~~~~~
+../src/Lab4.3.cpp: In function 'void RIT_start(int, int)':
+../src/Lab4.3.cpp:104:20: error: 'sbRIT' was not declared in this scope
+  if(xSemaphoreTake(sbRIT, portMAX_DELAY) == pdTRUE) {
+                    ^~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include/semphr.h:289:74: note: in definition of macro 'xSemaphoreTake'
+ #define xSemaphoreTake( xSemaphore, xBlockTime )  xQueueSemaphoreTake( ( xSemaphore ), ( xBlockTime ) )
+                                                                          ^~~~~~~~~~
+../src/Lab4.3.cpp: In function 'void UserInputTask(void*)':
+../src/Lab4.3.cpp:119:45: error: expected primary-expression before '!=' token
+   while((c = Board_UARTGetChar()) != EOF && != 13)
+                                             ^~
+../src/Lab4.3.cpp: In function 'int main()':
+../src/Lab4.3.cpp:167:2: error: 'binar' was not declared in this scope
+  binar = xSemaphoreCreateBinary();
+  ^~~~~
+../src/Lab4.3.cpp:170:14: error: 'SwitchCheckTask' was not declared in this scope
+  xTaskCreate(SwitchCheckTask, "SwitchCheckTask",
+              ^~~~~~~~~~~~~~~
+../src/Lab4.3.cpp: At global scope:
+../src/Lab4.3.cpp:114:13: warning: 'void UserInputTask(void*)' defined but not used [-Wunused-function]
+ static void UserInputTask(void *pvParameters)
+             ^~~~~~~~~~~~~
+make: *** [src/subdir.mk:39: src/Lab4.3.o] Error 1
+"make -r -j4 all" terminated with exit code 2. Build might be incomplete.
+09:50:06 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+09:50:06 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+09:50:06 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+09:50:06 **** Incremental Build of configuration Debug for project Lab4.3 ****
+make -r -j4 all 
+Building file: ../src/Lab4.3.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/Lab4.3.d" -MT"src/Lab4.3.o" -MT"src/Lab4.3.d" -o "src/Lab4.3.o" "../src/Lab4.3.cpp"
+../src/Lab4.3.cpp:57:1: error: 'xSemaphoreHandle' does not name a type; did you mean 'SemaphoreHandle_t'?
+ xSemaphoreHandle sbRIT;
+ ^~~~~~~~~~~~~~~~
+ SemaphoreHandle_t
+In file included from ../src/Lab4.3.cpp:29:
+../src/Lab4.3.cpp: In function 'void RIT_IRQHandler()':
+../src/Lab4.3.cpp:78:24: error: 'sbRIT' was not declared in this scope
+  xSemaphoreGiveFromISR(sbRIT, &xHigherPriorityWoken);
+                        ^~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include/semphr.h:624:111: note: in definition of macro 'xSemaphoreGiveFromISR'
+ #define xSemaphoreGiveFromISR( xSemaphore, pxHigherPriorityTaskWoken ) xQueueGiveFromISR( ( QueueHandle_t ) ( xSemaphore ), ( pxHigherPriorityTaskWoken ) )
+                                                                                                               ^~~~~~~~~~
+../src/Lab4.3.cpp: In function 'void RIT_start(int, int)':
+../src/Lab4.3.cpp:104:20: error: 'sbRIT' was not declared in this scope
+  if(xSemaphoreTake(sbRIT, portMAX_DELAY) == pdTRUE) {
+                    ^~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include/semphr.h:289:74: note: in definition of macro 'xSemaphoreTake'
+ #define xSemaphoreTake( xSemaphore, xBlockTime )  xQueueSemaphoreTake( ( xSemaphore ), ( xBlockTime ) )
+                                                                          ^~~~~~~~~~
+../src/Lab4.3.cpp: In function 'int main()':
+../src/Lab4.3.cpp:167:2: error: 'binar' was not declared in this scope
+  binar = xSemaphoreCreateBinary();
+  ^~~~~
+../src/Lab4.3.cpp:170:14: error: 'SwitchCheckTask' was not declared in this scope
+  xTaskCreate(SwitchCheckTask, "SwitchCheckTask",
+              ^~~~~~~~~~~~~~~
+../src/Lab4.3.cpp: At global scope:
+../src/Lab4.3.cpp:114:13: warning: 'void UserInputTask(void*)' defined but not used [-Wunused-function]
+ static void UserInputTask(void *pvParameters)
+             ^~~~~~~~~~~~~
+make: *** [src/subdir.mk:39: src/Lab4.3.o] Error 1
+"make -r -j4 all" terminated with exit code 2. Build might be incomplete.
+09:52:21 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+09:52:21 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+09:52:21 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+09:52:21 **** Incremental Build of configuration Debug for project Lab4.3 ****
+make -r -j4 all 
+Building file: ../src/Lab4.3.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/Lab4.3.d" -MT"src/Lab4.3.o" -MT"src/Lab4.3.d" -o "src/Lab4.3.o" "../src/Lab4.3.cpp"
+../src/Lab4.3.cpp:57:1: error: 'xSemaphoreHandle' does not name a type; did you mean 'SemaphoreHandle_t'?
+ xSemaphoreHandle sbRIT;
+ ^~~~~~~~~~~~~~~~
+ SemaphoreHandle_t
+In file included from ../src/Lab4.3.cpp:29:
+../src/Lab4.3.cpp: In function 'void RIT_IRQHandler()':
+../src/Lab4.3.cpp:78:24: error: 'sbRIT' was not declared in this scope
+  xSemaphoreGiveFromISR(sbRIT, &xHigherPriorityWoken);
+                        ^~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include/semphr.h:624:111: note: in definition of macro 'xSemaphoreGiveFromISR'
+ #define xSemaphoreGiveFromISR( xSemaphore, pxHigherPriorityTaskWoken ) xQueueGiveFromISR( ( QueueHandle_t ) ( xSemaphore ), ( pxHigherPriorityTaskWoken ) )
+                                                                                                               ^~~~~~~~~~
+../src/Lab4.3.cpp: In function 'void RIT_start(int, int)':
+../src/Lab4.3.cpp:104:20: error: 'sbRIT' was not declared in this scope
+  if(xSemaphoreTake(sbRIT, portMAX_DELAY) == pdTRUE) {
+                    ^~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include/semphr.h:289:74: note: in definition of macro 'xSemaphoreTake'
+ #define xSemaphoreTake( xSemaphore, xBlockTime )  xQueueSemaphoreTake( ( xSemaphore ), ( xBlockTime ) )
+                                                                          ^~~~~~~~~~
+../src/Lab4.3.cpp: In function 'int main()':
+../src/Lab4.3.cpp:167:2: error: 'binar' was not declared in this scope
+  binar = xSemaphoreCreateBinary();
+  ^~~~~
+../src/Lab4.3.cpp:170:14: error: 'SwitchCheckTask' was not declared in this scope
+  xTaskCreate(SwitchCheckTask, "SwitchCheckTask",
+              ^~~~~~~~~~~~~~~
+../src/Lab4.3.cpp: At global scope:
+../src/Lab4.3.cpp:114:13: warning: 'void UserInputTask(void*)' defined but not used [-Wunused-function]
+ static void UserInputTask(void *pvParameters)
+             ^~~~~~~~~~~~~
+make: *** [src/subdir.mk:39: src/Lab4.3.o] Error 1
+"make -r -j4 all" terminated with exit code 2. Build might be incomplete.
+09:53:29 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+09:53:30 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+09:53:30 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+09:53:30 **** Incremental Build of configuration Debug for project Lab4.3 ****
+make -r -j4 all 
+Building file: ../src/Lab4.3.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/Lab4.3.d" -MT"src/Lab4.3.o" -MT"src/Lab4.3.d" -o "src/Lab4.3.o" "../src/Lab4.3.cpp"
+../src/Lab4.3.cpp:57:1: error: 'xSemaphoreHandle' does not name a type; did you mean 'SemaphoreHandle_t'?
+ xSemaphoreHandle sbRIT;
+ ^~~~~~~~~~~~~~~~
+ SemaphoreHandle_t
+In file included from ../src/Lab4.3.cpp:29:
+../src/Lab4.3.cpp: In function 'void RIT_IRQHandler()':
+../src/Lab4.3.cpp:78:24: error: 'sbRIT' was not declared in this scope
+  xSemaphoreGiveFromISR(sbRIT, &xHigherPriorityWoken);
+                        ^~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include/semphr.h:624:111: note: in definition of macro 'xSemaphoreGiveFromISR'
+ #define xSemaphoreGiveFromISR( xSemaphore, pxHigherPriorityTaskWoken ) xQueueGiveFromISR( ( QueueHandle_t ) ( xSemaphore ), ( pxHigherPriorityTaskWoken ) )
+                                                                                                               ^~~~~~~~~~
+../src/Lab4.3.cpp: In function 'void RIT_start(int, int)':
+../src/Lab4.3.cpp:104:20: error: 'sbRIT' was not declared in this scope
+  if(xSemaphoreTake(sbRIT, portMAX_DELAY) == pdTRUE) {
+                    ^~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include/semphr.h:289:74: note: in definition of macro 'xSemaphoreTake'
+ #define xSemaphoreTake( xSemaphore, xBlockTime )  xQueueSemaphoreTake( ( xSemaphore ), ( xBlockTime ) )
+                                                                          ^~~~~~~~~~
+../src/Lab4.3.cpp: In function 'int main()':
+../src/Lab4.3.cpp:167:2: error: 'sbRIT' was not declared in this scope
+  sbRIT = xSemaphoreCreateBinary();
+  ^~~~~
+../src/Lab4.3.cpp: At global scope:
+../src/Lab4.3.cpp:126:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+make: *** [src/subdir.mk:39: src/Lab4.3.o] Error 1
+"make -r -j4 all" terminated with exit code 2. Build might be incomplete.
+09:57:02 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+09:57:02 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+09:57:02 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+09:57:02 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:62:1: error: 'xSemaphoreHandle' does not name a type; did you mean 'SemaphoreHandle_t'?
+ xSemaphoreHandle sbRIT;
+ ^~~~~~~~~~~~~~~~
+ SemaphoreHandle_t
+In file included from ../src/main.cpp:29:
+../src/main.cpp: In function 'void RIT_IRQHandler()':
+../src/main.cpp:83:24: error: 'sbRIT' was not declared in this scope
+  xSemaphoreGiveFromISR(sbRIT, &xHigherPriorityWoken);
+                        ^~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include/semphr.h:624:111: note: in definition of macro 'xSemaphoreGiveFromISR'
+ #define xSemaphoreGiveFromISR( xSemaphore, pxHigherPriorityTaskWoken ) xQueueGiveFromISR( ( QueueHandle_t ) ( xSemaphore ), ( pxHigherPriorityTaskWoken ) )
+                                                                                                               ^~~~~~~~~~
+../src/main.cpp: In function 'void RIT_start(int, int)':
+../src/main.cpp:109:20: error: 'sbRIT' was not declared in this scope
+  if(xSemaphoreTake(sbRIT, portMAX_DELAY) == pdTRUE) {
+                    ^~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include/semphr.h:289:74: note: in definition of macro 'xSemaphoreTake'
+ #define xSemaphoreTake( xSemaphore, xBlockTime )  xQueueSemaphoreTake( ( xSemaphore ), ( xBlockTime ) )
+                                                                          ^~~~~~~~~~
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:172:2: error: 'sbRIT' was not declared in this scope
+  sbRIT = xSemaphoreCreateBinary();
+  ^~~~~
+../src/main.cpp: At global scope:
+../src/main.cpp:131:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+make: *** [src/subdir.mk:42: src/main.o] Error 1
+"make -r -j4 all" terminated with exit code 2. Build might be incomplete.
+09:57:06 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+09:57:06 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+09:57:07 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+09:57:07 **** Incremental Build of configuration Debug for project Lab4.3 ****
+make -r -j4 all 
+Building file: ../src/Lab4.3.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/Lab4.3.d" -MT"src/Lab4.3.o" -MT"src/Lab4.3.d" -o "src/Lab4.3.o" "../src/Lab4.3.cpp"
+Finished building: ../src/Lab4.3.cpp
+ 
+Building target: Lab4.3.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug" -Xlinker -Map="Lab4.3.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Lab4_3_Debug.ld" -o "Lab4.3.axf"  ./src/DigitalIoPin.o ./src/Lab4.3.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx -lFreeRTOS
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       39704 B       256 KB     15.15%
+         Ram0_16:        2956 B        16 KB     18.04%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: Lab4.3.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Lab4.3.axf"; # arm-none-eabi-objcopy -v -O binary "Lab4.3.axf" "Lab4.3.bin" ; # checksum -p LPC1549 -d "Lab4.3.bin";
+   text	   data	    bss	    dec	    hex	filename
+  37224	   2480	    476	  40180	   9cf4	Lab4.3.axf
+ 
+09:57:29 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+09:57:29 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+09:57:29 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+09:57:29 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:62:1: error: 'xSemaphoreHandle_t' does not name a type; did you mean 'SemaphoreHandle_t'?
+ xSemaphoreHandle_t sbRIT;
+ ^~~~~~~~~~~~~~~~~~
+ SemaphoreHandle_t
+In file included from ../src/main.cpp:29:
+../src/main.cpp: In function 'void RIT_IRQHandler()':
+../src/main.cpp:83:24: error: 'sbRIT' was not declared in this scope
+  xSemaphoreGiveFromISR(sbRIT, &xHigherPriorityWoken);
+                        ^~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include/semphr.h:624:111: note: in definition of macro 'xSemaphoreGiveFromISR'
+ #define xSemaphoreGiveFromISR( xSemaphore, pxHigherPriorityTaskWoken ) xQueueGiveFromISR( ( QueueHandle_t ) ( xSemaphore ), ( pxHigherPriorityTaskWoken ) )
+                                                                                                               ^~~~~~~~~~
+../src/main.cpp: In function 'void RIT_start(int, int)':
+../src/main.cpp:109:20: error: 'sbRIT' was not declared in this scope
+  if(xSemaphoreTake(sbRIT, portMAX_DELAY) == pdTRUE) {
+                    ^~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include/semphr.h:289:74: note: in definition of macro 'xSemaphoreTake'
+ #define xSemaphoreTake( xSemaphore, xBlockTime )  xQueueSemaphoreTake( ( xSemaphore ), ( xBlockTime ) )
+                                                                          ^~~~~~~~~~
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:172:2: error: 'sbRIT' was not declared in this scope
+  sbRIT = xSemaphoreCreateBinary();
+  ^~~~~
+../src/main.cpp: At global scope:
+../src/main.cpp:131:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+make: *** [src/subdir.mk:42: src/main.o] Error 1
+"make -r -j4 all" terminated with exit code 2. Build might be incomplete.
+09:57:45 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+09:57:45 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+09:57:46 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+09:57:46 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:131:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: Lab6.1.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug" -Xlinker -Map="Lab6.1.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Lab6_1_Debug.ld" -o "Lab6.1.axf"  ./src/DigitalIoPin.o ./src/ITM_write.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/main.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx -lFreeRTOS
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       15304 B       256 KB      5.84%
+         Ram0_16:        2596 B        16 KB     15.84%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: Lab6.1.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Lab6.1.axf"; # arm-none-eabi-objcopy -v -O binary "Lab6.1.axf" "Lab6.1.bin" ; # checksum -p LPC1549 -d "Lab6.1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  13188	   2116	    480	  15784	   3da8	Lab6.1.axf
+ 
+09:58:11 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+09:58:12 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+09:58:12 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+09:58:12 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+09:58:13 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+10:05:18 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:05:18 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:05:19 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:05:19 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:139:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: Lab6.1.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug" -Xlinker -Map="Lab6.1.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Lab6_1_Debug.ld" -o "Lab6.1.axf"  ./src/DigitalIoPin.o ./src/ITM_write.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/main.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx -lFreeRTOS
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       47292 B       256 KB     18.04%
+         Ram0_16:        3012 B        16 KB     18.38%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: Lab6.1.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Lab6.1.axf"; # arm-none-eabi-objcopy -v -O binary "Lab6.1.axf" "Lab6.1.bin" ; # checksum -p LPC1549 -d "Lab6.1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  44804	   2488	    524	  47816	   bac8	Lab6.1.axf
+ 
+10:05:21 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+10:06:29 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:06:29 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:06:30 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:06:30 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:142:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: Lab6.1.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug" -Xlinker -Map="Lab6.1.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Lab6_1_Debug.ld" -o "Lab6.1.axf"  ./src/DigitalIoPin.o ./src/ITM_write.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/main.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx -lFreeRTOS
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       26204 B       256 KB     10.00%
+         Ram0_16:        2648 B        16 KB     16.16%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: Lab6.1.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Lab6.1.axf"; # arm-none-eabi-objcopy -v -O binary "Lab6.1.axf" "Lab6.1.bin" ; # checksum -p LPC1549 -d "Lab6.1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  24080	   2124	    524	  26728	   6868	Lab6.1.axf
+ 
+10:06:32 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+10:09:30 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:09:30 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:09:30 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:09:30 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'void StepTask(void*)':
+../src/main.cpp:143:6: error: expected primary-expression before ')' token
+   if()
+      ^
+../src/main.cpp:144:2: error: expected primary-expression before '}' token
+  }
+  ^
+../src/main.cpp: At global scope:
+../src/main.cpp:138:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+make: *** [src/subdir.mk:42: src/main.o] Error 1
+"make -r -j4 all" terminated with exit code 2. Build might be incomplete.
+10:09:32 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'void StepTask(void*)':
+../src/main.cpp:143:6: error: expected primary-expression before ')' token
+   if()
+      ^
+../src/main.cpp:144:2: error: expected primary-expression before '}' token
+  }
+  ^
+../src/main.cpp: At global scope:
+../src/main.cpp:138:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+make: *** [src/subdir.mk:42: src/main.o] Error 1
+"make -r -j4 all" terminated with exit code 2. Build might be incomplete.
+10:09:44 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:09:44 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:09:44 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:09:44 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:138:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: Lab6.1.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug" -Xlinker -Map="Lab6.1.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Lab6_1_Debug.ld" -o "Lab6.1.axf"  ./src/DigitalIoPin.o ./src/ITM_write.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/main.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx -lFreeRTOS
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       47276 B       256 KB     18.03%
+         Ram0_16:        3012 B        16 KB     18.38%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: Lab6.1.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Lab6.1.axf"; # arm-none-eabi-objcopy -v -O binary "Lab6.1.axf" "Lab6.1.bin" ; # checksum -p LPC1549 -d "Lab6.1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  44788	   2488	    524	  47800	   bab8	Lab6.1.axf
+ 
+10:09:49 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:09:49 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:09:49 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:09:50 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+10:09:51 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+10:13:29 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:13:29 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:13:29 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:13:29 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'void UserInputTask(void*)':
+../src/main.cpp:124:2: error: expected ',' or ';' before 'int'
+  int c = 0;
+  ^~~
+../src/main.cpp:127:10: error: 'c' was not declared in this scope
+   while((c = Board_UARTGetChar()) != EOF)
+          ^
+../src/main.cpp: At global scope:
+../src/main.cpp:147:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+make: *** [src/subdir.mk:42: src/main.o] Error 1
+"make -r -j4 all" terminated with exit code 2. Build might be incomplete.
+10:13:31 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'void UserInputTask(void*)':
+../src/main.cpp:124:2: error: expected ',' or ';' before 'int'
+  int c = 0;
+  ^~~
+../src/main.cpp:127:10: error: 'c' was not declared in this scope
+   while((c = Board_UARTGetChar()) != EOF)
+          ^
+../src/main.cpp: At global scope:
+../src/main.cpp:147:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+make: *** [src/subdir.mk:42: src/main.o] Error 1
+"make -r -j4 all" terminated with exit code 2. Build might be incomplete.
+10:13:42 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:13:42 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:13:42 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:13:42 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:147:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: Lab6.1.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug" -Xlinker -Map="Lab6.1.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Lab6_1_Debug.ld" -o "Lab6.1.axf"  ./src/DigitalIoPin.o ./src/ITM_write.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/main.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx -lFreeRTOS
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       47324 B       256 KB     18.05%
+         Ram0_16:        3012 B        16 KB     18.38%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: Lab6.1.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Lab6.1.axf"; # arm-none-eabi-objcopy -v -O binary "Lab6.1.axf" "Lab6.1.bin" ; # checksum -p LPC1549 -d "Lab6.1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  44836	   2488	    524	  47848	   bae8	Lab6.1.axf
+ 
+10:14:02 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:14:02 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:14:02 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:14:03 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+10:14:03 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+10:14:55 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:14:55 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:14:55 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:14:55 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:148:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: Lab6.1.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug" -Xlinker -Map="Lab6.1.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Lab6_1_Debug.ld" -o "Lab6.1.axf"  ./src/DigitalIoPin.o ./src/ITM_write.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/main.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx -lFreeRTOS
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       48264 B       256 KB     18.41%
+         Ram0_16:        3012 B        16 KB     18.38%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: Lab6.1.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Lab6.1.axf"; # arm-none-eabi-objcopy -v -O binary "Lab6.1.axf" "Lab6.1.bin" ; # checksum -p LPC1549 -d "Lab6.1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  45776	   2488	    524	  48788	   be94	Lab6.1.axf
+ 
+10:14:57 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+10:16:09 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:16:09 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:16:09 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:16:10 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:149:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: Lab6.1.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug" -Xlinker -Map="Lab6.1.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Lab6_1_Debug.ld" -o "Lab6.1.axf"  ./src/DigitalIoPin.o ./src/ITM_write.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/main.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx -lFreeRTOS
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       48280 B       256 KB     18.42%
+         Ram0_16:        3012 B        16 KB     18.38%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: Lab6.1.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Lab6.1.axf"; # arm-none-eabi-objcopy -v -O binary "Lab6.1.axf" "Lab6.1.bin" ; # checksum -p LPC1549 -d "Lab6.1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  45792	   2488	    524	  48804	   bea4	Lab6.1.axf
+ 
+10:16:12 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+10:17:29 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:17:30 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:17:30 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:17:30 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:149:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: Lab6.1.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug" -Xlinker -Map="Lab6.1.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Lab6_1_Debug.ld" -o "Lab6.1.axf"  ./src/DigitalIoPin.o ./src/ITM_write.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/main.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx -lFreeRTOS
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       48280 B       256 KB     18.42%
+         Ram0_16:        3012 B        16 KB     18.38%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: Lab6.1.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Lab6.1.axf"; # arm-none-eabi-objcopy -v -O binary "Lab6.1.axf" "Lab6.1.bin" ; # checksum -p LPC1549 -d "Lab6.1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  45792	   2488	    524	  48804	   bea4	Lab6.1.axf
+ 
+10:17:32 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+10:20:56 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:20:56 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:20:56 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:20:56 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:149:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: Lab6.1.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug" -Xlinker -Map="Lab6.1.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Lab6_1_Debug.ld" -o "Lab6.1.axf"  ./src/DigitalIoPin.o ./src/ITM_write.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/main.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx -lFreeRTOS
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       48580 B       256 KB     18.53%
+         Ram0_16:        3012 B        16 KB     18.38%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: Lab6.1.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Lab6.1.axf"; # arm-none-eabi-objcopy -v -O binary "Lab6.1.axf" "Lab6.1.bin" ; # checksum -p LPC1549 -d "Lab6.1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  46092	   2488	    524	  49104	   bfd0	Lab6.1.axf
+ 
+10:20:59 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+10:26:54 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:26:55 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:26:55 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:26:55 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'void UserInputTask(void*)':
+../src/main.cpp:133:15: error: 'std::__cxx11::string' {aka 'class std::__cxx11::basic_string<char>'} has no member named 'pushback'; did you mean 'push_back'?
+     direction.pushback(c);
+               ^~~~~~~~
+               push_back
+In file included from C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board.h:105,
+                 from ../src/main.cpp:16:
+../src/main.cpp:146:13: warning: format '%s' expects argument of type 'char*', but argument 2 has type 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} [-Wformat=]
+    DEBUGOUT("\r\n%s\r\n", direction);
+             ^~~~~~~~~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board_api.h:176:30: note: in definition of macro 'DEBUGOUT'
+ #define DEBUGOUT(...) printf(__VA_ARGS__)
+                              ^~~~~~~~~~~
+../src/main.cpp:150:13: warning: format '%s' expects argument of type 'char*', but argument 2 has type 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} [-Wformat=]
+    DEBUGOUT("\r\n%s\r\n", direction);
+             ^~~~~~~~~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board_api.h:176:30: note: in definition of macro 'DEBUGOUT'
+ #define DEBUGOUT(...) printf(__VA_ARGS__)
+                              ^~~~~~~~~~~
+../src/main.cpp: At global scope:
+../src/main.cpp:163:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+make: *** [src/subdir.mk:42: src/main.o] Error 1
+"make -r -j4 all" terminated with exit code 2. Build might be incomplete.
+10:26:56 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'void UserInputTask(void*)':
+../src/main.cpp:133:15: error: 'std::__cxx11::string' {aka 'class std::__cxx11::basic_string<char>'} has no member named 'pushback'; did you mean 'push_back'?
+     direction.pushback(c);
+               ^~~~~~~~
+               push_back
+In file included from C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board.h:105,
+                 from ../src/main.cpp:16:
+../src/main.cpp:146:13: warning: format '%s' expects argument of type 'char*', but argument 2 has type 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} [-Wformat=]
+    DEBUGOUT("\r\n%s\r\n", direction);
+             ^~~~~~~~~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board_api.h:176:30: note: in definition of macro 'DEBUGOUT'
+ #define DEBUGOUT(...) printf(__VA_ARGS__)
+                              ^~~~~~~~~~~
+../src/main.cpp:150:13: warning: format '%s' expects argument of type 'char*', but argument 2 has type 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} [-Wformat=]
+    DEBUGOUT("\r\n%s\r\n", direction);
+             ^~~~~~~~~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board_api.h:176:30: note: in definition of macro 'DEBUGOUT'
+ #define DEBUGOUT(...) printf(__VA_ARGS__)
+                              ^~~~~~~~~~~
+../src/main.cpp: At global scope:
+../src/main.cpp:163:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+make: *** [src/subdir.mk:42: src/main.o] Error 1
+"make -r -j4 all" terminated with exit code 2. Build might be incomplete.
+10:27:08 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:27:08 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:27:08 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:27:08 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+In file included from C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board.h:105,
+                 from ../src/main.cpp:16:
+../src/main.cpp: In function 'void UserInputTask(void*)':
+../src/main.cpp:146:13: warning: format '%s' expects argument of type 'char*', but argument 2 has type 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} [-Wformat=]
+    DEBUGOUT("\r\n%s\r\n", direction);
+             ^~~~~~~~~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board_api.h:176:30: note: in definition of macro 'DEBUGOUT'
+ #define DEBUGOUT(...) printf(__VA_ARGS__)
+                              ^~~~~~~~~~~
+../src/main.cpp:150:13: warning: format '%s' expects argument of type 'char*', but argument 2 has type 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} [-Wformat=]
+    DEBUGOUT("\r\n%s\r\n", direction);
+             ^~~~~~~~~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board_api.h:176:30: note: in definition of macro 'DEBUGOUT'
+ #define DEBUGOUT(...) printf(__VA_ARGS__)
+                              ^~~~~~~~~~~
+../src/main.cpp: At global scope:
+../src/main.cpp:163:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: Lab6.1.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug" -Xlinker -Map="Lab6.1.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Lab6_1_Debug.ld" -o "Lab6.1.axf"  ./src/DigitalIoPin.o ./src/ITM_write.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/main.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx -lFreeRTOS
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       47928 B       256 KB     18.28%
+         Ram0_16:        3012 B        16 KB     18.38%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: Lab6.1.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Lab6.1.axf"; # arm-none-eabi-objcopy -v -O binary "Lab6.1.axf" "Lab6.1.bin" ; # checksum -p LPC1549 -d "Lab6.1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  45440	   2488	    524	  48452	   bd44	Lab6.1.axf
+ 
+10:27:16 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:27:16 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:27:16 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:27:17 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+10:27:17 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+10:28:57 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:28:57 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:28:57 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:28:57 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+In file included from C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board.h:105,
+                 from ../src/main.cpp:16:
+../src/main.cpp: In function 'void UserInputTask(void*)':
+../src/main.cpp:146:13: warning: format '%s' expects argument of type 'char*', but argument 2 has type 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} [-Wformat=]
+    DEBUGOUT("\r\n%s\r\n", direction);
+             ^~~~~~~~~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board_api.h:176:30: note: in definition of macro 'DEBUGOUT'
+ #define DEBUGOUT(...) printf(__VA_ARGS__)
+                              ^~~~~~~~~~~
+../src/main.cpp:151:13: warning: format '%s' expects argument of type 'char*', but argument 2 has type 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} [-Wformat=]
+    DEBUGOUT("\r\n%s\r\n", direction);
+             ^~~~~~~~~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board_api.h:176:30: note: in definition of macro 'DEBUGOUT'
+ #define DEBUGOUT(...) printf(__VA_ARGS__)
+                              ^~~~~~~~~~~
+../src/main.cpp: At global scope:
+../src/main.cpp:164:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: Lab6.1.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug" -Xlinker -Map="Lab6.1.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Lab6_1_Debug.ld" -o "Lab6.1.axf"  ./src/DigitalIoPin.o ./src/ITM_write.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/main.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx -lFreeRTOS
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       47976 B       256 KB     18.30%
+         Ram0_16:        3012 B        16 KB     18.38%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: Lab6.1.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Lab6.1.axf"; # arm-none-eabi-objcopy -v -O binary "Lab6.1.axf" "Lab6.1.bin" ; # checksum -p LPC1549 -d "Lab6.1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  45488	   2488	    524	  48500	   bd74	Lab6.1.axf
+ 
+10:28:59 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+10:29:42 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:29:42 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:29:42 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:29:43 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+In file included from C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board.h:105,
+                 from ../src/main.cpp:16:
+../src/main.cpp: In function 'void UserInputTask(void*)':
+../src/main.cpp:146:13: warning: format '%s' expects argument of type 'char*', but argument 2 has type 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} [-Wformat=]
+    DEBUGOUT("\r\n%s\r\n", direction);
+             ^~~~~~~~~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board_api.h:176:30: note: in definition of macro 'DEBUGOUT'
+ #define DEBUGOUT(...) printf(__VA_ARGS__)
+                              ^~~~~~~~~~~
+../src/main.cpp:151:13: warning: format '%s' expects argument of type 'char*', but argument 2 has type 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} [-Wformat=]
+    DEBUGOUT("\r\n%s\r\n", direction);
+             ^~~~~~~~~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board_api.h:176:30: note: in definition of macro 'DEBUGOUT'
+ #define DEBUGOUT(...) printf(__VA_ARGS__)
+                              ^~~~~~~~~~~
+../src/main.cpp: At global scope:
+../src/main.cpp:164:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: Lab6.1.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug" -Xlinker -Map="Lab6.1.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Lab6_1_Debug.ld" -o "Lab6.1.axf"  ./src/DigitalIoPin.o ./src/ITM_write.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/main.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx -lFreeRTOS
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       47976 B       256 KB     18.30%
+         Ram0_16:        3012 B        16 KB     18.38%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: Lab6.1.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Lab6.1.axf"; # arm-none-eabi-objcopy -v -O binary "Lab6.1.axf" "Lab6.1.bin" ; # checksum -p LPC1549 -d "Lab6.1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  45488	   2488	    524	  48500	   bd74	Lab6.1.axf
+ 
+10:29:45 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+10:31:42 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:31:42 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:31:42 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:31:43 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'void UserInputTask(void*)':
+../src/main.cpp:144:3: error: expected primary-expression before 'if'
+   if(direction.c_str() == "right" && gotInput)
+   ^~
+../src/main.cpp:149:3: error: 'else' without a previous 'if'
+   else if(direction.c_str()  == "left" && gotInput)
+   ^~~~
+../src/main.cpp:149:33: warning: comparison with string literal results in unspecified behavior [-Waddress]
+   else if(direction.c_str()  == "left" && gotInput)
+                                 ^~~~~~
+In file included from C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board.h:105,
+                 from ../src/main.cpp:16:
+../src/main.cpp:151:13: warning: format '%s' expects argument of type 'char*', but argument 2 has type 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} [-Wformat=]
+    DEBUGOUT("\r\n%s\r\n", direction);
+             ^~~~~~~~~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board_api.h:176:30: note: in definition of macro 'DEBUGOUT'
+ #define DEBUGOUT(...) printf(__VA_ARGS__)
+                              ^~~~~~~~~~~
+../src/main.cpp: At global scope:
+../src/main.cpp:164:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+make: *** [src/subdir.mk:42: src/main.o] Error 1
+"make -r -j4 all" terminated with exit code 2. Build might be incomplete.
+10:31:44 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'void UserInputTask(void*)':
+../src/main.cpp:144:3: error: expected primary-expression before 'if'
+   if(direction.c_str() == "right" && gotInput)
+   ^~
+../src/main.cpp:149:3: error: 'else' without a previous 'if'
+   else if(direction.c_str()  == "left" && gotInput)
+   ^~~~
+../src/main.cpp:149:33: warning: comparison with string literal results in unspecified behavior [-Waddress]
+   else if(direction.c_str()  == "left" && gotInput)
+                                 ^~~~~~
+In file included from C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board.h:105,
+                 from ../src/main.cpp:16:
+../src/main.cpp:151:13: warning: format '%s' expects argument of type 'char*', but argument 2 has type 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} [-Wformat=]
+    DEBUGOUT("\r\n%s\r\n", direction);
+             ^~~~~~~~~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board_api.h:176:30: note: in definition of macro 'DEBUGOUT'
+ #define DEBUGOUT(...) printf(__VA_ARGS__)
+                              ^~~~~~~~~~~
+../src/main.cpp: At global scope:
+../src/main.cpp:164:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+make: *** [src/subdir.mk:42: src/main.o] Error 1
+"make -r -j4 all" terminated with exit code 2. Build might be incomplete.
+10:31:51 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:31:51 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:31:51 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:31:52 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'void UserInputTask(void*)':
+../src/main.cpp:144:27: warning: comparison with string literal results in unspecified behavior [-Waddress]
+   if(direction.c_str() == "right" && gotInput)
+                           ^~~~~~~
+In file included from C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board.h:105,
+                 from ../src/main.cpp:16:
+../src/main.cpp:146:13: warning: format '%s' expects argument of type 'char*', but argument 2 has type 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} [-Wformat=]
+    DEBUGOUT("\r\n%s\r\n", direction);
+             ^~~~~~~~~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board_api.h:176:30: note: in definition of macro 'DEBUGOUT'
+ #define DEBUGOUT(...) printf(__VA_ARGS__)
+                              ^~~~~~~~~~~
+../src/main.cpp:149:33: warning: comparison with string literal results in unspecified behavior [-Waddress]
+   else if(direction.c_str()  == "left" && gotInput)
+                                 ^~~~~~
+In file included from C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board.h:105,
+                 from ../src/main.cpp:16:
+../src/main.cpp:151:13: warning: format '%s' expects argument of type 'char*', but argument 2 has type 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} [-Wformat=]
+    DEBUGOUT("\r\n%s\r\n", direction);
+             ^~~~~~~~~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board_api.h:176:30: note: in definition of macro 'DEBUGOUT'
+ #define DEBUGOUT(...) printf(__VA_ARGS__)
+                              ^~~~~~~~~~~
+../src/main.cpp: At global scope:
+../src/main.cpp:164:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: Lab6.1.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug" -Xlinker -Map="Lab6.1.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Lab6_1_Debug.ld" -o "Lab6.1.axf"  ./src/DigitalIoPin.o ./src/ITM_write.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/main.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx -lFreeRTOS
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       47808 B       256 KB     18.24%
+         Ram0_16:        3012 B        16 KB     18.38%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: Lab6.1.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Lab6.1.axf"; # arm-none-eabi-objcopy -v -O binary "Lab6.1.axf" "Lab6.1.bin" ; # checksum -p LPC1549 -d "Lab6.1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  45320	   2488	    524	  48332	   bccc	Lab6.1.axf
+ 
+10:32:18 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:32:18 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:32:18 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:32:18 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+10:32:19 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+10:33:56 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:33:56 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:33:56 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:33:56 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+In file included from C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board.h:105,
+                 from ../src/main.cpp:16:
+../src/main.cpp: In function 'void UserInputTask(void*)':
+../src/main.cpp:148:13: warning: format '%s' expects argument of type 'char*', but argument 2 has type 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} [-Wformat=]
+    DEBUGOUT("\r\n%s\r\n", direction);
+             ^~~~~~~~~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board_api.h:176:30: note: in definition of macro 'DEBUGOUT'
+ #define DEBUGOUT(...) printf(__VA_ARGS__)
+                              ^~~~~~~~~~~
+../src/main.cpp:153:13: warning: format '%s' expects argument of type 'char*', but argument 2 has type 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} [-Wformat=]
+    DEBUGOUT("\r\n%s\r\n", direction);
+             ^~~~~~~~~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board_api.h:176:30: note: in definition of macro 'DEBUGOUT'
+ #define DEBUGOUT(...) printf(__VA_ARGS__)
+                              ^~~~~~~~~~~
+../src/main.cpp: At global scope:
+../src/main.cpp:166:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: Lab6.1.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug" -Xlinker -Map="Lab6.1.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Lab6_1_Debug.ld" -o "Lab6.1.axf"  ./src/DigitalIoPin.o ./src/ITM_write.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/main.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx -lFreeRTOS
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       47840 B       256 KB     18.25%
+         Ram0_16:        3012 B        16 KB     18.38%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: Lab6.1.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Lab6.1.axf"; # arm-none-eabi-objcopy -v -O binary "Lab6.1.axf" "Lab6.1.bin" ; # checksum -p LPC1549 -d "Lab6.1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  45352	   2488	    524	  48364	   bcec	Lab6.1.axf
+ 
+10:33:58 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+10:36:24 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:36:25 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:36:25 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:36:25 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+In file included from C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board.h:105,
+                 from ../src/main.cpp:16:
+../src/main.cpp: In function 'void UserInputTask(void*)':
+../src/main.cpp:148:13: warning: format '%s' expects argument of type 'char*', but argument 2 has type 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} [-Wformat=]
+    DEBUGOUT("\r\n%s\r\n", direction);
+             ^~~~~~~~~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board_api.h:176:30: note: in definition of macro 'DEBUGOUT'
+ #define DEBUGOUT(...) printf(__VA_ARGS__)
+                              ^~~~~~~~~~~
+../src/main.cpp:153:13: warning: format '%s' expects argument of type 'char*', but argument 2 has type 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} [-Wformat=]
+    DEBUGOUT("\r\n%s\r\n", direction);
+             ^~~~~~~~~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board_api.h:176:30: note: in definition of macro 'DEBUGOUT'
+ #define DEBUGOUT(...) printf(__VA_ARGS__)
+                              ^~~~~~~~~~~
+../src/main.cpp: At global scope:
+../src/main.cpp:166:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: Lab6.1.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug" -Xlinker -Map="Lab6.1.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Lab6_1_Debug.ld" -o "Lab6.1.axf"  ./src/DigitalIoPin.o ./src/ITM_write.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/main.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx -lFreeRTOS
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       48336 B       256 KB     18.44%
+         Ram0_16:        3012 B        16 KB     18.38%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: Lab6.1.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Lab6.1.axf"; # arm-none-eabi-objcopy -v -O binary "Lab6.1.axf" "Lab6.1.bin" ; # checksum -p LPC1549 -d "Lab6.1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  45848	   2488	    524	  48860	   bedc	Lab6.1.axf
+ 
+10:36:28 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+10:37:59 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:37:59 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:38:00 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:38:00 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+In file included from C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board.h:105,
+                 from ../src/main.cpp:16:
+../src/main.cpp: In function 'void UserInputTask(void*)':
+../src/main.cpp:153:13: warning: format '%s' expects argument of type 'char*', but argument 2 has type 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} [-Wformat=]
+    DEBUGOUT("\r\n%s\r\n", direction);
+             ^~~~~~~~~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board_api.h:176:30: note: in definition of macro 'DEBUGOUT'
+ #define DEBUGOUT(...) printf(__VA_ARGS__)
+                              ^~~~~~~~~~~
+../src/main.cpp: At global scope:
+../src/main.cpp:166:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: Lab6.1.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug" -Xlinker -Map="Lab6.1.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Lab6_1_Debug.ld" -o "Lab6.1.axf"  ./src/DigitalIoPin.o ./src/ITM_write.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/main.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx -lFreeRTOS
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       48320 B       256 KB     18.43%
+         Ram0_16:        3012 B        16 KB     18.38%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: Lab6.1.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Lab6.1.axf"; # arm-none-eabi-objcopy -v -O binary "Lab6.1.axf" "Lab6.1.bin" ; # checksum -p LPC1549 -d "Lab6.1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  45832	   2488	    524	  48844	   becc	Lab6.1.axf
+ 
+10:38:02 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+10:39:19 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:39:19 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:39:19 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:39:20 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+In file included from C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board.h:105,
+                 from ../src/main.cpp:16:
+../src/main.cpp: In function 'void UserInputTask(void*)':
+../src/main.cpp:148:13: warning: format '%s' expects argument of type 'char*', but argument 2 has type 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} [-Wformat=]
+    DEBUGOUT("\r\n%s\r\n", direction);
+             ^~~~~~~~~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board_api.h:176:30: note: in definition of macro 'DEBUGOUT'
+ #define DEBUGOUT(...) printf(__VA_ARGS__)
+                              ^~~~~~~~~~~
+../src/main.cpp:153:13: warning: format '%s' expects argument of type 'char*', but argument 2 has type 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} [-Wformat=]
+    DEBUGOUT("\r\n%s\r\n", direction);
+             ^~~~~~~~~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board_api.h:176:30: note: in definition of macro 'DEBUGOUT'
+ #define DEBUGOUT(...) printf(__VA_ARGS__)
+                              ^~~~~~~~~~~
+../src/main.cpp:158:13: warning: format '%s' expects argument of type 'char*', but argument 2 has type 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} [-Wformat=]
+    DEBUGOUT("\r\n%s\r\n", direction);
+             ^~~~~~~~~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board_api.h:176:30: note: in definition of macro 'DEBUGOUT'
+ #define DEBUGOUT(...) printf(__VA_ARGS__)
+                              ^~~~~~~~~~~
+../src/main.cpp: At global scope:
+../src/main.cpp:167:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: Lab6.1.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug" -Xlinker -Map="Lab6.1.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Lab6_1_Debug.ld" -o "Lab6.1.axf"  ./src/DigitalIoPin.o ./src/ITM_write.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/main.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx -lFreeRTOS
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       48368 B       256 KB     18.45%
+         Ram0_16:        3012 B        16 KB     18.38%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: Lab6.1.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Lab6.1.axf"; # arm-none-eabi-objcopy -v -O binary "Lab6.1.axf" "Lab6.1.bin" ; # checksum -p LPC1549 -d "Lab6.1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  45880	   2488	    524	  48892	   befc	Lab6.1.axf
+ 
+10:39:22 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+10:39:53 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:39:53 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:39:53 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:39:53 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+In file included from C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board.h:105,
+                 from ../src/main.cpp:16:
+../src/main.cpp: In function 'void UserInputTask(void*)':
+../src/main.cpp:148:13: warning: format '%s' expects argument of type 'char*', but argument 2 has type 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} [-Wformat=]
+    DEBUGOUT("\r\n%s\r\n", direction);
+             ^~~~~~~~~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board_api.h:176:30: note: in definition of macro 'DEBUGOUT'
+ #define DEBUGOUT(...) printf(__VA_ARGS__)
+                              ^~~~~~~~~~~
+../src/main.cpp:153:13: warning: format '%s' expects argument of type 'char*', but argument 2 has type 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} [-Wformat=]
+    DEBUGOUT("\r\n%s\r\n", direction);
+             ^~~~~~~~~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board_api.h:176:30: note: in definition of macro 'DEBUGOUT'
+ #define DEBUGOUT(...) printf(__VA_ARGS__)
+                              ^~~~~~~~~~~
+../src/main.cpp: At global scope:
+../src/main.cpp:167:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: Lab6.1.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug" -Xlinker -Map="Lab6.1.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Lab6_1_Debug.ld" -o "Lab6.1.axf"  ./src/DigitalIoPin.o ./src/ITM_write.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/main.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx -lFreeRTOS
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       48352 B       256 KB     18.44%
+         Ram0_16:        3012 B        16 KB     18.38%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: Lab6.1.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Lab6.1.axf"; # arm-none-eabi-objcopy -v -O binary "Lab6.1.axf" "Lab6.1.bin" ; # checksum -p LPC1549 -d "Lab6.1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  45864	   2488	    524	  48876	   beec	Lab6.1.axf
+ 
+10:39:55 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+10:41:39 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:41:39 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:41:39 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:41:40 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+In file included from C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board.h:105,
+                 from ../src/main.cpp:16:
+../src/main.cpp: In function 'void UserInputTask(void*)':
+../src/main.cpp:148:13: warning: format '%s' expects argument of type 'char*', but argument 2 has type 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} [-Wformat=]
+    DEBUGOUT("\r\n%s\r\n", direction);
+             ^~~~~~~~~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board_api.h:176:30: note: in definition of macro 'DEBUGOUT'
+ #define DEBUGOUT(...) printf(__VA_ARGS__)
+                              ^~~~~~~~~~~
+../src/main.cpp:153:13: warning: format '%s' expects argument of type 'char*', but argument 2 has type 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} [-Wformat=]
+    DEBUGOUT("\r\n%s\r\n", direction);
+             ^~~~~~~~~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board_api.h:176:30: note: in definition of macro 'DEBUGOUT'
+ #define DEBUGOUT(...) printf(__VA_ARGS__)
+                              ^~~~~~~~~~~
+../src/main.cpp: At global scope:
+../src/main.cpp:167:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: Lab6.1.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug" -Xlinker -Map="Lab6.1.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Lab6_1_Debug.ld" -o "Lab6.1.axf"  ./src/DigitalIoPin.o ./src/ITM_write.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/main.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx -lFreeRTOS
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       48352 B       256 KB     18.44%
+         Ram0_16:        3012 B        16 KB     18.38%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: Lab6.1.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Lab6.1.axf"; # arm-none-eabi-objcopy -v -O binary "Lab6.1.axf" "Lab6.1.bin" ; # checksum -p LPC1549 -d "Lab6.1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  45864	   2488	    524	  48876	   beec	Lab6.1.axf
+ 
+10:41:42 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+10:49:17 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:49:17 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:49:17 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:49:17 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+In file included from C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board.h:105,
+                 from ../src/main.cpp:16:
+../src/main.cpp: In function 'void UserInputTask(void*)':
+../src/main.cpp:158:54: error: cannot convert 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} to 'const char*'
+    DEBUGOUT("\r\n%s %d\r\n", direction.c_str(), atoi(speed));
+                                                      ^~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board_api.h:176:30: note: in definition of macro 'DEBUGOUT'
+ #define DEBUGOUT(...) printf(__VA_ARGS__)
+                              ^~~~~~~~~~~
+In file included from c:\nxp\mcuxpressoide_11.0.0_2516\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304\tools\arm-none-eabi\include\c++\8.2.1\cstdlib:75,
+                 from c:\nxp\mcuxpressoide_11.0.0_2516\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304\tools\arm-none-eabi\include\c++\8.2.1\stdlib.h:36,
+                 from ../src/main.cpp:21:
+c:\nxp\mcuxpressoide_11.0.0_2516\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304\tools\arm-none-eabi\include\stdlib.h:81:23: note:   initializing argument 1 of 'int atoi(const char*)'
+ int atoi (const char *__nptr);
+           ~~~~~~~~~~~~^~~~~~
+../src/main.cpp: At global scope:
+../src/main.cpp:167:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+make: *** [src/subdir.mk:42: src/main.o] Error 1
+"make -r -j4 all" terminated with exit code 2. Build might be incomplete.
+10:49:19 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+In file included from C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board.h:105,
+                 from ../src/main.cpp:16:
+../src/main.cpp: In function 'void UserInputTask(void*)':
+../src/main.cpp:158:54: error: cannot convert 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} to 'const char*'
+    DEBUGOUT("\r\n%s %d\r\n", direction.c_str(), atoi(speed));
+                                                      ^~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board_api.h:176:30: note: in definition of macro 'DEBUGOUT'
+ #define DEBUGOUT(...) printf(__VA_ARGS__)
+                              ^~~~~~~~~~~
+In file included from c:\nxp\mcuxpressoide_11.0.0_2516\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304\tools\arm-none-eabi\include\c++\8.2.1\cstdlib:75,
+                 from c:\nxp\mcuxpressoide_11.0.0_2516\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304\tools\arm-none-eabi\include\c++\8.2.1\stdlib.h:36,
+                 from ../src/main.cpp:21:
+c:\nxp\mcuxpressoide_11.0.0_2516\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304\tools\arm-none-eabi\include\stdlib.h:81:23: note:   initializing argument 1 of 'int atoi(const char*)'
+ int atoi (const char *__nptr);
+           ~~~~~~~~~~~~^~~~~~
+../src/main.cpp: At global scope:
+../src/main.cpp:167:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+make: *** [src/subdir.mk:42: src/main.o] Error 1
+"make -r -j4 all" terminated with exit code 2. Build might be incomplete.
+10:49:28 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:49:28 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:49:28 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:49:29 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:167:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: Lab6.1.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug" -Xlinker -Map="Lab6.1.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Lab6_1_Debug.ld" -o "Lab6.1.axf"  ./src/DigitalIoPin.o ./src/ITM_write.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/main.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx -lFreeRTOS
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       48060 B       256 KB     18.33%
+         Ram0_16:        3012 B        16 KB     18.38%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: Lab6.1.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Lab6.1.axf"; # arm-none-eabi-objcopy -v -O binary "Lab6.1.axf" "Lab6.1.bin" ; # checksum -p LPC1549 -d "Lab6.1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  45572	   2488	    524	  48584	   bdc8	Lab6.1.axf
+ 
+10:49:35 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:49:36 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:49:36 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:49:36 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+10:49:37 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+10:51:34 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:51:35 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:51:35 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:51:35 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:167:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: Lab6.1.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug" -Xlinker -Map="Lab6.1.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Lab6_1_Debug.ld" -o "Lab6.1.axf"  ./src/DigitalIoPin.o ./src/ITM_write.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/main.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx -lFreeRTOS
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       48060 B       256 KB     18.33%
+         Ram0_16:        3012 B        16 KB     18.38%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: Lab6.1.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Lab6.1.axf"; # arm-none-eabi-objcopy -v -O binary "Lab6.1.axf" "Lab6.1.bin" ; # checksum -p LPC1549 -d "Lab6.1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  45572	   2488	    524	  48584	   bdc8	Lab6.1.axf
+ 
+10:51:38 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+10:54:00 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:54:00 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:54:01 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:54:01 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:168:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: Lab6.1.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug" -Xlinker -Map="Lab6.1.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Lab6_1_Debug.ld" -o "Lab6.1.axf"  ./src/DigitalIoPin.o ./src/ITM_write.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/main.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx -lFreeRTOS
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       48060 B       256 KB     18.33%
+         Ram0_16:        3012 B        16 KB     18.38%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: Lab6.1.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Lab6.1.axf"; # arm-none-eabi-objcopy -v -O binary "Lab6.1.axf" "Lab6.1.bin" ; # checksum -p LPC1549 -d "Lab6.1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  45572	   2488	    524	  48584	   bdc8	Lab6.1.axf
+ 
+10:54:03 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+10:55:25 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:55:25 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:55:25 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+10:55:25 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:169:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: Lab6.1.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug" -Xlinker -Map="Lab6.1.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Lab6_1_Debug.ld" -o "Lab6.1.axf"  ./src/DigitalIoPin.o ./src/ITM_write.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/main.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx -lFreeRTOS
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       48076 B       256 KB     18.34%
+         Ram0_16:        3012 B        16 KB     18.38%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: Lab6.1.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Lab6.1.axf"; # arm-none-eabi-objcopy -v -O binary "Lab6.1.axf" "Lab6.1.bin" ; # checksum -p LPC1549 -d "Lab6.1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  45588	   2488	    524	  48600	   bdd8	Lab6.1.axf
+ 
+10:55:27 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+11:01:19 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+11:01:19 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+11:01:19 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+11:01:19 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:172:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: Lab6.1.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug" -Xlinker -Map="Lab6.1.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Lab6_1_Debug.ld" -o "Lab6.1.axf"  ./src/DigitalIoPin.o ./src/ITM_write.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/main.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx -lFreeRTOS
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       48108 B       256 KB     18.35%
+         Ram0_16:        3012 B        16 KB     18.38%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: Lab6.1.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Lab6.1.axf"; # arm-none-eabi-objcopy -v -O binary "Lab6.1.axf" "Lab6.1.bin" ; # checksum -p LPC1549 -d "Lab6.1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  45620	   2488	    524	  48632	   bdf8	Lab6.1.axf
+ 
+11:01:21 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+11:02:58 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+11:02:58 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+11:02:58 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+11:02:59 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'void UserInputTask(void*)':
+../src/main.cpp:144:26: error: expected ';' before '{' token
+    else(c < 48 && c > 57)
+                          ^
+                          ;
+    {
+    ~                      
+../src/main.cpp: At global scope:
+../src/main.cpp:172:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+make: *** [src/subdir.mk:42: src/main.o] Error 1
+"make -r -j4 all" terminated with exit code 2. Build might be incomplete.
+11:03:00 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'void UserInputTask(void*)':
+../src/main.cpp:144:26: error: expected ';' before '{' token
+    else(c < 48 && c > 57)
+                          ^
+                          ;
+    {
+    ~                      
+../src/main.cpp: At global scope:
+../src/main.cpp:172:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+make: *** [src/subdir.mk:42: src/main.o] Error 1
+"make -r -j4 all" terminated with exit code 2. Build might be incomplete.
+11:03:13 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+11:03:13 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+11:03:13 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+11:03:14 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:172:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: Lab6.1.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug" -Xlinker -Map="Lab6.1.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Lab6_1_Debug.ld" -o "Lab6.1.axf"  ./src/DigitalIoPin.o ./src/ITM_write.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/main.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx -lFreeRTOS
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       48060 B       256 KB     18.33%
+         Ram0_16:        3012 B        16 KB     18.38%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: Lab6.1.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Lab6.1.axf"; # arm-none-eabi-objcopy -v -O binary "Lab6.1.axf" "Lab6.1.bin" ; # checksum -p LPC1549 -d "Lab6.1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  45572	   2488	    524	  48584	   bdc8	Lab6.1.axf
+ 
+11:03:24 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+11:03:24 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+11:03:24 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+11:03:24 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+11:03:25 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+11:04:50 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+11:04:50 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+11:04:50 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+11:04:50 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+In file included from C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board.h:105,
+                 from ../src/main.cpp:16:
+../src/main.cpp: In function 'void UserInputTask(void*)':
+../src/main.cpp:151:13: warning: format '%s' expects argument of type 'char*', but argument 2 has type 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} [-Wformat=]
+    DEBUGOUT("\r\n%s\r\n", direction);
+             ^~~~~~~~~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board_api.h:176:30: note: in definition of macro 'DEBUGOUT'
+ #define DEBUGOUT(...) printf(__VA_ARGS__)
+                              ^~~~~~~~~~~
+../src/main.cpp:157:13: warning: format '%s' expects argument of type 'char*', but argument 2 has type 'std::__cxx11::string' {aka 'std::__cxx11::basic_string<char>'} [-Wformat=]
+    DEBUGOUT("\r\n%s\r\n", direction);
+             ^~~~~~~~~~~~
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board_api.h:176:30: note: in definition of macro 'DEBUGOUT'
+ #define DEBUGOUT(...) printf(__VA_ARGS__)
+                              ^~~~~~~~~~~
+../src/main.cpp: At global scope:
+../src/main.cpp:173:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: Lab6.1.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug" -Xlinker -Map="Lab6.1.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Lab6_1_Debug.ld" -o "Lab6.1.axf"  ./src/DigitalIoPin.o ./src/ITM_write.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/main.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx -lFreeRTOS
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       48376 B       256 KB     18.45%
+         Ram0_16:        3012 B        16 KB     18.38%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: Lab6.1.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Lab6.1.axf"; # arm-none-eabi-objcopy -v -O binary "Lab6.1.axf" "Lab6.1.bin" ; # checksum -p LPC1549 -d "Lab6.1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  45888	   2488	    524	  48900	   bf04	Lab6.1.axf
+ 
+11:04:52 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+11:05:42 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+11:05:42 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+11:05:42 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+11:05:43 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:173:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: Lab6.1.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug" -Xlinker -Map="Lab6.1.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Lab6_1_Debug.ld" -o "Lab6.1.axf"  ./src/DigitalIoPin.o ./src/ITM_write.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/main.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx -lFreeRTOS
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       48136 B       256 KB     18.36%
+         Ram0_16:        3012 B        16 KB     18.38%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: Lab6.1.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Lab6.1.axf"; # arm-none-eabi-objcopy -v -O binary "Lab6.1.axf" "Lab6.1.bin" ; # checksum -p LPC1549 -d "Lab6.1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  45648	   2488	    524	  48660	   be14	Lab6.1.axf
+ 
+11:05:45 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+11:07:06 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+11:07:06 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+11:07:07 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+11:07:07 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:173:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: Lab6.1.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug" -Xlinker -Map="Lab6.1.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Lab6_1_Debug.ld" -o "Lab6.1.axf"  ./src/DigitalIoPin.o ./src/ITM_write.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/main.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx -lFreeRTOS
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       48152 B       256 KB     18.37%
+         Ram0_16:        3012 B        16 KB     18.38%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: Lab6.1.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Lab6.1.axf"; # arm-none-eabi-objcopy -v -O binary "Lab6.1.axf" "Lab6.1.bin" ; # checksum -p LPC1549 -d "Lab6.1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  45664	   2488	    524	  48676	   be24	Lab6.1.axf
+ 
+11:07:09 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+11:08:11 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+11:08:11 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+11:08:12 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+11:08:12 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:173:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: Lab6.1.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug" -Xlinker -Map="Lab6.1.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Lab6_1_Debug.ld" -o "Lab6.1.axf"  ./src/DigitalIoPin.o ./src/ITM_write.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/main.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx -lFreeRTOS
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       48492 B       256 KB     18.50%
+         Ram0_16:        3012 B        16 KB     18.38%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: Lab6.1.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Lab6.1.axf"; # arm-none-eabi-objcopy -v -O binary "Lab6.1.axf" "Lab6.1.bin" ; # checksum -p LPC1549 -d "Lab6.1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  46004	   2488	    524	  49016	   bf78	Lab6.1.axf
+ 
+11:08:14 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+11:11:45 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+11:11:45 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+11:11:46 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+11:11:46 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:173:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: Lab6.1.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug" -Xlinker -Map="Lab6.1.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Lab6_1_Debug.ld" -o "Lab6.1.axf"  ./src/DigitalIoPin.o ./src/ITM_write.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/main.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx -lFreeRTOS
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       48540 B       256 KB     18.52%
+         Ram0_16:        3012 B        16 KB     18.38%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: Lab6.1.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Lab6.1.axf"; # arm-none-eabi-objcopy -v -O binary "Lab6.1.axf" "Lab6.1.bin" ; # checksum -p LPC1549 -d "Lab6.1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  46052	   2488	    524	  49064	   bfa8	Lab6.1.axf
+ 
+11:11:48 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+11:12:34 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+11:12:34 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+11:12:34 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+11:12:35 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:173:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: Lab6.1.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug" -Xlinker -Map="Lab6.1.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Lab6_1_Debug.ld" -o "Lab6.1.axf"  ./src/DigitalIoPin.o ./src/ITM_write.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/main.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx -lFreeRTOS
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       48540 B       256 KB     18.52%
+         Ram0_16:        3012 B        16 KB     18.38%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: Lab6.1.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Lab6.1.axf"; # arm-none-eabi-objcopy -v -O binary "Lab6.1.axf" "Lab6.1.bin" ; # checksum -p LPC1549 -d "Lab6.1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  46052	   2488	    524	  49064	   bfa8	Lab6.1.axf
+ 
+11:12:37 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+11:13:14 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+11:13:14 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+11:13:15 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+11:13:15 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:176:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: Lab6.1.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug" -Xlinker -Map="Lab6.1.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Lab6_1_Debug.ld" -o "Lab6.1.axf"  ./src/DigitalIoPin.o ./src/ITM_write.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/main.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx -lFreeRTOS
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       48572 B       256 KB     18.53%
+         Ram0_16:        3012 B        16 KB     18.38%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: Lab6.1.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Lab6.1.axf"; # arm-none-eabi-objcopy -v -O binary "Lab6.1.axf" "Lab6.1.bin" ; # checksum -p LPC1549 -d "Lab6.1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  46084	   2488	    524	  49096	   bfc8	Lab6.1.axf
+ 
+11:13:17 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.
+11:15:53 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1549 ****
+make -r all 
+make: Nothing to be done for 'all'.
+11:15:53 **** Incremental Build of configuration Debug for project lpc_chip_15xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+11:15:53 **** Incremental Build of configuration Debug for project FreeRTOS ****
+make -r all 
+make: Nothing to be done for 'all'.
+11:15:53 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+Building file: ../src/main.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -DDEBUG -D__CODE_RED -D__NEWLIB__ -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/main.d" -MT"src/main.o" -MT"src/main.d" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp:183:13: warning: 'void StepTask(void*)' defined but not used [-Wunused-function]
+ static void StepTask(void *pvParameters)
+             ^~~~~~~~
+Finished building: ../src/main.cpp
+ 
+Building target: Lab6.1.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostdlib -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug" -L"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug" -Xlinker -Map="Lab6.1.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Lab6_1_Debug.ld" -o "Lab6.1.axf"  ./src/DigitalIoPin.o ./src/ITM_write.o ./src/cr_cpp_config.o ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/main.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1549 -llpc_chip_15xx -lFreeRTOS
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       48684 B       256 KB     18.57%
+         Ram0_16:        3012 B        16 KB     18.38%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: Lab6.1.axf
+ 
+C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/buildtools/bin/make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Lab6.1.axf"; # arm-none-eabi-objcopy -v -O binary "Lab6.1.axf" "Lab6.1.bin" ; # checksum -p LPC1549 -d "Lab6.1.bin";
+   text	   data	    bss	    dec	    hex	filename
+  46196	   2488	    524	  49208	   c038	Lab6.1.axf
+ 
+11:15:55 **** Incremental Build of configuration Debug for project Lab6.1 ****
+make -r -j4 all 
+make: Nothing to be done for 'all'.

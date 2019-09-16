@@ -10034,3 +10034,2811 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.cdt.core 1 0 2019-09-16 09:27:48.931
 !MESSAGE Indexed 'FreeRTOS' (10 sources, 71 headers) in 0.554 sec: 5,520 declarations; 11,201 references; 19 unresolved inclusions; 125 syntax errors; 1,798 unresolved names (9.7%)
+
+!ENTRY org.eclipse.jface.text 2 0 2019-09-16 09:48:50.610
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY com.crt.log 1 0 2019-09-16 09:58:01.751
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 09:58:01.776
+!MESSAGE RedlinkServer telnet session connected on port 3025->50997 @ 127.0.0.1
+
+!ENTRY com.crt.dsfdebug 1 0 2019-09-16 09:58:18.028
+!MESSAGE Telnet session connected on port 3330->51003 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:05:15.956
+!MESSAGE Request for monitor: '61^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-09-16 10:05:15.956
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:993)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:822)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:05:17.052
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@19529ed5): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:05:17.052
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:05:17.059
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@286a3e35): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:05:17.059
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:05:17.071
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@59a31286): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:05:17.071
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:05:17.078
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@1ebfd094): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:05:17.078
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:05:17.084
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@7aaeea16): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:05:17.084
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:05:17.092
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@49ab34fe): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:05:17.092
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:05:17.099
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@2970762f): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:05:17.099
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:05:17.106
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@2483c74d): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:05:17.106
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:05:17.113
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@45bd24b4): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:05:17.113
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:05:17.119
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@55a1e439): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:05:17.119
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:05:17.126
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@7f4a21ac): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:05:17.126
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:05:17.133
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@454938a7): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:05:17.133
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:05:17.477
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:05:17.485
+!MESSAGE RedlinkServer telnet session connected on port 3025->51070 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:05:25.777
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:05:25.787
+!MESSAGE RedlinkServer telnet session connected on port 3025->51071 @ 127.0.0.1
+
+!ENTRY com.crt.dsfdebug 1 0 2019-09-16 10:05:27.395
+!MESSAGE Telnet session connected on port 3330->51075 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:06:23.418
+!MESSAGE Request for monitor: '61^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-09-16 10:06:23.418
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:993)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:822)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:06:24.501
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@11e1bb39): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:06:24.501
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:06:24.510
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@6524819a): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:06:24.510
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:06:24.518
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@25a6759e): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:06:24.518
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:06:24.524
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@39822a60): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:06:24.524
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:06:24.531
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@78eb449b): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:06:24.531
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:06:24.538
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@6be0115e): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:06:24.538
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:06:24.545
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@4399e768): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:06:24.545
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:06:24.552
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@61f4ac1c): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:06:24.552
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:06:24.558
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@789e0219): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:06:24.558
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:06:24.565
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@139f86b5): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:06:24.565
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:06:24.573
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@1f318109): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:06:24.573
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:06:24.580
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@5b615abf): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:06:24.580
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:06:24.901
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:06:24.909
+!MESSAGE RedlinkServer telnet session connected on port 3025->51084 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:06:28.713
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:06:28.723
+!MESSAGE RedlinkServer telnet session connected on port 3025->51085 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:06:36.567
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:06:36.586
+!MESSAGE RedlinkServer telnet session connected on port 3025->51087 @ 127.0.0.1
+
+!ENTRY com.crt.dsfdebug 1 0 2019-09-16 10:06:38.210
+!MESSAGE Telnet session connected on port 3330->51091 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:09:24.217
+!MESSAGE Request for monitor: '61^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-09-16 10:09:24.217
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:993)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:822)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:09:25.352
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@8132446): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:09:25.352
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:09:25.361
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@2af14a84): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:09:25.361
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:09:25.369
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@5962a945): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:09:25.369
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:09:25.375
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@4842973b): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:09:25.375
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:09:25.380
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@684741dd): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:09:25.380
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:09:25.388
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@4b9637c5): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:09:25.388
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:09:25.395
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@17b18ac3): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:09:25.395
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:09:25.402
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@45aa7841): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:09:25.402
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:09:25.408
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@56bc93ed): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:09:25.408
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:09:25.415
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@2c6ebee0): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:09:25.415
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:09:25.422
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@3792ce3c): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:09:25.422
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:09:25.428
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@216cd0ff): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:09:25.428
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:09:25.774
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:09:25.782
+!MESSAGE RedlinkServer telnet session connected on port 3025->51104 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:09:29.651
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:09:29.671
+!MESSAGE RedlinkServer telnet session connected on port 3025->51105 @ 127.0.0.1
+
+!ENTRY com.crt.dsfdebug 1 0 2019-09-16 10:09:53.435
+!MESSAGE Telnet session connected on port 3330->51110 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:13:23.183
+!MESSAGE Request for monitor: '61^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-09-16 10:13:23.184
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:993)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:822)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:13:24.332
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@262f3cb2): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:13:24.332
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:13:24.341
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@3cdd024f): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:13:24.341
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:13:24.350
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@9231200): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:13:24.350
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:13:24.357
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@56b6653a): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:13:24.357
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:13:24.365
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@63595c6f): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:13:24.365
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:13:24.373
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@727bf116): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:13:24.373
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:13:24.380
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@1781c5d6): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:13:24.380
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:13:24.386
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@7b16aefd): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:13:24.386
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:13:24.393
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@52053fd4): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:13:24.393
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:13:24.400
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@7fdb97c3): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:13:24.400
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:13:24.407
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@66ed529b): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:13:24.407
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:13:24.414
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@284279fd): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:13:24.414
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:13:24.421
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@534208be): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:13:24.421
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:13:24.770
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:13:24.777
+!MESSAGE RedlinkServer telnet session connected on port 3025->51139 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:13:28.559
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:13:28.568
+!MESSAGE RedlinkServer telnet session connected on port 3025->51143 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:14:01.574
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:14:01.595
+!MESSAGE RedlinkServer telnet session connected on port 3025->51152 @ 127.0.0.1
+
+!ENTRY com.crt.dsfdebug 1 0 2019-09-16 10:14:06.128
+!MESSAGE Telnet session connected on port 3330->51157 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:14:49.243
+!MESSAGE Request for monitor: '61^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-09-16 10:14:49.243
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:993)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:822)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:14:50.341
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@68cf5962): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:14:50.341
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:14:50.348
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@32f274de): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:14:50.348
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:14:50.356
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@3a48aec9): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:14:50.356
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:14:50.362
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@28dee4ab): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:14:50.362
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:14:50.368
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@92b21ea): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:14:50.368
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:14:50.376
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@24d5144f): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:14:50.376
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:14:50.382
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@7b7147c2): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:14:50.382
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:14:50.388
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@2b050d37): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:14:50.388
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:14:50.395
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@56547302): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:14:50.395
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:14:50.401
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@5a2f72eb): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:14:50.401
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:14:50.407
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@2b11713b): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:14:50.407
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:14:50.414
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@28febddb): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:14:50.414
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:14:50.679
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:14:50.686
+!MESSAGE RedlinkServer telnet session connected on port 3025->51162 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:14:54.456
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:14:54.465
+!MESSAGE RedlinkServer telnet session connected on port 3025->51163 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:15:02.000
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:15:02.007
+!MESSAGE RedlinkServer telnet session connected on port 3025->51165 @ 127.0.0.1
+
+!ENTRY com.crt.dsfdebug 1 0 2019-09-16 10:15:03.667
+!MESSAGE Telnet session connected on port 3330->51170 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:16:06.986
+!MESSAGE Request for monitor: '61^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-09-16 10:16:06.986
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:993)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:822)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:16:08.095
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@ec31940): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:16:08.095
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:16:08.100
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@4620038a): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:16:08.100
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:16:08.107
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@49d032e3): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:16:08.107
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:16:08.113
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@5f4f2b80): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:16:08.113
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:16:08.119
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@19b55fb0): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:16:08.119
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:16:08.126
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@6f1b9b1c): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:16:08.126
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:16:08.132
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@49aeae54): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:16:08.132
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:16:08.138
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@7a55200e): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:16:08.138
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:16:08.145
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@7ad070b9): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:16:08.145
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:16:08.151
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@49a0c784): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:16:08.151
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:16:08.157
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@75c00cea): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:16:08.157
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:16:08.163
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@2646070c): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:16:08.163
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:16:08.467
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:16:08.475
+!MESSAGE RedlinkServer telnet session connected on port 3025->51177 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:16:16.457
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:16:16.467
+!MESSAGE RedlinkServer telnet session connected on port 3025->51178 @ 127.0.0.1
+
+!ENTRY com.crt.dsfdebug 1 0 2019-09-16 10:16:18.090
+!MESSAGE Telnet session connected on port 3330->51182 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:17:27.502
+!MESSAGE Request for monitor: '61^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-09-16 10:17:27.502
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:993)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:822)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:17:28.617
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@79579021): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:17:28.617
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:17:28.623
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@7710a6b5): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:17:28.623
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:17:28.631
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@73387c24): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:17:28.631
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:17:28.637
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@36ab3cfa): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:17:28.637
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:17:28.643
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@44fc1194): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:17:28.643
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:17:28.650
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@1916ba4c): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:17:28.651
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:17:28.658
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@76351978): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:17:28.658
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:17:28.665
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@52e1d69b): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:17:28.665
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:17:28.671
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@29e112e): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:17:28.671
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:17:28.678
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@2ef61feb): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:17:28.678
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:17:28.684
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@70d63d94): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:17:28.684
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:17:28.691
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@2c5f781b): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:17:28.691
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:17:28.995
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:17:29.002
+!MESSAGE RedlinkServer telnet session connected on port 3025->51190 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:17:36.586
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:17:36.596
+!MESSAGE RedlinkServer telnet session connected on port 3025->51191 @ 127.0.0.1
+
+!ENTRY com.crt.dsfdebug 1 0 2019-09-16 10:17:38.205
+!MESSAGE Telnet session connected on port 3330->51196 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:20:53.845
+!MESSAGE Request for monitor: '61^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-09-16 10:20:53.845
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:993)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:822)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:20:54.976
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@535a2032): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:20:54.976
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:20:54.982
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@3bb76bbf): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:20:54.982
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:20:54.989
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@357ec6cd): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:20:54.989
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:20:54.995
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@37272be0): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:20:54.995
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:20:55.002
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@374d5428): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:20:55.002
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:20:55.009
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@1c1c4b4e): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:20:55.009
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:20:55.015
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@126a1b06): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:20:55.015
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:20:55.022
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@4f5be177): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:20:55.022
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:20:55.030
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@2d18970d): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:20:55.030
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:20:55.036
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@53a0ffdb): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:20:55.036
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:20:55.043
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@11506c82): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:20:55.043
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:20:55.049
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@1106786): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:20:55.049
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:20:55.055
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@68d93856): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:20:55.055
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:20:55.384
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:20:55.398
+!MESSAGE RedlinkServer telnet session connected on port 3025->51303 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:21:03.176
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:21:03.196
+!MESSAGE RedlinkServer telnet session connected on port 3025->51304 @ 127.0.0.1
+
+!ENTRY com.crt.dsfdebug 1 0 2019-09-16 10:21:04.810
+!MESSAGE Telnet session connected on port 3330->51308 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:26:48.824
+!MESSAGE Request for monitor: '61^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-09-16 10:26:48.824
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:993)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:822)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:26:49.940
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@18f5254b): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:26:49.940
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:26:49.946
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@6731a377): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:26:49.946
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:26:49.952
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@2d2f2ee5): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:26:49.952
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:26:49.958
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@1cc18976): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:26:49.958
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:26:49.964
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@7601bb82): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:26:49.964
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:26:49.971
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@77d6f784): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:26:49.971
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:26:49.978
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@674c4a31): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:26:49.978
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:26:49.984
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@1c6a30f1): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:26:49.984
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:26:49.991
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@6a2edc2d): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:26:49.991
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:26:49.997
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@2a846c3b): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:26:49.997
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:26:50.004
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@2f9ca698): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:26:50.004
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:26:50.010
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@62bce622): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:26:50.010
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:26:50.374
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:26:50.381
+!MESSAGE RedlinkServer telnet session connected on port 3025->51334 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:26:54.172
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:26:54.192
+!MESSAGE RedlinkServer telnet session connected on port 3025->51335 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:27:15.692
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:27:15.699
+!MESSAGE RedlinkServer telnet session connected on port 3025->51338 @ 127.0.0.1
+
+!ENTRY com.crt.dsfdebug 1 0 2019-09-16 10:27:20.173
+!MESSAGE Telnet session connected on port 3330->51342 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:28:54.553
+!MESSAGE Request for monitor: '61^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-09-16 10:28:54.553
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:993)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:822)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:28:55.737
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@691c20c5): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:28:55.737
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:28:55.742
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@7e815b58): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:28:55.742
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:28:55.750
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@18f19ef3): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:28:55.750
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:28:55.757
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@10638f20): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:28:55.757
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:28:55.763
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@64cc5def): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:28:55.763
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:28:55.771
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@159ffd2b): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:28:55.771
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:28:55.778
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@19096a37): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:28:55.778
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:28:55.785
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@1f2c7fdc): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:28:55.785
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:28:55.791
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@71a01bd3): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:28:55.791
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:28:55.797
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@1b3cc669): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:28:55.797
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:28:55.803
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@49b65feb): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:28:55.803
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:28:55.809
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@35981b9e): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:28:55.809
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:28:56.145
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:28:56.152
+!MESSAGE RedlinkServer telnet session connected on port 3025->51352 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:29:03.769
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:29:03.780
+!MESSAGE RedlinkServer telnet session connected on port 3025->51354 @ 127.0.0.1
+
+!ENTRY com.crt.dsfdebug 1 0 2019-09-16 10:29:05.417
+!MESSAGE Telnet session connected on port 3330->51358 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:29:36.370
+!MESSAGE Request for monitor: '61^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-09-16 10:29:36.370
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:993)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:822)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:29:37.472
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@4bd55a65): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:29:37.472
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:29:37.483
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@66fd2a47): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:29:37.483
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:29:37.491
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@26f55e54): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:29:37.491
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:29:37.497
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@47923e9d): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:29:37.497
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:29:37.504
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@48329b3a): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:29:37.504
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:29:37.513
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@55055496): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:29:37.513
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:29:37.519
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@335ee7d): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:29:37.519
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:29:37.526
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@5f824e6a): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:29:37.526
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:29:37.533
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@739035c9): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:29:37.533
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:29:37.540
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@c4e7ec9): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:29:37.540
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:29:37.546
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@20a43f3b): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:29:37.546
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:29:37.553
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@6d18c45b): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:29:37.553
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:29:37.856
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:29:37.863
+!MESSAGE RedlinkServer telnet session connected on port 3025->51362 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:29:41.642
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:29:41.653
+!MESSAGE RedlinkServer telnet session connected on port 3025->51363 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:29:49.752
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:29:49.761
+!MESSAGE RedlinkServer telnet session connected on port 3025->51364 @ 127.0.0.1
+
+!ENTRY com.crt.dsfdebug 1 0 2019-09-16 10:29:51.383
+!MESSAGE Telnet session connected on port 3330->51368 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:31:39.987
+!MESSAGE Request for monitor: '61^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-09-16 10:31:39.987
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:993)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:822)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:31:41.119
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@8a898a1): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:31:41.119
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:31:41.125
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@42383a3c): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:31:41.125
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:31:41.133
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@176c58e3): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:31:41.133
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:31:41.139
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@5b4db73f): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:31:41.139
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:31:41.145
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@58279fb0): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:31:41.145
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:31:41.152
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@23e13b6e): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:31:41.152
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:31:41.158
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@15a39462): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:31:41.158
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:31:41.165
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@711d5379): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:31:41.165
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:31:41.172
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@59da384a): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:31:41.172
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:31:41.178
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@734a5254): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:31:41.178
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:31:41.184
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@7a43d8db): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:31:41.184
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:31:41.190
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@615eca71): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:31:41.190
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:31:41.526
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:31:41.533
+!MESSAGE RedlinkServer telnet session connected on port 3025->51378 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:32:17.631
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:32:17.644
+!MESSAGE RedlinkServer telnet session connected on port 3025->51381 @ 127.0.0.1
+
+!ENTRY com.crt.dsfdebug 1 0 2019-09-16 10:32:21.887
+!MESSAGE Telnet session connected on port 3330->51385 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:33:53.873
+!MESSAGE Request for monitor: '61^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-09-16 10:33:53.873
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:993)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:822)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:33:54.965
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@2098dd6d): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:33:54.965
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:33:54.971
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@605a5bf0): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:33:54.971
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:33:54.977
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@559093c1): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:33:54.977
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:33:54.983
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@33854fab): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:33:54.983
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:33:54.989
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@1b207f0): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:33:54.989
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:33:54.997
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@7b409b3a): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:33:54.997
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:33:55.003
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@62216bee): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:33:55.003
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:33:55.009
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@733d6ddd): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:33:55.009
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:33:55.015
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@21a9b69a): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:33:55.015
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:33:55.022
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@5ecf70de): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:33:55.022
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:33:55.029
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@37d81ef2): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:33:55.029
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:33:55.036
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@2f93ce51): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:33:55.036
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:33:55.386
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:33:55.394
+!MESSAGE RedlinkServer telnet session connected on port 3025->51390 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:34:03.048
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:34:03.056
+!MESSAGE RedlinkServer telnet session connected on port 3025->51391 @ 127.0.0.1
+
+!ENTRY com.crt.dsfdebug 1 0 2019-09-16 10:34:04.668
+!MESSAGE Telnet session connected on port 3330->51395 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:36:22.175
+!MESSAGE Request for monitor: '61^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-09-16 10:36:22.175
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:993)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:822)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:36:23.352
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@210fff96): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:36:23.352
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:36:23.358
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@69200102): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:36:23.358
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:36:23.366
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@4d48b7ca): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:36:23.366
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:36:23.373
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@13e502ba): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:36:23.373
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:36:23.379
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@7aa439d5): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:36:23.379
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:36:23.387
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@447610d2): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:36:23.387
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:36:23.393
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@7fbd2a34): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:36:23.393
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:36:23.399
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@248cce87): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:36:23.399
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:36:23.406
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@284bf910): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:36:23.406
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:36:23.412
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@5ccf8c4b): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:36:23.412
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:36:23.419
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@4a35e16c): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:36:23.419
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:36:23.425
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@80fe65b): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:36:23.425
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:36:23.781
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:36:23.789
+!MESSAGE RedlinkServer telnet session connected on port 3025->51403 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:36:32.150
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:36:32.160
+!MESSAGE RedlinkServer telnet session connected on port 3025->51404 @ 127.0.0.1
+
+!ENTRY com.crt.dsfdebug 1 0 2019-09-16 10:36:33.777
+!MESSAGE Telnet session connected on port 3330->51408 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:37:23.843
+!MESSAGE Request for monitor: '61^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-09-16 10:37:23.843
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:993)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:822)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:37:24.962
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@6c29949b): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:37:24.962
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:37:24.968
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@613c9eb0): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:37:24.968
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:37:24.975
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@389df596): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:37:24.975
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:37:24.981
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@18302352): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:37:24.981
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:37:24.987
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@1dfce7fa): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:37:24.987
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:37:24.994
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@6033779f): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:37:24.995
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:37:25.001
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@7900e278): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:37:25.001
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:37:25.007
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@3b91995): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:37:25.007
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:37:25.014
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@1c5e5471): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:37:25.014
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:37:25.020
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@672a47ea): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:37:25.020
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:37:25.026
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@19477a55): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:37:25.026
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:37:25.033
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@52f9bd59): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:37:25.033
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:37:25.331
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:37:35.333
+!MESSAGE Trying to connect to redlink server on port 3050.
+
+!ENTRY com.crt.debugcommon 4 0 2019-09-16 10:37:37.401
+!MESSAGE RedlinkServer Telnet session connection timeout expired.
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:37:45.333
+!MESSAGE Trying to connect to redlink server on port 3075.
+
+!ENTRY com.crt.debugcommon 4 0 2019-09-16 10:37:46.453
+!MESSAGE RedlinkServer Telnet session connection timeout expired.
+
+!ENTRY com.crt.debugcommon 4 0 2019-09-16 10:37:55.505
+!MESSAGE RedlinkServer Telnet session connection timeout expired.
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:37:58.590
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:37:58.601
+!MESSAGE RedlinkServer telnet session connected on port 3025->51428 @ 127.0.0.1
+
+!ENTRY com.crt.dsfdebug 1 0 2019-09-16 10:38:04.641
+!MESSAGE Telnet session connected on port 3330->51432 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:39:16.905
+!MESSAGE Request for monitor: '61^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-09-16 10:39:16.905
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:993)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:822)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:39:17.982
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@6283218d): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:39:17.982
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:39:17.988
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@6e18880f): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:39:17.988
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:39:17.996
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@19fe5c6e): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:39:17.996
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:39:18.004
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@620a8995): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:39:18.004
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:39:18.011
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@48783d2b): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:39:18.011
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:39:18.019
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@47256d1c): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:39:18.019
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:39:18.025
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@71d5124c): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:39:18.025
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:39:18.031
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@784de838): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:39:18.031
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:39:18.038
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@4e66130c): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:39:18.038
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:39:18.044
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@22c7da51): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:39:18.044
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:39:18.050
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@7b59fb37): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:39:18.050
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:39:18.057
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@6c42d04c): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:39:18.057
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:39:18.361
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:39:18.369
+!MESSAGE RedlinkServer telnet session connected on port 3025->51439 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:39:26.130
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:39:26.141
+!MESSAGE RedlinkServer telnet session connected on port 3025->51442 @ 127.0.0.1
+
+!ENTRY com.crt.dsfdebug 1 0 2019-09-16 10:39:27.752
+!MESSAGE Telnet session connected on port 3330->51446 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:39:50.600
+!MESSAGE Request for monitor: '61^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-09-16 10:39:50.600
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:993)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:822)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:39:51.771
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@24c88f48): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:39:51.771
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:39:51.777
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@39fb87de): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:39:51.777
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:39:51.784
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@dd61aa5): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:39:51.784
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:39:51.791
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@6d046698): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:39:51.791
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:39:51.797
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@8a4d991): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:39:51.797
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:39:51.805
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@70a9b476): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:39:51.805
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:39:51.812
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@3ed72c5d): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:39:51.812
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:39:51.818
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@10911247): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:39:51.818
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:39:51.825
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@61156192): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:39:51.825
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:39:51.831
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@5c2263c2): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:39:51.831
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:39:51.837
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@5b1019df): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:39:51.837
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:39:51.843
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@438b2bd0): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:39:51.843
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:39:52.116
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:39:52.123
+!MESSAGE RedlinkServer telnet session connected on port 3025->51449 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:39:59.771
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:39:59.781
+!MESSAGE RedlinkServer telnet session connected on port 3025->51450 @ 127.0.0.1
+
+!ENTRY com.crt.dsfdebug 1 0 2019-09-16 10:40:01.398
+!MESSAGE Telnet session connected on port 3330->51454 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:41:33.477
+!MESSAGE Request for monitor: '61^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-09-16 10:41:33.477
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:993)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:822)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:41:34.663
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@3ee2398b): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:41:34.663
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:41:34.671
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@53576456): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:41:34.671
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:41:34.679
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@35ea81f): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:41:34.679
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:41:34.685
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@2cdfe79e): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:41:34.685
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:41:34.691
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@44c25387): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:41:34.692
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:41:34.699
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@39dbdc32): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:41:34.699
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:41:34.706
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@6a6b3f80): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:41:34.706
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:41:34.713
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@3ce31721): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:41:34.713
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:41:34.719
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@6fdfbc65): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:41:34.719
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:41:34.726
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@882d7e0): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:41:34.726
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:41:34.732
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@3ba66e4f): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:41:34.732
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:41:34.739
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@1fd82c05): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:41:34.739
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:41:34.745
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@df6870f): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:41:34.745
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:41:38.303
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:41:38.316
+!MESSAGE RedlinkServer telnet session connected on port 3025->51466 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:41:46.707
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:41:46.718
+!MESSAGE RedlinkServer telnet session connected on port 3025->51467 @ 127.0.0.1
+
+!ENTRY com.crt.dsfdebug 1 0 2019-09-16 10:41:48.345
+!MESSAGE Telnet session connected on port 3330->51471 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:49:14.642
+!MESSAGE Request for monitor: '61^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-09-16 10:49:14.642
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:993)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:822)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:49:15.766
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@13105e8): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:49:15.766
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:49:15.773
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@51084330): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:49:15.773
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:49:15.781
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@4900a5d1): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:49:15.781
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:49:15.788
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@4097e75c): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:49:15.788
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:49:15.793
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@53953dbd): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:49:15.793
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:49:15.801
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@33420dbb): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:49:15.801
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:49:15.807
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@4c10a188): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:49:15.807
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:49:15.813
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@36921562): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:49:15.813
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:49:15.821
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@4940b78a): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:49:15.821
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:49:15.827
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@6a4c54cc): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:49:15.827
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:49:15.832
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@2319b4ec): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:49:15.832
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:49:15.838
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@5869ce8): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:49:15.838
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:49:16.202
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:49:16.209
+!MESSAGE RedlinkServer telnet session connected on port 3025->51533 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:49:35.203
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:49:35.210
+!MESSAGE RedlinkServer telnet session connected on port 3025->51534 @ 127.0.0.1
+
+!ENTRY com.crt.dsfdebug 1 0 2019-09-16 10:49:39.698
+!MESSAGE Telnet session connected on port 3330->51538 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:51:32.434
+!MESSAGE Request for monitor: '61^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-09-16 10:51:32.434
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:993)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:822)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:51:33.580
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.MemoryReader$1@5f2fc5bb): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:51:33.580
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:51:34.000
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:51:34.008
+!MESSAGE RedlinkServer telnet session connected on port 3025->51543 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:51:42.146
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:51:42.157
+!MESSAGE RedlinkServer telnet session connected on port 3025->51546 @ 127.0.0.1
+
+!ENTRY com.crt.dsfdebug 1 0 2019-09-16 10:51:43.770
+!MESSAGE Telnet session connected on port 3330->51550 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:53:58.287
+!MESSAGE Request for monitor: '62^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-09-16 10:53:58.287
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:993)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:822)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:53:59.394
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@7db95c59): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:53:59.394
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:53:59.400
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@4541329d): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:53:59.400
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:53:59.407
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@77332810): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:53:59.407
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:53:59.415
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@40dff93b): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:53:59.415
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:53:59.422
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@cc6fe67): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:53:59.422
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:53:59.430
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@2ad0acaa): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:53:59.430
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:53:59.437
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@15798eea): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:53:59.437
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:53:59.444
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@2ef77fe4): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:53:59.444
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:53:59.450
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@1e9ec86): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:53:59.450
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:53:59.456
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@2e73a5ed): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:53:59.456
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:53:59.463
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@77a47017): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:53:59.463
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:53:59.468
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@62b93958): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:53:59.468
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:53:59.796
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:53:59.803
+!MESSAGE RedlinkServer telnet session connected on port 3025->51557 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:54:07.348
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:54:07.358
+!MESSAGE RedlinkServer telnet session connected on port 3025->51558 @ 127.0.0.1
+
+!ENTRY com.crt.dsfdebug 1 0 2019-09-16 10:54:08.971
+!MESSAGE Telnet session connected on port 3330->51562 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:55:19.154
+!MESSAGE Request for monitor: '61^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-09-16 10:55:19.154
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:993)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:822)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:55:20.287
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@239fe06b): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:55:20.287
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:55:20.293
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@461b097b): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:55:20.293
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:55:20.301
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@75831792): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:55:20.301
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:55:20.306
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@29c32df1): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:55:20.306
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:55:20.312
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@370da963): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:55:20.312
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:55:20.318
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@4f4d8eef): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:55:20.318
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:55:20.325
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@7fd18e52): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:55:20.325
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:55:20.331
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@254d767a): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:55:20.331
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:55:20.338
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@7e9c8210): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:55:20.338
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:55:20.344
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@5d8551da): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:55:20.344
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:55:20.351
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@2ed5f726): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:55:20.351
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 10:55:20.357
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@60e5aa20): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 10:55:20.357
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:55:23.836
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:55:23.848
+!MESSAGE RedlinkServer telnet session connected on port 3025->51567 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2019-09-16 10:55:31.498
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 10:55:31.510
+!MESSAGE RedlinkServer telnet session connected on port 3025->51568 @ 127.0.0.1
+
+!ENTRY com.crt.dsfdebug 1 0 2019-09-16 10:55:33.125
+!MESSAGE Telnet session connected on port 3330->51572 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:01:16.652
+!MESSAGE Request for monitor: '61^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-09-16 11:01:16.652
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:993)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:822)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:01:17.763
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@541f80e8): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:01:17.763
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:01:17.770
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@2440bf74): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:01:17.770
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:01:17.777
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@265c1faf): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:01:17.777
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:01:17.784
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@eecc34c): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:01:17.784
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:01:17.791
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@2ff676fa): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:01:17.791
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:01:17.799
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@193e5784): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:01:17.799
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:01:17.805
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@7120114c): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:01:17.805
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:01:17.812
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@6dfdf834): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:01:17.812
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:01:17.819
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@7ee2cb8e): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:01:17.819
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:01:17.825
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@150b31a1): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:01:17.825
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:01:17.831
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@64d0e83d): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:01:17.831
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:01:17.837
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@66ee80cb): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:01:17.837
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.log 1 0 2019-09-16 11:01:18.167
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 11:01:18.175
+!MESSAGE RedlinkServer telnet session connected on port 3025->51588 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2019-09-16 11:01:26.006
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 11:01:26.014
+!MESSAGE RedlinkServer telnet session connected on port 3025->51589 @ 127.0.0.1
+
+!ENTRY com.crt.dsfdebug 1 0 2019-09-16 11:01:27.625
+!MESSAGE Telnet session connected on port 3330->51594 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:02:56.041
+!MESSAGE Request for monitor: '61^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-09-16 11:02:56.041
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:993)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:822)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:02:57.158
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@2c26927a): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:02:57.158
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:02:57.163
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@5bb7f38a): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:02:57.163
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:02:57.171
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@1bc3d34c): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:02:57.171
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:02:57.177
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@3ee370c): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:02:57.177
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:02:57.183
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@67a1bf58): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:02:57.183
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:02:57.190
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@7c365cf6): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:02:57.190
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:02:57.197
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@e12422b): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:02:57.197
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:02:57.203
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@642377ce): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:02:57.203
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:02:57.209
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@482c5167): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:02:57.209
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:02:57.215
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@6b37578): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:02:57.216
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:02:57.222
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@1aac7c9f): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:02:57.222
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:02:57.228
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@65cef503): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:02:57.228
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.log 1 0 2019-09-16 11:02:57.581
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 11:02:57.588
+!MESSAGE RedlinkServer telnet session connected on port 3025->51601 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2019-09-16 11:03:23.527
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 11:03:23.538
+!MESSAGE RedlinkServer telnet session connected on port 3025->51603 @ 127.0.0.1
+
+!ENTRY com.crt.dsfdebug 1 0 2019-09-16 11:03:28.009
+!MESSAGE Telnet session connected on port 3330->51607 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:04:47.642
+!MESSAGE Request for monitor: '61^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-09-16 11:04:47.642
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:993)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:822)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:04:48.803
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@7465a48e): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:04:48.803
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:04:48.809
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@612222fe): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:04:48.809
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:04:48.816
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@547568b8): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:04:48.816
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:04:48.822
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@dede76c): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:04:48.822
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:04:48.827
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@7d2801fd): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:04:48.827
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:04:48.834
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@4a901510): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:04:48.834
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:04:48.840
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@28244da9): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:04:48.840
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:04:48.846
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@15be86b9): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:04:48.846
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:04:48.853
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@5cf545e6): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:04:48.853
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:04:48.859
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@1607e3fd): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:04:48.859
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:04:48.865
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@1c44bd91): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:04:48.865
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:04:48.872
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@7dae6bee): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:04:48.872
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:04:48.878
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@b82dbc8): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:04:48.878
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.log 1 0 2019-09-16 11:04:49.214
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 11:04:49.222
+!MESSAGE RedlinkServer telnet session connected on port 3025->51611 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2019-09-16 11:04:56.937
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 11:04:56.947
+!MESSAGE RedlinkServer telnet session connected on port 3025->51613 @ 127.0.0.1
+
+!ENTRY com.crt.dsfdebug 1 0 2019-09-16 11:04:58.613
+!MESSAGE Telnet session connected on port 3330->51617 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:05:39.979
+!MESSAGE Request for monitor: '61^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-09-16 11:05:39.979
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:993)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:822)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:05:41.103
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@576d89a9): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:05:41.103
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:05:41.109
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@7157c3e9): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:05:41.109
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:05:41.117
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@51976d30): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:05:41.117
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:05:41.123
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@6a8c966a): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:05:41.123
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:05:41.129
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@258b4859): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:05:41.129
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:05:41.137
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@63742f9d): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:05:41.137
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:05:41.144
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@6dc5ca5f): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:05:41.144
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:05:41.150
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@12f38e3e): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:05:41.150
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:05:41.156
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@1af0dad1): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:05:41.156
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:05:41.163
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@58ba16d5): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:05:41.163
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:05:41.169
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@1b6eb8af): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:05:41.169
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:05:41.175
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@15e24782): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:05:41.175
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.log 1 0 2019-09-16 11:05:41.474
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 11:05:41.481
+!MESSAGE RedlinkServer telnet session connected on port 3025->51622 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2019-09-16 11:05:49.124
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 11:05:49.132
+!MESSAGE RedlinkServer telnet session connected on port 3025->51623 @ 127.0.0.1
+
+!ENTRY com.crt.dsfdebug 1 0 2019-09-16 11:05:50.753
+!MESSAGE Telnet session connected on port 3330->51627 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:07:00.769
+!MESSAGE Request for monitor: '61^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-09-16 11:07:00.769
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:993)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:822)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:07:01.975
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@2351b817): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:07:01.975
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:07:01.981
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@5429ff32): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:07:01.981
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:07:01.989
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@491c990e): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:07:01.989
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:07:01.994
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@67a3013a): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:07:01.994
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:07:02.000
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@7ce8b293): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:07:02.000
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:07:02.006
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@33012f20): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:07:02.006
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:07:02.013
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@4cd452ab): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:07:02.013
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:07:02.020
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@75110d88): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:07:02.020
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:07:02.026
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@2b3f2263): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:07:02.026
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:07:02.032
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@117d600b): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:07:02.032
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:07:02.038
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@7fd23985): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:07:02.038
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:07:02.044
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@2d206ba): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:07:02.044
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.log 1 0 2019-09-16 11:07:05.563
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 11:07:05.574
+!MESSAGE RedlinkServer telnet session connected on port 3025->51630 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2019-09-16 11:07:13.370
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 11:07:13.377
+!MESSAGE RedlinkServer telnet session connected on port 3025->51632 @ 127.0.0.1
+
+!ENTRY com.crt.dsfdebug 1 0 2019-09-16 11:07:14.986
+!MESSAGE Telnet session connected on port 3330->51636 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:08:09.261
+!MESSAGE Request for monitor: '61^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-09-16 11:08:09.261
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:993)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:822)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:08:10.400
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@611fd711): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:08:10.400
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:08:10.412
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@7bbaefcc): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:08:10.413
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:08:10.421
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@7447c0d6): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:08:10.421
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:08:10.428
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@6bff3610): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:08:10.428
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:08:10.434
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@4797702c): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:08:10.434
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:08:10.442
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@498eb8ed): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:08:10.442
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:08:10.449
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@5b53587a): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:08:10.449
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:08:10.456
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@2739552c): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:08:10.456
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:08:10.463
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@8da5cb1): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:08:10.463
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:08:10.469
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@342fd497): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:08:10.470
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:08:10.475
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@757ecae0): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:08:10.475
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:08:10.482
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@18037156): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:08:10.482
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.log 1 0 2019-09-16 11:08:10.764
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 11:08:10.771
+!MESSAGE RedlinkServer telnet session connected on port 3025->51641 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2019-09-16 11:08:18.314
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 11:08:18.324
+!MESSAGE RedlinkServer telnet session connected on port 3025->51642 @ 127.0.0.1
+
+!ENTRY com.crt.dsfdebug 1 0 2019-09-16 11:08:19.936
+!MESSAGE Telnet session connected on port 3330->51646 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:11:43.357
+!MESSAGE Request for monitor: '61^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-09-16 11:11:43.357
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:993)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:822)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:11:44.472
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@4bb64e93): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:11:44.472
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:11:44.478
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@41f6f076): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:11:44.478
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:11:44.485
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@1a940c4f): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:11:44.485
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:11:44.491
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@632f1b58): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:11:44.491
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:11:44.496
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@152c220b): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:11:44.496
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:11:44.503
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@e8466dc): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:11:44.503
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:11:44.510
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@156a598f): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:11:44.510
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:11:44.517
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@61220d53): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:11:44.517
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:11:44.523
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@128ad81b): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:11:44.523
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:11:44.529
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@3f95fe10): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:11:44.529
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:11:44.536
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@78f47e4c): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:11:44.536
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:11:44.542
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@94dbc94): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:11:44.542
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.log 1 0 2019-09-16 11:11:44.888
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 11:11:44.896
+!MESSAGE RedlinkServer telnet session connected on port 3025->51653 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2019-09-16 11:11:52.602
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 11:11:52.612
+!MESSAGE RedlinkServer telnet session connected on port 3025->51658 @ 127.0.0.1
+
+!ENTRY com.crt.dsfdebug 1 0 2019-09-16 11:11:54.224
+!MESSAGE Telnet session connected on port 3330->51662 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:12:32.022
+!MESSAGE Request for monitor: '61^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-09-16 11:12:32.022
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:993)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:822)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:12:33.206
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@23325950): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:12:33.206
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:12:33.213
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@309abfd): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:12:33.213
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:12:33.221
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@29cc5b29): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:12:33.221
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:12:33.227
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@18856f99): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:12:33.227
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:12:33.233
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@561d7937): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:12:33.233
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:12:33.240
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@3c60620c): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:12:33.240
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:12:33.246
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@faa2bbe): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:12:33.246
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:12:33.253
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@32432fbd): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:12:33.253
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:12:33.258
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@362fb356): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:12:33.258
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:12:33.264
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@9e0c79d): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:12:33.264
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:12:33.270
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@57c9fac4): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:12:33.270
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:12:33.276
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@7c5c0947): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:12:33.276
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.log 1 0 2019-09-16 11:12:33.569
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 11:12:33.576
+!MESSAGE RedlinkServer telnet session connected on port 3025->51671 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2019-09-16 11:12:41.166
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 11:12:41.176
+!MESSAGE RedlinkServer telnet session connected on port 3025->51672 @ 127.0.0.1
+
+!ENTRY com.crt.dsfdebug 1 0 2019-09-16 11:12:42.784
+!MESSAGE Telnet session connected on port 3330->51676 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:13:12.256
+!MESSAGE Request for monitor: '61^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-09-16 11:13:12.256
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:993)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:822)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:13:13.384
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@1be99b5f): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:13:13.384
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:13:13.391
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@2ad2195d): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:13:13.391
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:13:13.399
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@54ab4bd3): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:13:13.399
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:13:13.404
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@3cf017a): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:13:13.404
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:13:13.410
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@396df8af): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:13:13.410
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:13:13.417
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@4c1a8152): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:13:13.417
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:13:13.425
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@37259d7a): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:13:13.425
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:13:13.431
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@61dba3b1): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:13:13.431
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:13:13.438
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@2e8d69db): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:13:13.438
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:13:13.444
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@36056d49): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:13:13.444
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:13:13.450
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@2d50f8be): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:13:13.450
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:13:13.456
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@11aa108e): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:13:13.456
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.log 1 0 2019-09-16 11:13:13.742
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 11:13:13.749
+!MESSAGE RedlinkServer telnet session connected on port 3025->51679 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2019-09-16 11:13:21.398
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 11:13:21.408
+!MESSAGE RedlinkServer telnet session connected on port 3025->51680 @ 127.0.0.1
+
+!ENTRY com.crt.dsfdebug 1 0 2019-09-16 11:13:23.025
+!MESSAGE Telnet session connected on port 3330->51684 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:15:50.590
+!MESSAGE Request for monitor: '61^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2019-09-16 11:15:50.590
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:993)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:822)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:15:51.747
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@267f5b9b): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:15:51.747
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:15:51.752
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@7d06a2e8): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:15:51.752
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:15:51.759
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@1daf0fb9): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:15:51.759
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:15:51.765
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@41502c14): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:15:51.765
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:15:51.771
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@909d734): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:15:51.771
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:15:51.778
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@56a3dbca): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:15:51.778
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:15:51.785
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@16536d86): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:15:51.785
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:15:51.792
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@51a4b80f): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:15:51.792
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:15:51.800
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@44638895): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:15:51.800
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:15:51.808
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@c567658): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:15:51.808
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:15:51.816
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@1641509): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:15:51.816
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:15:51.823
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@75f4b1ea): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:15:51.823
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2019-09-16 11:15:51.829
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.freertos.gdb.tad.model.readers.VariableReader$1@2d8ba8e1): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2019-09-16 11:15:51.829
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.log 1 0 2019-09-16 11:15:52.192
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 11:15:52.200
+!MESSAGE RedlinkServer telnet session connected on port 3025->51698 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2019-09-16 11:15:59.779
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.crt.debugcommon 1 0 2019-09-16 11:15:59.788
+!MESSAGE RedlinkServer telnet session connected on port 3025->51699 @ 127.0.0.1
+
+!ENTRY com.crt.dsfdebug 1 0 2019-09-16 11:16:01.447
+!MESSAGE Telnet session connected on port 3330->51703 @ 127.0.0.1

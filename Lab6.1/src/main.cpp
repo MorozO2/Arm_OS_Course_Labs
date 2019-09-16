@@ -20,6 +20,7 @@
 #include <cr_section_macros.h>
 #include <stdlib.h>
 #include <time.h>
+#include <string>
 // TODO: insert other include files here
 
 // TODO: insert other definitions and declarations here
@@ -47,52 +48,134 @@ static void prvSetupHardware(void)
 {
 	SystemCoreClockUpdate();
 	Board_Init();
+	// initialize RIT (= enable clocking etc.)
 	Chip_RIT_Init(LPC_RITIMER);
+	// set the priority level of the interrupt
+	// The level must be equal or lower than the maximum priority specified in FreeRTOS config
+	// Note that in a Cortex-M3 a higher number indicates lower interrupt priority
 	NVIC_SetPriority( RITIMER_IRQn, configLIBRARY_MAX_SYSCALL_INTERRUPT_PRIORITY + 1 );
 	/* Initial LED0 state is off */
 	Board_LED_Set(0, false);
 }
 
 
-SemaphoreHandle_t binar;
+volatile uint32_t RIT_count;
+SemaphoreHandle_t sbRIT;
+
 
 DigitalIoPin LimitSW1(0, 27, DigitalIoPin::pullup, true);
 DigitalIoPin LimitSW2(0, 28, DigitalIoPin::pullup, true);
 
-static void SwitchCheckTask(void *pvParameters)
+extern "C" {
+void RIT_IRQHandler(void)
 {
-	bool waiting =true;
+ // This used to check if a context switch is required
+ portBASE_TYPE xHigherPriorityWoken = pdFALSE;
+ // Tell timer that we have processed the interrupt.
+ // Timer then removes the IRQ until next match occurs
+ Chip_RIT_ClearIntStatus(LPC_RITIMER); // clear IRQ flag
+ if(RIT_count > 0) {
+ RIT_count--;
+ // do something useful here...
+ }
+ else {
+ Chip_RIT_Disable(LPC_RITIMER); // disable timer
+ // Give semaphore and set context switch flag if a higher priority task was woken up
+ xSemaphoreGiveFromISR(sbRIT, &xHigherPriorityWoken);
+ }
+ // End the ISR and (possibly) do a context switch
+ portEND_SWITCHING_ISR(xHigherPriorityWoken);
+}
+}
 
+void RIT_start(int count, int us)
+{
+ uint64_t cmp_value;
+ // Determine approximate compare value based on clock rate and passed interval
+ cmp_value = (uint64_t) Chip_Clock_GetSystemClockRate() * (uint64_t) us / 1000000;
+ // disable timer during configuration
+ Chip_RIT_Disable(LPC_RITIMER);
+ RIT_count = count;
+ // enable automatic clear on when compare value==timer value
+ // this makes interrupts trigger periodically
+ Chip_RIT_EnableCompClear(LPC_RITIMER);
+ // reset the counter
+ Chip_RIT_SetCounter(LPC_RITIMER, 0);
+ Chip_RIT_SetCompareValue(LPC_RITIMER, cmp_value);
+ // start counting
+ Chip_RIT_Enable(LPC_RITIMER);
+ // Enable the interrupt signal in NVIC (the interrupt controller)
+ NVIC_EnableIRQ(RITIMER_IRQn);
+ // wait for ISR to tell that we're done
+ if(xSemaphoreTake(sbRIT, portMAX_DELAY) == pdTRUE) {
+ // Disable the interrupt signal in NVIC (the interrupt controller)
+ NVIC_DisableIRQ(RITIMER_IRQn);
+ }
+ else {
+ // unexpected error
+ }
+}
+
+
+static void UserInputTask(void *pvParameters)
+{
+	std::string speed;
+	std::string command;
+
+	std::string right = "right";
+	std::string left = "left";
+	std::string pps = "pps";
+	bool gotInput = false;
+
+	int c = 0;
 	while(1)
 	{
-		while(waiting )
+		while((c = Board_UARTGetChar()) != EOF)
 		{
-			if(LimitSW1.read() == false && LimitSW2.read() == false) {waiting = false;}
-			Board_LED_Set(2, true);
-			vTaskDelay(100);
-			Board_LED_Set(2, false);
-			vTaskDelay(100);
+			Board_UARTPutChar(c);
+
+			if(c > 47 && c < 58) //	INPUTS THE VALUES FOR SPEED
+			{
+				speed.push_back(c);
+			}
+			else if(c == 13 && gotInput == false)
+			{
+				gotInput = true;
+			}
+			else if(c != 32) // INPUTS THE command
+			{
+				command.push_back(c);
+			}
+		}
+		if(command == right && gotInput)
+		{
+			DEBUGOUT("\r\n%s %d\r\n", command.c_str(), atoi(speed.c_str()));
+			speed.clear();
+			command.clear();
+			gotInput = false;
+		}
+		else if(command  == left && gotInput)
+		{
+			DEBUGOUT("\r\n%s %d\r\n", command.c_str(), atoi(speed.c_str()));
+			speed.clear();
+			command.clear();
+			gotInput = false;
+		}
+		else if(command  == pps && gotInput)
+		{
+			DEBUGOUT("\r\n%s %d\r\n", command.c_str(), atoi(speed.c_str()));
+			speed.clear();
+			command.clear();
+			gotInput = false;
+		}
+		else if(gotInput)
+		{
+			DEBUGOUT("\r\n error \r\n");
+			speed.clear();
+			command.clear();
+			gotInput = false;
 		}
 
-		xSemaphoreGive(binar);
-
-
-		if(LimitSW1.read() )
-		{
-			Board_LED_Set(0, true);
-			Board_LED_Set(1, false);
-			vTaskDelay(1000);
-		}
-
-		if(LimitSW2.read() )
-		{
-			Board_LED_Set(1, true);
-			Board_LED_Set(0, false);
-			vTaskDelay(1000);
-		}
-
-		Board_LED_Set(0, false);
-		Board_LED_Set(1, false);
 
 	}
 }
@@ -100,107 +183,9 @@ static void SwitchCheckTask(void *pvParameters)
 static void StepTask(void *pvParameters)
 {
 
-	DigitalIoPin step(0, 24, DigitalIoPin::output, true);
-	DigitalIoPin SwitchDir(1, 0, DigitalIoPin::output, true);
-
-	Board_LED_Set(0, false);
-	Board_LED_Set(1, false);
-	Board_LED_Set(2, false);
-
-	int cnt = 0;
-	int distance = 0;
-	bool countStarted = false;
-	bool gotDist =  false;
-	bool dir = false;
-	bool cycleStart = false;
-	SwitchDir.write(dir);
-
 	while(1)
 	{
-		if(LimitSW1.read() && LimitSW2.read())
-		{
-			vTaskDelay(5000); //PAUSE FOR 5 SEC IN BOTH LIMIT SWITCHES ARE ON
-			gotDist = false;
-			cycleStart = false; //RESETS ALL FLAGS
-		}
 
-		else if(xSemaphoreTake(binar, portMAX_DELAY)) //CHECK IF SEMAPHORE IS AVAILABLE
-		{
-
-			if(gotDist) //CHECK IF DISTANCE IS CALCULATED
-			{
-
-				if(cycleStart)// CHECK IF CYCLE IS STARTED
-				{
-					int setDist = distance;
-					for( ; setDist > 14 ; setDist--)
-					{
-						step.write(true);
-						vTaskDelay(1);
-						step.write(false);
-						vTaskDelay(1);
-						if(LimitSW1.read() && LimitSW2.read())//RESET
-						{
-							vTaskDelay(5000); //PAUSE FOR 5 SEC IN BOTH LIMIT SWITCHES ARE ON
-							gotDist = false;
-							cycleStart = false; //RESETS ALL FLAGS
-						}
-					}
-					dir = !dir;
-					SwitchDir.write(dir);
-				}
-				else//IF CYCLE IS NOT STARTED, TURN THE LIGHT ON, TAKE A FEW STEP AND START THE CYCLE
-				{
-					Board_LED_Set(2, true);
-					vTaskDelay(2000);
-					Board_LED_Set(2, false);
-
-					for(int i = 0; i > 15; i--) //MOVES A FEW STEPS
-					{
-						step.write(true);
-						vTaskDelay(1);
-						step.write(false);
-						vTaskDelay(1);
-					}
-					cycleStart = true;
-				}
-
-			}
-
-
-			else if (LimitSW1.read() || LimitSW2.read())
-				{
-					if(countStarted) //COUNT STARTS IF ONE OF THE LIMIT SWITCHES WAS HIT ONCE
-					{
-						distance = cnt;
-						gotDist = true;
-						DEBUGOUT("Distance %d\r\n", distance);
-						cnt = 0;
-					}
-
-					cnt = 0;
-					countStarted = true;
-					dir = !dir;
-					SwitchDir.write(dir);
-					for(int i = 5; i > 0; i--) //TAKES 3 STEPS
-					{
-						step.write(true);
-						vTaskDelay(1);
-						step.write(false);
-						vTaskDelay(1);
-						cnt++;
-					}
-				}
-
-			else
-			{
-				step.write(true);
-				vTaskDelay(1);
-				step.write(false);
-				vTaskDelay(1);
-				cnt++;
-			}
-		}
 	}
 }
 
@@ -236,17 +221,17 @@ int main(void)
 	prvSetupHardware();
 
 
-	binar = xSemaphoreCreateBinary();
+	sbRIT = xSemaphoreCreateBinary();
 
 
-	xTaskCreate(SwitchCheckTask, "SwitchCheckTask",
+	xTaskCreate(UserInputTask, "UserInputTask",
 				configMINIMAL_STACK_SIZE + 128, NULL, (tskIDLE_PRIORITY + 1UL),
 				(TaskHandle_t *) NULL);
 
-	xTaskCreate(StepTask, "StepTask",
+	/*xTaskCreate(StepTask, "StepTask",
 					configMINIMAL_STACK_SIZE + 128, NULL, (tskIDLE_PRIORITY + 1UL),
 					(TaskHandle_t *) NULL);
-
+*/
 	/* Start the scheduler */
 	vTaskStartScheduler();
 
