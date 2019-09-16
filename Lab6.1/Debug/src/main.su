@@ -1,0 +1,8 @@
+core_cm3.h:1405:22:void NVIC_SetPriority(IRQn_Type, uint32_t)	16	static
+main.cpp:46:13:void prvSetupHardware()	8	static
+main.cpp:62:13:void SwitchCheckTask(void*)	24	static
+main.cpp:100:13:void StepTask(void*)	72	static
+main.cpp:219:6:void vConfigureTimerForRunTimeStats()	8	static
+main.cpp:232:5:int main()	16	static
+main.cpp:255:1:void __static_initialization_and_destruction_0(int, int)	24	static
+main.cpp:255:1:cpp)	8	static

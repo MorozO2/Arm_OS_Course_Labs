@@ -1,32 +1,32 @@
-12:22:37 **** Incremental Build of configuration Debug for project usb_cdc ****
+08:20:48 **** Build of configuration Debug for project usb_cdc ****
 make -r -j4 all 
 Building file: ../src/Fmutex.cpp
-Building file: ../src/ITM_write.c
-Building file: ../src/cdc_desc.c
+Building file: ../src/cdc_vcom.c
 Building file: ../src/cdc_main.c
+Building file: ../src/cr_cpp_config.cpp
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
 Invoking: MCU C++ Compiler
-Invoking: MCU C Compiler
-Invoking: MCU C Compiler
-arm-none-eabi-c++ -std=c++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\usb_cdc\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc\usbd" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/Fmutex.d" -MT"src/Fmutex.o" -MT"src/Fmutex.d" -o "src/Fmutex.o" "../src/Fmutex.cpp"
-Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\usb_cdc\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc\usbd" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/ITM_write.d" -MT"src/ITM_write.o" -MT"src/ITM_write.d" -o "src/ITM_write.o" "../src/ITM_write.c"
-arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\usb_cdc\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc\usbd" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/cdc_desc.d" -MT"src/cdc_desc.o" -MT"src/cdc_desc.d" -o "src/cdc_desc.o" "../src/cdc_desc.c"
+Invoking: MCU C++ Compiler
+arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\usb_cdc\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc\usbd" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/cdc_vcom.d" -MT"src/cdc_vcom.o" -MT"src/cdc_vcom.d" -o "src/cdc_vcom.o" "../src/cdc_vcom.c"
 arm-none-eabi-gcc -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\usb_cdc\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc\usbd" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/cdc_main.d" -MT"src/cdc_main.o" -MT"src/cdc_main.d" -o "src/cdc_main.o" "../src/cdc_main.c"
+arm-none-eabi-c++ -std=c++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\usb_cdc\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc\usbd" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/Fmutex.d" -MT"src/Fmutex.o" -MT"src/Fmutex.d" -o "src/Fmutex.o" "../src/Fmutex.cpp"
+arm-none-eabi-c++ -std=c++11 -D__NEWLIB__ -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -DCPP_USE_HEAP -D__LPC15XX__ -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\usb_cdc\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc\usbd" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include" -I"C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -fstack-usage -MMD -MP -MF"src/cr_cpp_config.d" -MT"src/cr_cpp_config.o" -MT"src/cr_cpp_config.d" -o "src/cr_cpp_config.o" "../src/cr_cpp_config.cpp"
 ../src/cdc_main.c: In function 'cdc_task':
 ../src/cdc_main.c:217:32: error: 'configLIBRARY_MAX_SYSCALL_INTERRUPT_PRIORITY' undeclared (first use in this function); did you mean 'configMAX_SYSCALL_INTERRUPT_PRIORITY'?
     NVIC_SetPriority(USB0_IRQn, configLIBRARY_MAX_SYSCALL_INTERRUPT_PRIORITY + 1);
                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                                 configMAX_SYSCALL_INTERRUPT_PRIORITY
 ../src/cdc_main.c:217:32: note: each undeclared identifier is reported only once for each function it appears in
-Finished building: ../src/cdc_desc.c
-make: *** [src/subdir.mk:59: src/cdc_main.o] Error 1
+make: *** [src/subdir.mk:58: src/cdc_main.o] Error 1
 make: *** Waiting for unfinished jobs....
+Finished building: ../src/cdc_vcom.c
  
-Finished building: ../src/ITM_write.c
+Finished building: ../src/cr_cpp_config.cpp
  
 Finished building: ../src/Fmutex.cpp
  
 "make -r -j4 all" terminated with exit code 2. Build might be incomplete.
 
-12:22:38 Build Failed. 3 errors, 0 warnings. (took 518ms)
+08:20:49 Build Failed. 3 errors, 0 warnings. (took 1s.182ms)
 
