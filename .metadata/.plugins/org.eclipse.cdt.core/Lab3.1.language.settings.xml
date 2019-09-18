@@ -4,13 +4,10 @@
 		<extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
 			<provider id="com.crt.advproject.GCCBuildSpecCompilerParser">
 				<language id="org.eclipse.cdt.core.gcc">
-					<entry kind="includePath" name="C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/lib/gcc/arm-none-eabi/8.2.1/include">
+					<entry kind="includePath" name="C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/redlib/include">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="includePath" name="C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/lib/gcc/arm-none-eabi/8.2.1/include-fixed">
-						<flag value="BUILTIN|READONLY"/>
-					</entry>
-					<entry kind="includePath" name="C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/arm-none-eabi/include">
+					<entry kind="includePath" name="C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/features/include">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__ACCUM_EPSILON__" value="0x1P-15K">
@@ -2612,13 +2609,10 @@
 		<extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
 			<provider id="com.crt.advproject.GCCBuildSpecCompilerParser">
 				<language id="org.eclipse.cdt.core.gcc">
-					<entry kind="includePath" name="C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/lib/gcc/arm-none-eabi/8.2.1/include">
+					<entry kind="includePath" name="C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/redlib/include">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="includePath" name="C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/lib/gcc/arm-none-eabi/8.2.1/include-fixed">
-						<flag value="BUILTIN|READONLY"/>
-					</entry>
-					<entry kind="includePath" name="C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/arm-none-eabi/include">
+					<entry kind="includePath" name="C:/nxp/MCUXpressoIDE_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/features/include">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__ACCUM_EPSILON__" value="0x1P-15K">

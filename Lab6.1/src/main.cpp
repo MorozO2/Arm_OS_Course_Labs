@@ -6,7 +6,7 @@
  Copyright   : $(copyright)
  Description : main definition
 ===============================================================================
-*/
+ */
 
 #if defined (__USE_LPCOPEN)
 #if defined(NO_BOARD_LIB)
@@ -20,9 +20,9 @@
 #include <cr_section_macros.h>
 #include <stdlib.h>
 #include <time.h>
-#include <string>
-// TODO: insert other include files here
 
+// TODO: insert other include files here
+#include <string>
 // TODO: insert other definitions and declarations here
 
 #include "FreeRTOS.h"
@@ -61,59 +61,66 @@ static void prvSetupHardware(void)
 
 volatile uint32_t RIT_count;
 SemaphoreHandle_t sbRIT;
-
+SemaphoreHandle_t move(xSemaphoreCreateBinary());
 
 DigitalIoPin LimitSW1(0, 27, DigitalIoPin::pullup, true);
 DigitalIoPin LimitSW2(0, 28, DigitalIoPin::pullup, true);
 
+
+DigitalIoPin step(0, 24, DigitalIoPin::output, true);
+DigitalIoPin SwitchDir(1, 0, DigitalIoPin::output, true);
+
 extern "C" {
 void RIT_IRQHandler(void)
 {
- // This used to check if a context switch is required
- portBASE_TYPE xHigherPriorityWoken = pdFALSE;
- // Tell timer that we have processed the interrupt.
- // Timer then removes the IRQ until next match occurs
- Chip_RIT_ClearIntStatus(LPC_RITIMER); // clear IRQ flag
- if(RIT_count > 0) {
- RIT_count--;
- // do something useful here...
- }
- else {
- Chip_RIT_Disable(LPC_RITIMER); // disable timer
- // Give semaphore and set context switch flag if a higher priority task was woken up
- xSemaphoreGiveFromISR(sbRIT, &xHigherPriorityWoken);
- }
- // End the ISR and (possibly) do a context switch
- portEND_SWITCHING_ISR(xHigherPriorityWoken);
+
+	// This used to check if a context switch is required
+	portBASE_TYPE xHigherPriorityWoken = pdFALSE;
+	// Tell timer that we have processed the interrupt.
+	// Timer then removes the IRQ until next match occurs
+	Chip_RIT_ClearIntStatus(LPC_RITIMER); // clear IRQ flag
+
+	if(RIT_count > 0) {
+		RIT_count--;
+		xSemaphoreGiveFromISR(move, &xHigherPriorityWoken);
+		// do something useful here...
+	}
+	else {
+		Chip_RIT_Disable(LPC_RITIMER); // disable timer
+		// Give semaphore and set context switch flag if a higher priority task was woken up
+		xSemaphoreGiveFromISR(sbRIT, &xHigherPriorityWoken);
+	}
+	// End the ISR and (possibly) do a context switch
+	portEND_SWITCHING_ISR(xHigherPriorityWoken);
 }
 }
 
 void RIT_start(int count, int us)
 {
- uint64_t cmp_value;
- // Determine approximate compare value based on clock rate and passed interval
- cmp_value = (uint64_t) Chip_Clock_GetSystemClockRate() * (uint64_t) us / 1000000;
- // disable timer during configuration
- Chip_RIT_Disable(LPC_RITIMER);
- RIT_count = count;
- // enable automatic clear on when compare value==timer value
- // this makes interrupts trigger periodically
- Chip_RIT_EnableCompClear(LPC_RITIMER);
- // reset the counter
- Chip_RIT_SetCounter(LPC_RITIMER, 0);
- Chip_RIT_SetCompareValue(LPC_RITIMER, cmp_value);
- // start counting
- Chip_RIT_Enable(LPC_RITIMER);
- // Enable the interrupt signal in NVIC (the interrupt controller)
- NVIC_EnableIRQ(RITIMER_IRQn);
- // wait for ISR to tell that we're done
- if(xSemaphoreTake(sbRIT, portMAX_DELAY) == pdTRUE) {
- // Disable the interrupt signal in NVIC (the interrupt controller)
- NVIC_DisableIRQ(RITIMER_IRQn);
- }
- else {
- // unexpected error
- }
+	uint64_t cmp_value;
+	// Determine approximate compare value based on clock rate and passed interval
+	cmp_value = (uint64_t) Chip_Clock_GetSystemClockRate() * (uint64_t) us / 1000000;
+	// disable timer during configuration
+	Chip_RIT_Disable(LPC_RITIMER);
+	RIT_count = count;
+	// enable automatic clear on when compare value==timer value
+	// this makes interrupts trigger periodically
+	Chip_RIT_EnableCompClear(LPC_RITIMER);
+	// reset the counter
+	Chip_RIT_SetCounter(LPC_RITIMER, 0);
+	Chip_RIT_SetCompareValue(LPC_RITIMER, cmp_value);
+	// start counting
+	Chip_RIT_Enable(LPC_RITIMER);
+	// Enable the interrupt signal in NVIC (the interrupt controller)
+	NVIC_EnableIRQ(RITIMER_IRQn);
+	// wait for ISR to tell that we're done
+	if(xSemaphoreTake(sbRIT, portMAX_DELAY) == pdTRUE) {
+		// Disable the interrupt signal in NVIC (the interrupt controller)
+		NVIC_DisableIRQ(RITIMER_IRQn);
+	}
+	else {
+		// unexpected error
+	}
 }
 
 
@@ -121,7 +128,8 @@ static void UserInputTask(void *pvParameters)
 {
 	std::string speed;
 	std::string command;
-
+	int input = 0;
+	int ppsVal = 1000;
 	std::string right = "right";
 	std::string left = "left";
 	std::string pps = "pps";
@@ -130,6 +138,7 @@ static void UserInputTask(void *pvParameters)
 	int c = 0;
 	while(1)
 	{
+
 		while((c = Board_UARTGetChar()) != EOF)
 		{
 			Board_UARTPutChar(c);
@@ -147,32 +156,40 @@ static void UserInputTask(void *pvParameters)
 				command.push_back(c);
 			}
 		}
+
+
 		if(command == right && gotInput)
 		{
-			DEBUGOUT("\r\n%s %d\r\n", command.c_str(), atoi(speed.c_str()));
+
+			input = atoi(speed.c_str());
+			SwitchDir.write(true);
+			DEBUGOUT("right");
+			RIT_start(input, ppsVal);
 			speed.clear();
 			command.clear();
 			gotInput = false;
 		}
-		else if(command  == left && gotInput)
+		else if(command == left && gotInput)
 		{
-			DEBUGOUT("\r\n%s %d\r\n", command.c_str(), atoi(speed.c_str()));
+			input = atoi(speed.c_str());
+			SwitchDir.write(false);
+			DEBUGOUT("left");
+			RIT_start(input, ppsVal);
 			speed.clear();
 			command.clear();
 			gotInput = false;
 		}
-		else if(command  == pps && gotInput)
+		else if(command == pps && gotInput)
 		{
-			DEBUGOUT("\r\n%s %d\r\n", command.c_str(), atoi(speed.c_str()));
-			speed.clear();
-			command.clear();
+			ppsVal = atoi(speed.c_str());
 			gotInput = false;
 		}
 		else if(gotInput)
 		{
-			DEBUGOUT("\r\n error \r\n");
+		//	DEBUGOUT("\r\n error \r\n");
 			speed.clear();
 			command.clear();
+			input = 0;
 			gotInput = false;
 		}
 
@@ -182,10 +199,23 @@ static void UserInputTask(void *pvParameters)
 
 static void StepTask(void *pvParameters)
 {
-
+	bool pulse = false;
+	int cnt = 0;
 	while(1)
 	{
-
+		if(xSemaphoreTake(move, portMAX_DELAY))
+		{
+			if(LimitSW1.read() == false && LimitSW2.read() == false)
+			{
+				DEBUGOUT("pulse");
+				pulse = !pulse;
+				step.write(pulse);
+			}
+		}
+		else
+		{
+			step.write(false);
+		}
 	}
 }
 
@@ -225,13 +255,13 @@ int main(void)
 
 
 	xTaskCreate(UserInputTask, "UserInputTask",
-				configMINIMAL_STACK_SIZE + 128, NULL, (tskIDLE_PRIORITY + 1UL),
-				(TaskHandle_t *) NULL);
+			configMINIMAL_STACK_SIZE + 128, NULL, (tskIDLE_PRIORITY + 1UL),
+			(TaskHandle_t *) NULL);
 
-	/*xTaskCreate(StepTask, "StepTask",
-					configMINIMAL_STACK_SIZE + 128, NULL, (tskIDLE_PRIORITY + 1UL),
-					(TaskHandle_t *) NULL);
-*/
+	xTaskCreate(StepTask, "StepTask",
+			configMINIMAL_STACK_SIZE + 128, NULL, (tskIDLE_PRIORITY + 1UL),
+			(TaskHandle_t *) NULL);
+
 	/* Start the scheduler */
 	vTaskStartScheduler();
 

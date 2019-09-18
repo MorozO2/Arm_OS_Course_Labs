@@ -1,0 +1,33 @@
+"FreeRTOS Task Aware Debugger for GDB" version 11.0.0 (201905201323)
+(c) 2016-2018 NXP Semiconductors, Inc.
+==================================
+12:29:27.981 INFO: [TadModel] DSF session ID 62 has started.
+12:29:31.28 INFO: [TadState] TAD state changed:  DEBUG_STARTED -> DEBUG_INIT_0 (SUSPENDED, USER_REQUEST)
+12:29:32.474 INFO: [TadState] TAD state changed:  DEBUG_INIT_0 -> DEBUG_INIT_1 (RESUMED, USER_REQUEST)
+12:29:32.571 INFO: [TadState] TAD state changed:  DEBUG_INIT_1 -> DEBUG_SUSPENDED (SUSPENDED, BREAKPOINT)
+12:29:39.722 INFO: [TadState] TAD state changed:  DEBUG_SUSPENDED -> DEBUG_RESUMED (RESUMED, USER_REQUEST)
+12:30:56.318 INFO: [TadState] TAD state changed:  DEBUG_RESUMED -> READY (SUSPENDED, SIGNAL)
+12:30:56.521 INFO: [Benchmark] Loading data for "Determine FreeRTOS version" has started.
+12:30:56.545 INFO: [TadModel] Heap type (memory allocation scheme) has been identified from FreeRTOSDebugConfig structure as Heap #3. 
+12:30:56.545 INFO: [TadModel] FreeRTOS version has been identified from FreeRTOSDebugConfig structure as 10.2.0.
+12:30:56.545 INFO: [Benchmark] Loading data for "Determine FreeRTOS version" took 24 ms.
+12:30:56.545 INFO: [Benchmark] Loading data for "Task List" has started.
+12:30:57.604 ERROR: [TadFactory] Reading exception during: "readAddressOfVariableSafely(xQueueRegistry)"
+12:30:57.646 ERROR: [VariableReader] Could not read variable expression: "&(xQueueRegistry)".
+12:30:57.650 ERROR: [VariableReader] Could not read variable expression: "sizeof(pxReadyTasksLists)".
+12:30:57.650 ERROR: [TaskFactory] Could not get size of "pxReadyTasksLists"!
+12:30:57.650 ERROR: [TaskFactory] Cannot display tasks from ready task list!
+12:30:57.657 ERROR: [VariableReader] Could not read variable expression: "pxCurrentTCB".
+12:30:57.657 ERROR: [TadFactory] Reading exception during: "readLongVariableSafely(pxCurrentTCB)"
+12:30:57.662 ERROR: [VariableReader] Could not read variable expression: "ulTotalRunTime".
+12:30:57.662 ERROR: [TaskFactory] ulTotalRunTime not available
+12:30:57.667 ERROR: [VariableReader] Could not read variable expression: "xPendingReadyList.uxNumberOfItems".
+12:30:57.668 ERROR: [TaskFactory] Cannot read information from "xPendingReadyList".
+12:30:57.675 ERROR: [VariableReader] Could not read variable expression: "xSuspendedTaskList.uxNumberOfItems".
+12:30:57.675 ERROR: [TaskFactory] Cannot read information from "xSuspendedTaskList".
+12:30:57.680 ERROR: [VariableReader] Could not read variable expression: "pxDelayedTaskList.uxNumberOfItems".
+12:30:57.681 ERROR: [TaskFactory] Cannot read information from "pxDelayedTaskList".
+12:30:57.686 ERROR: [VariableReader] Could not read variable expression: "pxOverflowDelayedTaskList.uxNumberOfItems".
+12:30:57.686 ERROR: [TaskFactory] Cannot read information from "pxOverflowDelayedTaskList".
+12:30:57.686 INFO: [Benchmark] Loading data for "Task List" took 1141 ms.
+12:30:57.691 INFO: [TadModel] DSF session ID 62 has ended.
