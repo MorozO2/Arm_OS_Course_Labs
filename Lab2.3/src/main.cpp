@@ -52,45 +52,43 @@ static void prvSetupHardware(void)
 
 SemaphoreHandle_t countingSem;
 SemaphoreHandle_t mutx;
-
+SemaphoreHandle_t msgReady(xSemaphoreCreateBinary());
 
 static void askingTask(void *pvParameters)
 {
 	std::string you = "[You] ";
 	int c;
 	int count = 0;
+	bool question = false;
 	while(1)
 	{
 		while((c = Board_UARTGetChar()) != EOF)
 		{
-			//if(count == 60){c = 13;}//Checks if count is up to 60
-
-			if(c!=13 && count < 60 && c != 63)
+			if(c != 13 && count < 60 && question == false)
 			{
 				if(xSemaphoreTake(mutx, portMAX_DELAY))
 				{
 					Board_UARTPutChar(c);
 					xSemaphoreGive(mutx);
-					 // Check whether "?" was entered
+					you.push_back(c);
+					count++;
+					if(c == 63 && question == false)
+					{
+						you.erase(6, count);
+						question = true;
+						xSemaphoreGive(countingSem);
+					}
 
 				}
-
-				you.push_back(c);
-				if(c == 63) {xSemaphoreGive(countingSem); you.erase(6, count); c = 13;}
-				count++;
-
 			}
-			else
+			else if(xSemaphoreTake(mutx, portMAX_DELAY))
 			{
-
-				if(xSemaphoreTake(mutx, portMAX_DELAY))
-				{
-					DEBUGOUT("\r%s\r\n", you.c_str());
-					xSemaphoreGive(mutx);
-				}
+				DEBUGOUT("\r%s\r\n", you.c_str());
+				xSemaphoreGive(mutx);
+				xSemaphoreGive(msgReady);
 				you.erase(6, count);
 				count = 0;
-
+				question = false;
 			}
 		}
 	}
@@ -105,11 +103,14 @@ static void OracleTask(void *pvParameters)
 	while(1)
 	{
 
-		if(xSemaphoreTake(countingSem, portMAX_DELAY))
+		if(xSemaphoreTake(msgReady, portMAX_DELAY) && xSemaphoreTake(countingSem, portMAX_DELAY))
 		{
-
-			if(xSemaphoreTake(mutx, portMAX_DELAY)) {DEBUGOUT("\r\n%s%s\r\n", oracle.c_str()), hm.c_str(); xSemaphoreGive(mutx);}
-			vTaskDelay(3000);
+			if(xSemaphoreTake(mutx, portMAX_DELAY))
+			{
+				DEBUGOUT("\r\n%s%s\r\n", oracle.c_str()), hm.c_str();
+				xSemaphoreGive(mutx);
+				vTaskDelay(3000);
+			}
 		}
 	}
 }

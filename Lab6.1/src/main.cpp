@@ -62,13 +62,9 @@ static void prvSetupHardware(void)
 volatile uint32_t RIT_count;
 SemaphoreHandle_t sbRIT;
 SemaphoreHandle_t move(xSemaphoreCreateBinary());
-
-DigitalIoPin LimitSW1(0, 27, DigitalIoPin::pullup, true);
-DigitalIoPin LimitSW2(0, 28, DigitalIoPin::pullup, true);
+SemaphoreHandle_t mtx(xSemaphoreCreateMutex());
 
 
-DigitalIoPin step(0, 24, DigitalIoPin::output, true);
-DigitalIoPin SwitchDir(1, 0, DigitalIoPin::output, true);
 
 extern "C" {
 void RIT_IRQHandler(void)
@@ -129,19 +125,22 @@ static void UserInputTask(void *pvParameters)
 	std::string speed;
 	std::string command;
 	int input = 0;
-	int ppsVal = 1000;
-	std::string right = "right";
-	std::string left = "left";
-	std::string pps = "pps";
+	int ppsVal = 400;
+	char right[] = "right";
+	char left[] = "left";
+	char pps[] = "pps";
 	bool gotInput = false;
+
+ 	DigitalIoPin SwitchDir(1, 0, DigitalIoPin::output, true);
 
 	int c = 0;
 	while(1)
 	{
 
-		while((c = Board_UARTGetChar()) != EOF)
+		while((c = Board_UARTGetChar()) != EOF && gotInput == false)
 		{
-			Board_UARTPutChar(c);
+			if(xSemaphoreTake(mtx, portMAX_DELAY)){Board_UARTPutChar(c);}
+			xSemaphoreGive(mtx);
 
 			if(c > 47 && c < 58) //	INPUTS THE VALUES FOR SPEED
 			{
@@ -149,6 +148,7 @@ static void UserInputTask(void *pvParameters)
 			}
 			else if(c == 13 && gotInput == false)
 			{
+				Board_UARTPutChar(10);
 				gotInput = true;
 			}
 			else if(c != 32) // INPUTS THE command
@@ -162,9 +162,8 @@ static void UserInputTask(void *pvParameters)
 		{
 
 			input = atoi(speed.c_str());
-			SwitchDir.write(true);
-			DEBUGOUT("right");
-			RIT_start(input, ppsVal);
+			SwitchDir.write(false);
+			RIT_start(input, 1000000/ppsVal);
 			speed.clear();
 			command.clear();
 			gotInput = false;
@@ -172,9 +171,8 @@ static void UserInputTask(void *pvParameters)
 		else if(command == left && gotInput)
 		{
 			input = atoi(speed.c_str());
-			SwitchDir.write(false);
-			DEBUGOUT("left");
-			RIT_start(input, ppsVal);
+			SwitchDir.write(true);
+			RIT_start(input, 1000000/ppsVal);
 			speed.clear();
 			command.clear();
 			gotInput = false;
@@ -182,11 +180,12 @@ static void UserInputTask(void *pvParameters)
 		else if(command == pps && gotInput)
 		{
 			ppsVal = atoi(speed.c_str());
+			speed.clear();
+			command.clear();
 			gotInput = false;
 		}
 		else if(gotInput)
 		{
-		//	DEBUGOUT("\r\n error \r\n");
 			speed.clear();
 			command.clear();
 			input = 0;
@@ -201,20 +200,20 @@ static void StepTask(void *pvParameters)
 {
 	bool pulse = false;
 	int cnt = 0;
+	DigitalIoPin step(0, 24, DigitalIoPin::output, true);
+
+ 	DigitalIoPin LimitSW1(0, 27, DigitalIoPin::pullup, true);
+ 	DigitalIoPin LimitSW2(0, 28, DigitalIoPin::pullup, true);
+
 	while(1)
 	{
 		if(xSemaphoreTake(move, portMAX_DELAY))
 		{
 			if(LimitSW1.read() == false && LimitSW2.read() == false)
 			{
-				DEBUGOUT("pulse");
-				pulse = !pulse;
 				step.write(pulse);
+				pulse = !pulse;
 			}
-		}
-		else
-		{
-			step.write(false);
 		}
 	}
 }
@@ -248,8 +247,7 @@ int main(void)
 {
 
 
-	prvSetupHardware();
-
+ 	prvSetupHardware();
 
 	sbRIT = xSemaphoreCreateBinary();
 

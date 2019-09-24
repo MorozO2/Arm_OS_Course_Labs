@@ -57,16 +57,17 @@ static void prvSetupHardware(void)
 static void send_task(void *pvParameters) {
 	bool LedState = false;
 	uint32_t count = 0;
-
+	char str[32] = "Counter: %lu runs really fast\r\n";
 	while (1) {
-		char str[32];
-		int len = sprintf(str, "Counter: %lu runs really fast\r\n", count);
+
+		int len = 32;
 		USB_send((uint8_t *)str, len);
 		Board_LED_Set(0, LedState);
 		LedState = (bool) !LedState;
 		count++;
 
 		vTaskDelay(configTICK_RATE_HZ / 50);
+
 	}
 }
 
@@ -80,7 +81,6 @@ static void receive_task(void *pvParameters) {
 		uint32_t len = USB_receive((uint8_t *)str, 79);
 		str[len] = 0; /* make sure we have a zero at the end so that we can print the data */
 		ITM_write(str);
-
 		Board_LED_Set(1, LedState);
 		LedState = (bool) !LedState;
 	}
@@ -94,12 +94,12 @@ int main(void) {
 
 	/* LED1 toggle thread */
 	xTaskCreate(send_task, "Tx",
-				configMINIMAL_STACK_SIZE * 3, NULL, (tskIDLE_PRIORITY + 1UL),
+				configMINIMAL_STACK_SIZE * 2.5, NULL, (tskIDLE_PRIORITY + 1UL),
 				(TaskHandle_t *) NULL);
 
 	/* LED1 toggle thread */
 	xTaskCreate(receive_task, "Rx",
-				configMINIMAL_STACK_SIZE * 3, NULL, (tskIDLE_PRIORITY + 1UL),
+				configMINIMAL_STACK_SIZE * 2.7, NULL, (tskIDLE_PRIORITY + 1UL),
 				(TaskHandle_t *) NULL);
 
 	/* LED2 toggle thread */
