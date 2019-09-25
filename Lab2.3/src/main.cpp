@@ -19,6 +19,7 @@
 
 #include <cr_section_macros.h>
 #include <string>
+#include <time.h>
 
 // TODO: insert other include files here
 
@@ -27,6 +28,7 @@
 #include "FreeRTOS.h"
 #include "task.h"
 #include "semphr.h"
+#include "answers.h"
 
 /*****************************************************************************
  * Private types/enumerations/variables
@@ -50,8 +52,8 @@ static void prvSetupHardware(void)
 	Board_LED_Set(0, false);
 }
 
-SemaphoreHandle_t countingSem;
-SemaphoreHandle_t mutx;
+SemaphoreHandle_t countingSem(xSemaphoreCreateCounting(3, 0));
+SemaphoreHandle_t mutx(xSemaphoreCreateMutex());
 SemaphoreHandle_t msgReady(xSemaphoreCreateBinary());
 
 static void askingTask(void *pvParameters)
@@ -64,7 +66,7 @@ static void askingTask(void *pvParameters)
 	{
 		while((c = Board_UARTGetChar()) != EOF)
 		{
-			if(c != 13 && count < 60 && question == false)
+			if(c != 13 && count < 60)
 			{
 				if(xSemaphoreTake(mutx, portMAX_DELAY))
 				{
@@ -72,20 +74,18 @@ static void askingTask(void *pvParameters)
 					xSemaphoreGive(mutx);
 					you.push_back(c);
 					count++;
-					if(c == 63 && question == false)
+					if(c == 63)
 					{
-						you.erase(6, count);
 						question = true;
-						xSemaphoreGive(countingSem);
 					}
-
 				}
 			}
+
 			else if(xSemaphoreTake(mutx, portMAX_DELAY))
 			{
 				DEBUGOUT("\r%s\r\n", you.c_str());
 				xSemaphoreGive(mutx);
-				xSemaphoreGive(msgReady);
+				if(question){xSemaphoreGive(countingSem);}
 				you.erase(6, count);
 				count = 0;
 				question = false;
@@ -96,21 +96,25 @@ static void askingTask(void *pvParameters)
 
 static void OracleTask(void *pvParameters)
 {
-
-	std::string oracle = "[Oracle] ";
-	std::string hm = "Hmm...";
-
+	Answers oracle;
 	while(1)
 	{
 
-		if(xSemaphoreTake(msgReady, portMAX_DELAY) && xSemaphoreTake(countingSem, portMAX_DELAY))
+		if(xSemaphoreTake(countingSem, portMAX_DELAY))
 		{
 			if(xSemaphoreTake(mutx, portMAX_DELAY))
 			{
-				DEBUGOUT("\r\n%s%s\r\n", oracle.c_str()), hm.c_str();
+				oracle.returnHm();
 				xSemaphoreGive(mutx);
 				vTaskDelay(3000);
 			}
+			if(xSemaphoreTake(mutx, portMAX_DELAY))
+			{
+				oracle.randAns();
+				xSemaphoreGive(mutx);
+				vTaskDelay(5000);
+			}
+
 		}
 	}
 }
@@ -144,8 +148,6 @@ int main(void)
 
 	prvSetupHardware();
 
-	countingSem = xSemaphoreCreateCounting(3, 0);
-	mutx = xSemaphoreCreateMutex();
 
 	 //Gives initial semaphore for access to UART
 	xTaskCreate(askingTask, "askingTask",

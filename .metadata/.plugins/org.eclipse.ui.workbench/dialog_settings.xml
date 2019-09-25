@@ -4,12 +4,16 @@
 		<item value="943" key="dialogHeight"/>
 		<item value="1162" key="dialogWidth"/>
 		<list key="textEntries">
+			<item value="1"/>
 		</list>
 		<list key="orderedElements">
+			<item value="org.eclipse.tm.terminal.view.ui.TerminalsView"/>
 		</list>
 		<list key="orderedProviders">
+			<item value="org.eclipse.e4.ui.parts"/>
 		</list>
 		<list key="textArray">
+			<item value="termin"/>
 		</list>
 	</section>
 	<section name="NewWizardAction">

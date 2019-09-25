@@ -1,4 +1,6 @@
-src/main.o src/main.d: ../src/main.cpp \
+src/answers.o src/answers.d: ../src/answers.cpp ../src/answers.h \
+ C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include/FreeRTOS.h \
+ C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc/FreeRTOSConfig.h \
  C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board.h \
  C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc/chip.h \
  C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc/lpc_types.h \
@@ -49,19 +51,17 @@ src/main.o src/main.d: ../src/main.cpp \
  C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc/i2cs_15xx.h \
  C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board_api.h \
  C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc/lpc_types.h \
- C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include/FreeRTOS.h \
- C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc/FreeRTOSConfig.h \
  C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include/projdefs.h \
  C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include/portable.h \
  C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include/deprecated_definitions.h \
  C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3/portmacro.h \
- C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include/mpu_wrappers.h \
- C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include/task.h \
- C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include/list.h \
- C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include/semphr.h \
- C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include/queue.h \
- C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include/task.h \
- ../src/answers.h
+ C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include/mpu_wrappers.h
+
+../src/answers.h:
+
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include/FreeRTOS.h:
+
+C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc/FreeRTOSConfig.h:
 
 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\inc/board.h:
 
@@ -163,10 +163,6 @@ C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxp
 
 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\inc/lpc_types.h:
 
-C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include/FreeRTOS.h:
-
-C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\inc/FreeRTOSConfig.h:
-
 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include/projdefs.h:
 
 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include/portable.h:
@@ -176,15 +172,3 @@ C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\includ
 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\portable\GCC\ARM_CM3/portmacro.h:
 
 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include/mpu_wrappers.h:
-
-C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include/task.h:
-
-C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include/list.h:
-
-C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include/semphr.h:
-
-C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include/queue.h:
-
-C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\src\include/task.h:
-
-../src/answers.h:

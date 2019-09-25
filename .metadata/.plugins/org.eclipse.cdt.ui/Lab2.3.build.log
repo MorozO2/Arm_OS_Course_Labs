@@ -1,6 +1,6 @@
-13:07:22 **** Incremental Build of configuration Debug for project Lab2.3 ****
+13:55:41 **** Incremental Build of configuration Debug for project Lab2.3 ****
 make -r -j4 all 
 make: Nothing to be done for 'all'.
 
-13:07:22 Build Finished. 0 errors, 0 warnings. (took 134ms)
+13:55:41 Build Finished. 0 errors, 0 warnings. (took 113ms)
 

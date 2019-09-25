@@ -1,8 +1,11 @@
 gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
-main.cpp:44:13:void prvSetupHardware()	8	static
-main.cpp:57:13:void askingTask(void*)	56	static
-main.cpp:97:13:void OracleTask(void*)	72	static
-main.cpp:128:6:void vConfigureTimerForRunTimeStats()	8	static
-main.cpp:141:5:int main()	16	static
-main.cpp:167:1:void __static_initialization_and_destruction_0(int, int)	16	static
-main.cpp:167:1:cpp)	8	static
+answers.h:27:2:Answers::Answers()	48	static
+answers.h:28:10:Answers::~Answers()	16	static
+answers.h:28:10:virtual Answers::~Answers()	16	static
+main.cpp:46:13:void prvSetupHardware()	8	static
+main.cpp:59:13:void askingTask(void*)	56	static
+main.cpp:97:13:void OracleTask(void*)	168	static
+main.cpp:132:6:void vConfigureTimerForRunTimeStats()	8	static
+main.cpp:145:5:int main()	16	static
+main.cpp:169:1:void __static_initialization_and_destruction_0(int, int)	16	static
+main.cpp:169:1:cpp)	8	static
