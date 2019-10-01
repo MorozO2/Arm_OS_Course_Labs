@@ -7,9 +7,9 @@
 		<item value="352" key="HEIGHT"/>
 	</section>
 	<section name="com.nxp.lpcxpresso.debug.ui.gui.NXPExpressionInformationControlCreator$ExpressionInformationControl">
-		<item value="200" key="Sash.Weight.Details"/>
-		<item value="200" key="Sash.Weight.Tree"/>
-		<item value="816" key="WIDTH"/>
-		<item value="297" key="HEIGHT"/>
+		<item value="500" key="Sash.Weight.Details"/>
+		<item value="500" key="Sash.Weight.Tree"/>
+		<item value="830" key="WIDTH"/>
+		<item value="352" key="HEIGHT"/>
 	</section>
 </section>

@@ -320,7 +320,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x80 ./src/Fmutex.o
  .debug_macro   0x00000000       0x7e ./src/Fmutex.o
  .debug_line    0x00000000      0x986 ./src/Fmutex.o
- .debug_str     0x00000000    0x17713 ./src/Fmutex.o
+ .debug_str     0x00000000    0x17714 ./src/Fmutex.o
  .comment       0x00000000       0x76 ./src/Fmutex.o
  .debug_frame   0x00000000       0xc8 ./src/Fmutex.o
  .ARM.attributes
@@ -4110,7 +4110,7 @@ END GROUP
                 0x02009000                __top_Ram2_4 = 0x2009000
                 0x02009000                __top_RAM2 = 0x2009000
 
-.text           0x00000000     0x4708
+.text           0x00000000     0x4718
  FILL mask 0xff
                 0x00000000                __vectors_start__ = ABSOLUTE (.)
  *(.isr_vector)
@@ -4119,10 +4119,10 @@ END GROUP
                 0x000000fc                . = ALIGN (0x4)
                 0x000000fc                __section_table_start = .
                 0x000000fc                __data_section_table = .
-                0x000000fc        0x4 LONG 0x4710 LOADADDR (.data)
+                0x000000fc        0x4 LONG 0x4720 LOADADDR (.data)
                 0x00000100        0x4 LONG 0x2000000 ADDR (.data)
                 0x00000104        0x4 LONG 0x890 SIZEOF (.data)
-                0x00000108        0x4 LONG 0x4710 LOADADDR (.data_RAM2)
+                0x00000108        0x4 LONG 0x4720 LOADADDR (.data_RAM2)
                 0x0000010c        0x4 LONG 0x2008000 ADDR (.data_RAM2)
                 0x00000110        0x4 LONG 0x0 SIZEOF (.data_RAM2)
                 0x00000114                __data_section_table_end = .
@@ -4255,498 +4255,498 @@ END GROUP
                 0x00000c04       0x64 ./src/usb_cdc.o
  .text._ZL12receive_taskPv
                 0x00000c68       0x4c ./src/usb_cdc.o
- .text.main     0x00000cb4       0x70 ./src/usb_cdc.o
+ .text.main     0x00000cb4       0x74 ./src/usb_cdc.o
                 0x00000cb4                main
  .text.xQueueGenericReset
-                0x00000d24       0xb4 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(queue.o)
-                0x00000d24                xQueueGenericReset
+                0x00000d28       0xb4 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(queue.o)
+                0x00000d28                xQueueGenericReset
  .text.xQueueGenericCreate
-                0x00000dd8       0x5c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(queue.o)
-                0x00000dd8                xQueueGenericCreate
+                0x00000ddc       0x5c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(queue.o)
+                0x00000ddc                xQueueGenericCreate
  .text.prvInitialiseNewQueue
-                0x00000e34       0x46 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(queue.o)
+                0x00000e38       0x46 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(queue.o)
  .text.prvInitialiseMutex
-                0x00000e7a       0x34 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(queue.o)
+                0x00000e7e       0x34 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(queue.o)
  .text.xQueueCreateMutex
-                0x00000eae       0x30 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(queue.o)
-                0x00000eae                xQueueCreateMutex
- *fill*         0x00000ede        0x2 ff
+                0x00000eb2       0x30 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(queue.o)
+                0x00000eb2                xQueueCreateMutex
+ *fill*         0x00000ee2        0x2 ff
  .text.xQueueGenericSend
-                0x00000ee0      0x154 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(queue.o)
-                0x00000ee0                xQueueGenericSend
+                0x00000ee4      0x154 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(queue.o)
+                0x00000ee4                xQueueGenericSend
  .text.xQueueGiveFromISR
-                0x00001034       0xa6 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(queue.o)
-                0x00001034                xQueueGiveFromISR
- *fill*         0x000010da        0x2 ff
+                0x00001038       0xa6 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(queue.o)
+                0x00001038                xQueueGiveFromISR
+ *fill*         0x000010de        0x2 ff
  .text.xQueueReceive
-                0x000010dc      0x144 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(queue.o)
-                0x000010dc                xQueueReceive
+                0x000010e0      0x144 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(queue.o)
+                0x000010e0                xQueueReceive
  .text.xQueueSemaphoreTake
-                0x00001220      0x190 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(queue.o)
-                0x00001220                xQueueSemaphoreTake
+                0x00001224      0x190 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(queue.o)
+                0x00001224                xQueueSemaphoreTake
  .text.prvGetDisinheritPriorityAfterTimeout
-                0x000013b0       0x2e C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(queue.o)
+                0x000013b4       0x2e C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(queue.o)
  .text.prvCopyDataToQueue
-                0x000013de       0xd4 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(queue.o)
+                0x000013e2       0xd4 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(queue.o)
  .text.prvCopyDataFromQueue
-                0x000014b2       0x4c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(queue.o)
+                0x000014b6       0x4c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(queue.o)
  .text.prvUnlockQueue
-                0x000014fe       0xa4 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(queue.o)
+                0x00001502       0xa4 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(queue.o)
  .text.prvIsQueueEmpty
-                0x000015a2       0x2c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(queue.o)
+                0x000015a6       0x2c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(queue.o)
  .text.prvIsQueueFull
-                0x000015ce       0x30 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(queue.o)
- *fill*         0x000015fe        0x2 ff
+                0x000015d2       0x30 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(queue.o)
+ *fill*         0x00001602        0x2 ff
  .text.vQueueAddToRegistry
-                0x00001600       0x50 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(queue.o)
-                0x00001600                vQueueAddToRegistry
+                0x00001604       0x50 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(queue.o)
+                0x00001604                vQueueAddToRegistry
  .text.xTaskCreate
-                0x00001650       0x84 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
-                0x00001650                xTaskCreate
+                0x00001654       0x84 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
+                0x00001654                xTaskCreate
  .text.prvInitialiseNewTask
-                0x000016d4      0x18a C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
- *fill*         0x0000185e        0x2 ff
+                0x000016d8      0x18a C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
+ *fill*         0x00001862        0x2 ff
  .text.prvAddNewTaskToReadyList
-                0x00001860       0xdc C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
+                0x00001864       0xdc C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
  .text.vTaskDelay
-                0x0000193c       0x48 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
-                0x0000193c                vTaskDelay
+                0x00001940       0x48 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
+                0x00001940                vTaskDelay
  .text.vTaskStartScheduler
-                0x00001984       0x84 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
-                0x00001984                vTaskStartScheduler
+                0x00001988       0x84 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
+                0x00001988                vTaskStartScheduler
  .text.vTaskSuspendAll
-                0x00001a08       0x1c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
-                0x00001a08                vTaskSuspendAll
+                0x00001a0c       0x1c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
+                0x00001a0c                vTaskSuspendAll
  .text.xTaskResumeAll
-                0x00001a24      0x11c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
-                0x00001a24                xTaskResumeAll
+                0x00001a28      0x11c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
+                0x00001a28                xTaskResumeAll
  .text.xTaskIncrementTick
-                0x00001b40      0x150 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
-                0x00001b40                xTaskIncrementTick
+                0x00001b44      0x150 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
+                0x00001b44                xTaskIncrementTick
  .text.vTaskSwitchContext
-                0x00001c90      0x120 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
-                0x00001c90                vTaskSwitchContext
+                0x00001c94      0x120 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
+                0x00001c94                vTaskSwitchContext
  .text.vTaskPlaceOnEventList
-                0x00001db0       0x2c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
-                0x00001db0                vTaskPlaceOnEventList
+                0x00001db4       0x2c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
+                0x00001db4                vTaskPlaceOnEventList
  .text.xTaskRemoveFromEventList
-                0x00001ddc       0xa8 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
-                0x00001ddc                xTaskRemoveFromEventList
+                0x00001de0       0xa8 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
+                0x00001de0                xTaskRemoveFromEventList
  .text.vTaskInternalSetTimeOutState
-                0x00001e84       0x2c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
-                0x00001e84                vTaskInternalSetTimeOutState
+                0x00001e88       0x2c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
+                0x00001e88                vTaskInternalSetTimeOutState
  .text.xTaskCheckForTimeOut
-                0x00001eb0       0x8c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
-                0x00001eb0                xTaskCheckForTimeOut
+                0x00001eb4       0x8c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
+                0x00001eb4                xTaskCheckForTimeOut
  .text.vTaskMissedYield
-                0x00001f3c       0x18 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
-                0x00001f3c                vTaskMissedYield
+                0x00001f40       0x18 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
+                0x00001f40                vTaskMissedYield
  .text.prvIdleTask
-                0x00001f54        0xe C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
- *fill*         0x00001f62        0x2 ff
+                0x00001f58        0xe C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
+ *fill*         0x00001f66        0x2 ff
  .text.prvInitialiseTaskLists
-                0x00001f64       0x80 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
+                0x00001f68       0x80 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
  .text.prvCheckTasksWaitingTermination
-                0x00001fe4       0x58 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
+                0x00001fe8       0x58 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
  .text.prvDeleteTCB
-                0x0000203c       0x2a C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
- *fill*         0x00002066        0x2 ff
+                0x00002040       0x2a C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
+ *fill*         0x0000206a        0x2 ff
  .text.prvResetNextTaskUnblockTime
-                0x00002068       0x40 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
+                0x0000206c       0x40 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
  .text.xTaskPriorityInherit
-                0x000020a8      0x100 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
-                0x000020a8                xTaskPriorityInherit
+                0x000020ac      0x100 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
+                0x000020ac                xTaskPriorityInherit
  .text.xTaskPriorityDisinherit
-                0x000021a8       0xc8 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
-                0x000021a8                xTaskPriorityDisinherit
+                0x000021ac       0xc8 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
+                0x000021ac                xTaskPriorityDisinherit
  .text.vTaskPriorityDisinheritAfterTimeout
-                0x00002270       0xf0 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
-                0x00002270                vTaskPriorityDisinheritAfterTimeout
+                0x00002274       0xf0 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
+                0x00002274                vTaskPriorityDisinheritAfterTimeout
  .text.pvTaskIncrementMutexHeldCount
-                0x00002360       0x28 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
-                0x00002360                pvTaskIncrementMutexHeldCount
+                0x00002364       0x28 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
+                0x00002364                pvTaskIncrementMutexHeldCount
  .text.prvAddCurrentTaskToDelayedList
-                0x00002388       0xcc C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
+                0x0000238c       0xcc C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
  .text.pvPortMalloc
-                0x00002454       0x2e C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(heap_3.o)
-                0x00002454                pvPortMalloc
+                0x00002458       0x2e C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(heap_3.o)
+                0x00002458                pvPortMalloc
  .text.vPortFree
-                0x00002482       0x24 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(heap_3.o)
-                0x00002482                vPortFree
- *fill*         0x000024a6        0x2 ff
+                0x00002486       0x24 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(heap_3.o)
+                0x00002486                vPortFree
+ *fill*         0x000024aa        0x2 ff
  .text.pxPortInitialiseStack
-                0x000024a8       0x58 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(port.o)
-                0x000024a8                pxPortInitialiseStack
+                0x000024ac       0x58 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(port.o)
+                0x000024ac                pxPortInitialiseStack
  .text.prvTaskExitError
-                0x00002500       0x2e C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(port.o)
- *fill*         0x0000252e        0x2 ff
+                0x00002504       0x2e C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(port.o)
+ *fill*         0x00002532        0xe ff
  .text.SVC_Handler
-                0x00002530       0x28 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(port.o)
-                0x00002530                SVC_Handler
+                0x00002540       0x28 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(port.o)
+                0x00002540                SVC_Handler
  .text.prvPortStartFirstTask
-                0x00002558       0x20 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(port.o)
+                0x00002568       0x20 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(port.o)
  .text.xPortStartScheduler
-                0x00002578       0x40 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(port.o)
-                0x00002578                xPortStartScheduler
+                0x00002588       0x40 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(port.o)
+                0x00002588                xPortStartScheduler
  .text.vPortEnterCritical
-                0x000025b8       0x30 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(port.o)
-                0x000025b8                vPortEnterCritical
+                0x000025c8       0x30 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(port.o)
+                0x000025c8                vPortEnterCritical
  .text.vPortExitCritical
-                0x000025e8       0x30 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(port.o)
-                0x000025e8                vPortExitCritical
- *fill*         0x00002618        0x8 ff
+                0x000025f8       0x30 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(port.o)
+                0x000025f8                vPortExitCritical
+ *fill*         0x00002628        0x8 ff
  .text.PendSV_Handler
-                0x00002620       0x48 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(port.o)
-                0x00002620                PendSV_Handler
+                0x00002630       0x48 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(port.o)
+                0x00002630                PendSV_Handler
  .text.SysTick_Handler
-                0x00002668       0x40 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(port.o)
-                0x00002668                SysTick_Handler
+                0x00002678       0x40 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(port.o)
+                0x00002678                SysTick_Handler
  .text.vPortSetupTimerInterrupt
-                0x000026a8       0x44 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(port.o)
-                0x000026a8                vPortSetupTimerInterrupt
+                0x000026b8       0x44 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(port.o)
+                0x000026b8                vPortSetupTimerInterrupt
  .text.vApplicationMallocFailedHook
-                0x000026ec       0x1c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(FreeRTOSCommonHooks.o)
-                0x000026ec                vApplicationMallocFailedHook
+                0x000026fc       0x1c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(FreeRTOSCommonHooks.o)
+                0x000026fc                vApplicationMallocFailedHook
  .text.vApplicationStackOverflowHook
-                0x00002708       0x20 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(FreeRTOSCommonHooks.o)
-                0x00002708                vApplicationStackOverflowHook
+                0x00002718       0x20 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(FreeRTOSCommonHooks.o)
+                0x00002718                vApplicationStackOverflowHook
  .text.vListInitialise
-                0x00002728       0x3e C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(list.o)
-                0x00002728                vListInitialise
+                0x00002738       0x3e C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(list.o)
+                0x00002738                vListInitialise
  .text.vListInitialiseItem
-                0x00002766       0x18 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(list.o)
-                0x00002766                vListInitialiseItem
+                0x00002776       0x18 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(list.o)
+                0x00002776                vListInitialiseItem
  .text.vListInsertEnd
-                0x0000277e       0x46 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(list.o)
-                0x0000277e                vListInsertEnd
+                0x0000278e       0x46 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(list.o)
+                0x0000278e                vListInsertEnd
  .text.vListInsert
-                0x000027c4       0x70 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(list.o)
-                0x000027c4                vListInsert
+                0x000027d4       0x70 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(list.o)
+                0x000027d4                vListInsert
  .text.uxListRemove
-                0x00002834       0x52 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(list.o)
-                0x00002834                uxListRemove
+                0x00002844       0x52 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(list.o)
+                0x00002844                uxListRemove
  .text.Chip_IOCON_PinMuxSet
-                0x00002886       0x2c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board.o)
+                0x00002896       0x2c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board.o)
  .text.Chip_SWM_MovablePortPinAssign
-                0x000028b2       0x30 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board.o)
+                0x000028c2       0x30 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board.o)
  .text.Chip_GPIO_SetPinState
-                0x000028e2       0x36 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board.o)
+                0x000028f2       0x36 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board.o)
  .text.Chip_GPIO_SetPinDIROutput
-                0x00002918       0x3c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board.o)
+                0x00002928       0x3c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board.o)
  .text.Chip_UART_Enable
-                0x00002954       0x1e C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board.o)
+                0x00002964       0x1e C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board.o)
  .text.Chip_UART_TXEnable
-                0x00002972       0x1e C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board.o)
+                0x00002982       0x1e C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board.o)
  .text.Chip_UART_ConfigData
-                0x00002990       0x28 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board.o)
+                0x000029a0       0x28 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board.o)
  .text.Board_Debug_Init
-                0x000029b8       0x70 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board.o)
-                0x000029b8                Board_Debug_Init
+                0x000029c8       0x70 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board.o)
+                0x000029c8                Board_Debug_Init
  .text.Board_LED_Init
-                0x00002a28       0x5c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board.o)
+                0x00002a38       0x5c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board.o)
  .text.Board_LED_Set
-                0x00002a84       0x54 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board.o)
-                0x00002a84                Board_LED_Set
+                0x00002a94       0x54 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board.o)
+                0x00002a94                Board_LED_Set
  .text.Board_Init
-                0x00002ad8       0x18 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board.o)
-                0x00002ad8                Board_Init
+                0x00002ae8       0x18 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board.o)
+                0x00002ae8                Board_Init
  .text.Chip_SYSCTL_PeriphReset
-                0x00002af0       0x22 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board_sysinit.o)
- *fill*         0x00002b12        0x2 ff
+                0x00002b00       0x22 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board_sysinit.o)
+ *fill*         0x00002b22        0x2 ff
  .text.Chip_Clock_SetUSBPLLSource
-                0x00002b14       0x20 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board_sysinit.o)
+                0x00002b24       0x20 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board_sysinit.o)
  .text.Chip_Clock_SetupUSBPLL
-                0x00002b34       0x34 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board_sysinit.o)
+                0x00002b44       0x34 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board_sysinit.o)
  .text.Chip_Clock_IsUSBPLLLocked
-                0x00002b68       0x24 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board_sysinit.o)
+                0x00002b78       0x24 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board_sysinit.o)
  .text.Chip_Clock_SetSysTickClockDiv
-                0x00002b8c       0x20 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board_sysinit.o)
+                0x00002b9c       0x20 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board_sysinit.o)
  .text.Chip_SWM_MovablePortPinAssign
-                0x00002bac       0x30 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board_sysinit.o)
+                0x00002bbc       0x30 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board_sysinit.o)
  .text.Board_SetupMuxing
-                0x00002bdc       0x80 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board_sysinit.o)
-                0x00002bdc                Board_SetupMuxing
+                0x00002bec       0x80 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board_sysinit.o)
+                0x00002bec                Board_SetupMuxing
  .text.Board_SetupClocking
-                0x00002c5c       0x3a C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board_sysinit.o)
-                0x00002c5c                Board_SetupClocking
- *fill*         0x00002c96        0x2 ff
+                0x00002c6c       0x3a C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board_sysinit.o)
+                0x00002c6c                Board_SetupClocking
+ *fill*         0x00002ca6        0x2 ff
  .text.Board_SystemInit
-                0x00002c98       0x1c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board_sysinit.o)
-                0x00002c98                Board_SystemInit
+                0x00002ca8       0x1c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board_sysinit.o)
+                0x00002ca8                Board_SystemInit
  .text.Chip_SYSCTL_PeriphReset
-                0x00002cb4       0x22 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(chip_15xx.o)
- *fill*         0x00002cd6        0x2 ff
+                0x00002cc4       0x22 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(chip_15xx.o)
+ *fill*         0x00002ce6        0x2 ff
  .text.Chip_Clock_SetUSBClockSource
-                0x00002cd8       0x2c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(chip_15xx.o)
+                0x00002ce8       0x2c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(chip_15xx.o)
  .text.Chip_Clock_SetUSBPLLSource
-                0x00002d04       0x20 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(chip_15xx.o)
+                0x00002d14       0x20 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(chip_15xx.o)
  .text.Chip_Clock_SetupUSBPLL
-                0x00002d24       0x34 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(chip_15xx.o)
+                0x00002d34       0x34 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(chip_15xx.o)
  .text.Chip_Clock_IsUSBPLLLocked
-                0x00002d58       0x24 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(chip_15xx.o)
+                0x00002d68       0x24 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(chip_15xx.o)
  .text.SystemCoreClockUpdate
-                0x00002d7c       0x18 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(chip_15xx.o)
-                0x00002d7c                SystemCoreClockUpdate
+                0x00002d8c       0x18 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(chip_15xx.o)
+                0x00002d8c                SystemCoreClockUpdate
  .text.Chip_USB_Init
-                0x00002d94       0x4c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(chip_15xx.o)
-                0x00002d94                Chip_USB_Init
+                0x00002da4       0x4c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(chip_15xx.o)
+                0x00002da4                Chip_USB_Init
  .text.Chip_Clock_SetMain_A_ClockSource
-                0x00002de0       0x20 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
+                0x00002df0       0x20 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
  .text.Chip_Clock_GetMain_A_ClockSource
-                0x00002e00       0x18 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
+                0x00002e10       0x18 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
  .text.Chip_Clock_SetMain_B_ClockSource
-                0x00002e18       0x20 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
+                0x00002e28       0x20 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
  .text.Chip_Clock_GetMain_B_ClockSource
-                0x00002e38       0x18 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
+                0x00002e48       0x18 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
  .text.Chip_Clock_SetUARTFRGDivider
-                0x00002e50       0x20 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
+                0x00002e60       0x20 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
  .text.Chip_Clock_GetUARTFRGDivider
-                0x00002e70       0x18 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
+                0x00002e80       0x18 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
  .text.Chip_Clock_GetMainOscRate
-                0x00002e88       0x14 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
+                0x00002e98       0x14 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
  .text.Chip_Clock_GetIntOscRate
-                0x00002e9c       0x14 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
+                0x00002eac       0x14 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
  .text.Chip_Clock_GetRTCOscRate
-                0x00002eb0       0x14 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
+                0x00002ec0       0x14 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
  .text.Chip_Clock_GetWDTOSCRate
-                0x00002ec4       0x14 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
+                0x00002ed4       0x14 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
  .text.Chip_Clock_GetPLLFreq
-                0x00002ed8       0x26 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
+                0x00002ee8       0x26 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
  .text.Chip_Clock_GetPLLInClockRate
-                0x00002efe       0x38 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
- *fill*         0x00002f36        0x2 ff
+                0x00002f0e       0x38 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
+ *fill*         0x00002f46        0x2 ff
  .text.Chip_Clock_GetSystemPLLInClockRate
-                0x00002f38       0x1c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
-                0x00002f38                Chip_Clock_GetSystemPLLInClockRate
+                0x00002f48       0x1c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
+                0x00002f48                Chip_Clock_GetSystemPLLInClockRate
  .text.Chip_Clock_GetSystemPLLOutClockRate
-                0x00002f54       0x24 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
-                0x00002f54                Chip_Clock_GetSystemPLLOutClockRate
+                0x00002f64       0x24 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
+                0x00002f64                Chip_Clock_GetSystemPLLOutClockRate
  .text.Chip_Clock_GetMain_A_ClockRate
-                0x00002f78       0x44 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
-                0x00002f78                Chip_Clock_GetMain_A_ClockRate
+                0x00002f88       0x44 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
+                0x00002f88                Chip_Clock_GetMain_A_ClockRate
  .text.Chip_Clock_GetMain_B_ClockRate
-                0x00002fbc       0x58 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
-                0x00002fbc                Chip_Clock_GetMain_B_ClockRate
+                0x00002fcc       0x58 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
+                0x00002fcc                Chip_Clock_GetMain_B_ClockRate
  .text.Chip_Clock_SetMainClockSource
-                0x00003014       0x3c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
-                0x00003014                Chip_Clock_SetMainClockSource
+                0x00003024       0x3c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
+                0x00003024                Chip_Clock_SetMainClockSource
  .text.Chip_Clock_GetMainClockRate
-                0x00003050       0x28 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
-                0x00003050                Chip_Clock_GetMainClockRate
+                0x00003060       0x28 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
+                0x00003060                Chip_Clock_GetMainClockRate
  .text.Chip_Clock_EnablePeriphClock
-                0x00003078       0x58 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
-                0x00003078                Chip_Clock_EnablePeriphClock
+                0x00003088       0x58 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
+                0x00003088                Chip_Clock_EnablePeriphClock
  .text.Chip_Clock_GetUARTBaseClockRate
-                0x000030d0       0x8c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
-                0x000030d0                Chip_Clock_GetUARTBaseClockRate
+                0x000030e0       0x8c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
+                0x000030e0                Chip_Clock_GetUARTBaseClockRate
  .text.Chip_Clock_SetUARTBaseClockRate
-                0x0000315c       0xa4 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
-                0x0000315c                Chip_Clock_SetUARTBaseClockRate
+                0x0000316c       0xa4 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
+                0x0000316c                Chip_Clock_SetUARTBaseClockRate
  .text.Chip_Clock_GetSystemClockRate
-                0x00003200       0x1c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
-                0x00003200                Chip_Clock_GetSystemClockRate
+                0x00003210       0x1c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
+                0x00003210                Chip_Clock_GetSystemClockRate
  .text.Chip_SYSCTL_PeriphReset
-                0x0000321c       0x22 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(gpio_15xx.o)
+                0x0000322c       0x22 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(gpio_15xx.o)
  .text.Chip_GPIO_Init
-                0x0000323e       0x2e C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(gpio_15xx.o)
-                0x0000323e                Chip_GPIO_Init
+                0x0000324e       0x2e C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(gpio_15xx.o)
+                0x0000324e                Chip_GPIO_Init
  .text.Chip_IOCON_PinMuxSet
-                0x0000326c       0x2c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(iocon_15xx.o)
+                0x0000327c       0x2c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(iocon_15xx.o)
  .text.Chip_IOCON_SetPinMuxing
-                0x00003298       0x4e C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(iocon_15xx.o)
-                0x00003298                Chip_IOCON_SetPinMuxing
+                0x000032a8       0x4e C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(iocon_15xx.o)
+                0x000032a8                Chip_IOCON_SetPinMuxing
  .text.Chip_SYSCTL_PeriphReset
-                0x000032e6       0x22 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(sct_15xx.o)
+                0x000032f6       0x22 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(sct_15xx.o)
  .text.Chip_SCT_Init
-                0x00003308       0x3c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(sct_15xx.o)
-                0x00003308                Chip_SCT_Init
+                0x00003318       0x3c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(sct_15xx.o)
+                0x00003318                Chip_SCT_Init
  .text.Chip_SWM_MovablePinAssign
-                0x00003344       0x5c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(swm_15xx.o)
-                0x00003344                Chip_SWM_MovablePinAssign
+                0x00003354       0x5c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(swm_15xx.o)
+                0x00003354                Chip_SWM_MovablePinAssign
  .text.Chip_SYSCTL_AssertPeriphReset
-                0x000033a0       0x4c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(sysctl_15xx.o)
-                0x000033a0                Chip_SYSCTL_AssertPeriphReset
+                0x000033b0       0x4c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(sysctl_15xx.o)
+                0x000033b0                Chip_SYSCTL_AssertPeriphReset
  .text.Chip_SYSCTL_DeassertPeriphReset
-                0x000033ec       0x50 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(sysctl_15xx.o)
-                0x000033ec                Chip_SYSCTL_DeassertPeriphReset
+                0x000033fc       0x50 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(sysctl_15xx.o)
+                0x000033fc                Chip_SYSCTL_DeassertPeriphReset
  .text.Chip_SYSCTL_PowerDown
-                0x0000343c       0x40 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(sysctl_15xx.o)
-                0x0000343c                Chip_SYSCTL_PowerDown
+                0x0000344c       0x40 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(sysctl_15xx.o)
+                0x0000344c                Chip_SYSCTL_PowerDown
  .text.Chip_SYSCTL_PowerUp
-                0x0000347c       0x40 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(sysctl_15xx.o)
-                0x0000347c                Chip_SYSCTL_PowerUp
+                0x0000348c       0x40 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(sysctl_15xx.o)
+                0x0000348c                Chip_SYSCTL_PowerUp
  .text.Chip_FMC_SetFLASHAccess
-                0x000034bc       0x38 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(sysinit_15xx.o)
+                0x000034cc       0x38 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(sysinit_15xx.o)
  .text.Chip_Clock_SetSystemPLLSource
-                0x000034f4       0x20 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(sysinit_15xx.o)
+                0x00003504       0x20 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(sysinit_15xx.o)
  .text.Chip_Clock_SetupSystemPLL
-                0x00003514       0x34 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(sysinit_15xx.o)
+                0x00003524       0x34 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(sysinit_15xx.o)
  .text.Chip_Clock_IsSystemPLLLocked
-                0x00003548       0x24 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(sysinit_15xx.o)
+                0x00003558       0x24 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(sysinit_15xx.o)
  .text.Chip_Clock_SetSysClockDiv
-                0x0000356c       0x20 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(sysinit_15xx.o)
+                0x0000357c       0x20 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(sysinit_15xx.o)
  .text.Chip_SetupXtalClocking
-                0x0000358c       0x6c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(sysinit_15xx.o)
-                0x0000358c                Chip_SetupXtalClocking
+                0x0000359c       0x6c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(sysinit_15xx.o)
+                0x0000359c                Chip_SetupXtalClocking
  .text.Chip_SYSCTL_PeriphReset
-                0x000035f8       0x22 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(uart_15xx.o)
- *fill*         0x0000361a        0x2 ff
+                0x00003608       0x22 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(uart_15xx.o)
+ *fill*         0x0000362a        0x2 ff
  .text.getUARTClockID
-                0x0000361c       0x34 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(uart_15xx.o)
+                0x0000362c       0x34 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(uart_15xx.o)
  .text.Chip_UART_Init
-                0x00003650       0x4c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(uart_15xx.o)
-                0x00003650                Chip_UART_Init
+                0x00003660       0x4c C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(uart_15xx.o)
+                0x00003660                Chip_UART_Init
  .text.Chip_UART_SetBaud
-                0x0000369c       0x2a C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(uart_15xx.o)
-                0x0000369c                Chip_UART_SetBaud
- *fill*         0x000036c6        0x2 ff
- .text          0x000036c8       0x30 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp\libgcc.a(_aeabi_uldivmod.o)
-                0x000036c8                __aeabi_uldivmod
- .text          0x000036f8      0x2d0 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp\libgcc.a(_udivmoddi4.o)
-                0x000036f8                __udivmoddi4
- .text          0x000039c8        0x4 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp\libgcc.a(_dvmd_tls.o)
-                0x000039c8                __aeabi_idiv0
-                0x000039c8                __aeabi_ldiv0
+                0x000036ac       0x2a C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(uart_15xx.o)
+                0x000036ac                Chip_UART_SetBaud
+ *fill*         0x000036d6        0x2 ff
+ .text          0x000036d8       0x30 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp\libgcc.a(_aeabi_uldivmod.o)
+                0x000036d8                __aeabi_uldivmod
+ .text          0x00003708      0x2d0 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp\libgcc.a(_udivmoddi4.o)
+                0x00003708                __udivmoddi4
+ .text          0x000039d8        0x4 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp\libgcc.a(_dvmd_tls.o)
+                0x000039d8                __aeabi_idiv0
+                0x000039d8                __aeabi_ldiv0
  .text.__libc_init_array
-                0x000039cc       0x48 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-init.o)
-                0x000039cc                __libc_init_array
- .text.malloc   0x00003a14       0x10 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-malloc.o)
-                0x00003a14                malloc
- .text.free     0x00003a24       0x10 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-malloc.o)
-                0x00003a24                free
+                0x000039dc       0x48 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-init.o)
+                0x000039dc                __libc_init_array
+ .text.malloc   0x00003a24       0x10 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-malloc.o)
+                0x00003a24                malloc
+ .text.free     0x00003a34       0x10 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-malloc.o)
+                0x00003a34                free
  .text._malloc_r
-                0x00003a34      0x558 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-mallocr.o)
-                0x00003a34                _malloc_r
- .text          0x00003f8c       0xec c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-memcpy.o)
-                0x00003f8c                memcpy
- .text.memset   0x00004078       0xa0 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-memset.o)
-                0x00004078                memset
+                0x00003a44      0x558 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-mallocr.o)
+                0x00003a44                _malloc_r
+ .text          0x00003f9c       0xec c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-memcpy.o)
+                0x00003f9c                memcpy
+ .text.memset   0x00004088       0xa0 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-memset.o)
+                0x00004088                memset
  .text.__malloc_lock
-                0x00004118        0xc c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-mlock.o)
-                0x00004118                __malloc_lock
+                0x00004128        0xc c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-mlock.o)
+                0x00004128                __malloc_lock
  .text.__malloc_unlock
-                0x00004124        0xc c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-mlock.o)
-                0x00004124                __malloc_unlock
+                0x00004134        0xc c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-mlock.o)
+                0x00004134                __malloc_unlock
  .text.cleanup_glue
-                0x00004130       0x1c c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-reent.o)
-                0x00004130                cleanup_glue
+                0x00004140       0x1c c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-reent.o)
+                0x00004140                cleanup_glue
  .text._reclaim_reent
-                0x0000414c       0x88 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-reent.o)
-                0x0000414c                _reclaim_reent
- .text._sbrk_r  0x000041d4       0x24 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-sbrkr.o)
-                0x000041d4                _sbrk_r
+                0x0000415c       0x88 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-reent.o)
+                0x0000415c                _reclaim_reent
+ .text._sbrk_r  0x000041e4       0x24 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-sbrkr.o)
+                0x000041e4                _sbrk_r
  .text._malloc_trim_r
-                0x000041f8       0xa0 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-freer.o)
-                0x000041f8                _malloc_trim_r
- .text._free_r  0x00004298      0x1ec c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-freer.o)
-                0x00004298                _free_r
+                0x00004208       0xa0 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-freer.o)
+                0x00004208                _malloc_trim_r
+ .text._free_r  0x000042a8      0x1ec c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-freer.o)
+                0x000042a8                _free_r
  .text.__retarget_lock_acquire_recursive
-                0x00004484        0x4 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-lock.o)
-                0x00004484                __retarget_lock_acquire_recursive
+                0x00004494        0x4 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-lock.o)
+                0x00004494                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x00004488        0x4 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-lock.o)
-                0x00004488                __retarget_lock_release_recursive
- .text._sbrk    0x0000448c       0x3c c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libcr_newlib_nohost.a(_cr_sbrk.o)
-                0x0000448c                _sbrk
+                0x00004498        0x4 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-lock.o)
+                0x00004498                __retarget_lock_release_recursive
+ .text._sbrk    0x0000449c       0x3c c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libcr_newlib_nohost.a(_cr_sbrk.o)
+                0x0000449c                _sbrk
  .text.__check_heap_overflow
-                0x000044c8       0x18 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libcr_newlib_nohost.a(_cr_check_heap.o)
-                0x000044c8                __check_heap_overflow
- .text          0x000044e0       0x40 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp\crtbegin.o
- .text.__errno  0x00004520        0xc c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-errno.o)
-                0x00004520                __errno
+                0x000044d8       0x18 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libcr_newlib_nohost.a(_cr_check_heap.o)
+                0x000044d8                __check_heap_overflow
+ .text          0x000044f0       0x40 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp\crtbegin.o
+ .text.__errno  0x00004530        0xc c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a(lib_a-errno.o)
+                0x00004530                __errno
  *(.rodata .rodata.* .constdata .constdata.*)
  .rodata.USB_DeviceDescriptor
-                0x0000452c       0x12 ./src/cdc_desc.o
-                0x0000452c                USB_DeviceDescriptor
- *fill*         0x0000453e        0x2 ff
+                0x0000453c       0x12 ./src/cdc_desc.o
+                0x0000453c                USB_DeviceDescriptor
+ *fill*         0x0000454e        0x2 ff
  .rodata.USB_StringDescriptor
-                0x00004540       0x38 ./src/cdc_desc.o
-                0x00004540                USB_StringDescriptor
- .rodata        0x00004578       0x7c ./src/cdc_main.o
- .rodata        0x000045f4       0x2c ./src/usb_cdc.o
- .rodata        0x00004620       0x40 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
-                0x00004650                FreeRTOSDebugConfig
+                0x00004550       0x38 ./src/cdc_desc.o
+                0x00004550                USB_StringDescriptor
+ .rodata        0x00004588       0x7c ./src/cdc_main.o
+ .rodata        0x00004604       0x2c ./src/usb_cdc.o
+ .rodata        0x00004630       0x40 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
+                0x00004660                FreeRTOSDebugConfig
  .rodata.OscRateIn
-                0x00004660        0x4 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board.o)
-                0x00004660                OscRateIn
+                0x00004670        0x4 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board.o)
+                0x00004670                OscRateIn
  .rodata.RTCOscRateIn
-                0x00004664        0x4 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board.o)
-                0x00004664                RTCOscRateIn
+                0x00004674        0x4 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board.o)
+                0x00004674                RTCOscRateIn
  .rodata.ledpins
-                0x00004668        0x3 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board.o)
- *fill*         0x0000466b        0x1 ff
+                0x00004678        0x3 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board.o)
+ *fill*         0x0000467b        0x1 ff
  .rodata.ledports
-                0x0000466c        0x3 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board.o)
- *fill*         0x0000466f        0x1 ff
+                0x0000467c        0x3 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board.o)
+ *fill*         0x0000467f        0x1 ff
  .rodata.ioconSetup
-                0x00004670       0x74 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board_sysinit.o)
+                0x00004680       0x74 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board_sysinit.o)
  .rodata.swmSetup
-                0x000046e4        0x6 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board_sysinit.o)
-                0x000046ec                . = ALIGN (0x4)
- *fill*         0x000046ea        0x2 ff
-                0x000046ec                . = ALIGN (0x4)
+                0x000046f4        0x6 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board_sysinit.o)
+                0x000046fc                . = ALIGN (0x4)
+ *fill*         0x000046fa        0x2 ff
+                0x000046fc                . = ALIGN (0x4)
  *(.init)
- .init          0x000046ec        0x4 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp\crti.o
-                0x000046ec                _init
- .init          0x000046f0        0x8 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp\crtn.o
-                0x000046f8                . = ALIGN (0x4)
-                0x000046f8                __preinit_array_start = .
+ .init          0x000046fc        0x4 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp\crti.o
+                0x000046fc                _init
+ .init          0x00004700        0x8 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp\crtn.o
+                0x00004708                . = ALIGN (0x4)
+                0x00004708                __preinit_array_start = .
  *(.preinit_array)
-                0x000046f8                __preinit_array_end = .
-                0x000046f8                . = ALIGN (0x4)
-                0x000046f8                __init_array_start = .
+                0x00004708                __preinit_array_end = .
+                0x00004708                . = ALIGN (0x4)
+                0x00004708                __init_array_start = .
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array)
- .init_array    0x000046f8        0x4 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp\crtbegin.o
-                0x000046fc                __init_array_end = .
+ .init_array    0x00004708        0x4 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp\crtbegin.o
+                0x0000470c                __init_array_end = .
  *(.fini)
- .fini          0x000046fc        0x4 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp\crti.o
-                0x000046fc                _fini
- .fini          0x00004700        0x8 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp\crtn.o
-                0x00004708                . = ALIGN (0x4)
+ .fini          0x0000470c        0x4 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp\crti.o
+                0x0000470c                _fini
+ .fini          0x00004710        0x8 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp\crtn.o
+                0x00004718                . = ALIGN (0x4)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT_BY_NAME(.ctors.*))
  *crtend.o(.ctors)
-                0x00004708                . = ALIGN (0x4)
+                0x00004718                . = ALIGN (0x4)
  *crtbegin.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o) .dtors)
  *(SORT_BY_NAME(.dtors.*))
  *crtend.o(.dtors)
-                0x00004708                . = ALIGN (0x4)
+                0x00004718                . = ALIGN (0x4)
 
-.glue_7         0x00004708        0x0
- .glue_7        0x00004708        0x0 linker stubs
+.glue_7         0x00004718        0x0
+ .glue_7        0x00004718        0x0 linker stubs
 
-.glue_7t        0x00004708        0x0
- .glue_7t       0x00004708        0x0 linker stubs
+.glue_7t        0x00004718        0x0
+ .glue_7t       0x00004718        0x0 linker stubs
 
-.vfp11_veneer   0x00004708        0x0
- .vfp11_veneer  0x00004708        0x0 linker stubs
+.vfp11_veneer   0x00004718        0x0
+ .vfp11_veneer  0x00004718        0x0 linker stubs
 
-.v4_bx          0x00004708        0x0
- .v4_bx         0x00004708        0x0 linker stubs
+.v4_bx          0x00004718        0x0
+ .v4_bx         0x00004718        0x0 linker stubs
 
-.iplt           0x00004708        0x0
- .iplt          0x00004708        0x0 ./src/ITM_write.o
+.iplt           0x00004718        0x0
+ .iplt          0x00004718        0x0 ./src/ITM_write.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x00004708                __exidx_start = .
+                0x00004718                __exidx_start = .
 
-.ARM.exidx      0x00004708        0x8
+.ARM.exidx      0x00004718        0x8
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
- .ARM.exidx     0x00004708        0x8 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp\libgcc.a(_udivmoddi4.o)
-                0x00004710                __exidx_end = .
-                0x00004710                _etext = .
+ .ARM.exidx     0x00004718        0x8 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp\libgcc.a(_udivmoddi4.o)
+                0x00004720                __exidx_end = .
+                0x00004720                _etext = .
 
-.rel.dyn        0x00004710        0x0
- .rel.iplt      0x00004710        0x0 ./src/ITM_write.o
+.rel.dyn        0x00004720        0x0
+ .rel.iplt      0x00004720        0x0 ./src/ITM_write.o
 
-.eh_frame       0x00004710        0x0
- .eh_frame      0x00004710        0x0 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp\crtbegin.o
+.eh_frame       0x00004720        0x0
+ .eh_frame      0x00004720        0x0 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7-m/nofp\crtbegin.o
 
-.data_RAM2      0x02008000        0x0 load address 0x00004710
+.data_RAM2      0x02008000        0x0 load address 0x00004720
  FILL mask 0xff
                 [!provide]                PROVIDE (__start_data_RAM2 = .)
  *(.ramfunc.$RAM2)
@@ -4765,7 +4765,7 @@ END GROUP
                 0x02000000                . = ALIGN (0x4)
                 0x02000000                _end_uninit_RESERVED = .
 
-.data           0x02000000      0x890 load address 0x00004710
+.data           0x02000000      0x890 load address 0x00004720
  FILL mask 0xff
                 0x02000000                _data = .
  *(vtable)
@@ -4794,7 +4794,7 @@ END GROUP
                 0x02000890                . = ALIGN (0x4)
                 0x02000890                _edata = .
 
-.igot.plt       0x02000890        0x0 load address 0x00004fa0
+.igot.plt       0x02000890        0x0 load address 0x00004fb0
  .igot.plt      0x02000890        0x0 ./src/ITM_write.o
 
 .bss_RAM2       0x02008000        0x0
@@ -4934,8 +4934,8 @@ END GROUP
                 0x02008000                PROVIDE (_vStackTop = DEFINED (__user_stack_top)?__user_stack_top:(__top_Ram0_16_32 - 0x0))
                 0xfdff735a                PROVIDE (__valid_user_code_checksum = (0x0 - ((((((_vStackTop + (ResetISR + 0x1)) + (NMI_Handler + 0x1)) + (HardFault_Handler + 0x1)) + (DEFINED (MemManage_Handler)?MemManage_Handler:0x0 + 0x1)) + (DEFINED (BusFault_Handler)?BusFault_Handler:0x0 + 0x1)) + (DEFINED (UsageFault_Handler)?UsageFault_Handler:0x0 + 0x1))))
                 0x00000000                _image_start = LOADADDR (.text)
-                0x00004fa0                _image_end = (LOADADDR (.data) + SIZEOF (.data))
-                0x00004fa0                _image_size = (_image_end - _image_start)
+                0x00004fb0                _image_end = (LOADADDR (.data) + SIZEOF (.data))
+                0x00004fb0                _image_size = (_image_end - _image_start)
 OUTPUT(usb_cdc.axf elf32-littlearm)
 
 .debug_info     0x00000000    0x1e2e6
@@ -5217,58 +5217,58 @@ OUTPUT(usb_cdc.axf elf32-littlearm)
  .debug_line    0x0000f1ac      0x1f7 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libcr_newlib_nohost.a(_cr_sbrk.o)
  .debug_line    0x0000f3a3       0x61 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libcr_newlib_nohost.a(_cr_check_heap.o)
 
-.debug_str      0x00000000    0x2da61
+.debug_str      0x00000000    0x2da62
  .debug_str     0x00000000     0xf86e ./src/ITM_write.o
                                0xfa21 (size before relaxing)
  .debug_str     0x0000f86e     0x5414 ./src/cdc_desc.o
                                0x9481 (size before relaxing)
- .debug_str     0x00014c82     0x9e49 ./src/cdc_main.o
-                              0x1e8b9 (size before relaxing)
- .debug_str     0x0001eacb      0x1fb ./src/cdc_vcom.o
+ .debug_str     0x00014c82     0x9e4a ./src/cdc_main.o
+                              0x1e8ba (size before relaxing)
+ .debug_str     0x0001eacc      0x1fb ./src/cdc_vcom.o
                               0x192dd (size before relaxing)
- .debug_str     0x0001ecc6      0x6c8 ./src/cr_startup_lpc15xx.o
+ .debug_str     0x0001ecc7      0x6c8 ./src/cr_startup_lpc15xx.o
                                0x3312 (size before relaxing)
- .debug_str     0x0001f38e       0x11 ./src/sysinit.o
+ .debug_str     0x0001f38f       0x11 ./src/sysinit.o
                               0x13558 (size before relaxing)
- .debug_str     0x0001f39f     0x939d ./src/usb_cdc.o
-                              0x20e50 (size before relaxing)
- .debug_str     0x0002873c      0x9bb C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(queue.o)
-                              0x183c0 (size before relaxing)
- .debug_str     0x000290f7     0x1dfe C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
-                              0x194e0 (size before relaxing)
- .debug_str     0x0002aef5       0x6a C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(heap_3.o)
-                              0x17159 (size before relaxing)
- .debug_str     0x0002af5f      0x5fe C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(port.o)
-                              0x17865 (size before relaxing)
- .debug_str     0x0002b55d       0xc4 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(FreeRTOSCommonHooks.o)
-                              0x170ea (size before relaxing)
- .debug_str     0x0002b621       0x9b C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(list.o)
-                              0x16b6e (size before relaxing)
- .debug_str     0x0002b6bc      0x3c3 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board.o)
+ .debug_str     0x0001f3a0     0x939d ./src/usb_cdc.o
+                              0x20e51 (size before relaxing)
+ .debug_str     0x0002873d      0x9bb C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(queue.o)
+                              0x183c1 (size before relaxing)
+ .debug_str     0x000290f8     0x1dfe C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(tasks.o)
+                              0x194e1 (size before relaxing)
+ .debug_str     0x0002aef6       0x6a C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(heap_3.o)
+                              0x1715a (size before relaxing)
+ .debug_str     0x0002af60      0x5fe C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(port.o)
+                              0x17866 (size before relaxing)
+ .debug_str     0x0002b55e       0xc4 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(FreeRTOSCommonHooks.o)
+                              0x170eb (size before relaxing)
+ .debug_str     0x0002b622       0x9b C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\FreeRTOS\Debug\libfreertos.a(list.o)
+                              0x16b6f (size before relaxing)
+ .debug_str     0x0002b6bd      0x3c3 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board.o)
                               0x13f20 (size before relaxing)
- .debug_str     0x0002ba7f      0x83e C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board_sysinit.o)
+ .debug_str     0x0002ba80      0x83e C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_board_nxp_lpcxpresso_1549\Debug\liblpc_board_nxp_lpcxpresso_1549.a(board_sysinit.o)
                               0x14550 (size before relaxing)
- .debug_str     0x0002c2bd      0x14d C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(chip_15xx.o)
+ .debug_str     0x0002c2be      0x14d C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(chip_15xx.o)
                                0xfd8a (size before relaxing)
- .debug_str     0x0002c40a      0x88f C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
+ .debug_str     0x0002c40b      0x88f C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(clock_15xx.o)
                               0x101a5 (size before relaxing)
- .debug_str     0x0002cc99       0xdf C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(gpio_15xx.o)
+ .debug_str     0x0002cc9a       0xdf C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(gpio_15xx.o)
                                0xf847 (size before relaxing)
- .debug_str     0x0002cd78       0x41 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(iocon_15xx.o)
+ .debug_str     0x0002cd79       0x41 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(iocon_15xx.o)
                                0xf364 (size before relaxing)
- .debug_str     0x0002cdb9       0xb4 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(sct_15xx.o)
+ .debug_str     0x0002cdba       0xb4 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(sct_15xx.o)
                                0xf97d (size before relaxing)
- .debug_str     0x0002ce6d      0x55d C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(swm_15xx.o)
+ .debug_str     0x0002ce6e      0x55d C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(swm_15xx.o)
                                0xfd6c (size before relaxing)
- .debug_str     0x0002d3ca      0x183 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(sysctl_15xx.o)
+ .debug_str     0x0002d3cb      0x183 C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(sysctl_15xx.o)
                                0xf852 (size before relaxing)
- .debug_str     0x0002d54d      0x13f C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(sysinit_15xx.o)
+ .debug_str     0x0002d54e      0x13f C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(sysinit_15xx.o)
                                0xf840 (size before relaxing)
- .debug_str     0x0002d68c      0x20a C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(uart_15xx.o)
+ .debug_str     0x0002d68d      0x20a C:\Users\vovan\Documents\MCUXpressoIDE_11.0.0_2516\workspace\lpc_chip_15xx\Debug\liblpc_chip_15xx.a(uart_15xx.o)
                                0xf9a3 (size before relaxing)
- .debug_str     0x0002d896      0x1a6 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libcr_newlib_nohost.a(_cr_sbrk.o)
+ .debug_str     0x0002d897      0x1a6 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libcr_newlib_nohost.a(_cr_sbrk.o)
                                 0x635 (size before relaxing)
- .debug_str     0x0002da3c       0x25 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libcr_newlib_nohost.a(_cr_check_heap.o)
+ .debug_str     0x0002da3d       0x25 c:/nxp/mcuxpressoide_11.0.0_2516/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.0.0.201905131304/tools/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libcr_newlib_nohost.a(_cr_check_heap.o)
                                 0x18d (size before relaxing)
 
 .comment        0x00000000       0x75

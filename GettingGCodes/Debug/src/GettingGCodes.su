@@ -1,0 +1,6 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+GettingGCodes.cpp:36:6:void vConfigureTimerForRunTimeStats()	8	static
+GettingGCodes.cpp:46:13:void prvSetupHardware()	8	static
+GettingGCodes.cpp:57:13:void send_task(void*)	72	static
+GettingGCodes.cpp:76:13:void receive_task(void*)	104	static
+GettingGCodes.cpp:90:5:int main()	16	static
