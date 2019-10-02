@@ -29,7 +29,6 @@
 #include "task.h"
 #include "semphr.h"
 #include "queue.h"
-#include "ITM_write.h"
 #include "DigitalIoPin.h"
 
 
@@ -48,18 +47,43 @@
  ****************************************************************************/
 
 /* Sets up system hardware */
-SemaphoreHandle_t sbPIN;
+SemaphoreHandle_t mutx(xSemaphoreCreateMutex());
 QueueHandle_t pinQ;
+
+
+volatile uint64_t tickCounter = 50;
+volatile uint32_t cnt = 0;
+
+struct buttonPress{
+	uint64_t count;
+	int pin;
+} press, receive;
+
 extern "C" {
 void PIN_INT0_IRQHandler(void)
 {
+	int pinNum = 1;
+	cnt++;
 	// This used to check if a context switch is required
 	portBASE_TYPE xHigherPriorityWoken = pdFALSE;
 	//Chip_PININT_ClearFallStates(LPC_GPIO_PIN_INT, PININTCH0);
-	int pin = 1;
-	xQueueSendFromISR(pinQ, &pin, &xHigherPriorityWoken);
+	if(cnt > (Chip_Clock_GetMainClockRate()/10000))
+	{
+		tickCounter++;
+		cnt = 0;
+	}
+
+	if(tickCounter >= 50)
+	{
+		press.count = tickCounter;
+		press.pin = pinNum;
+		xQueueSendFromISR(pinQ, &press, &xHigherPriorityWoken);
+		tickCounter = 0;
+		Chip_PININT_ClearIntStatus(LPC_GPIO_PIN_INT, PININTCH0);
+	}
+
 	// End the ISR and (possibly) do a context switch
-	Chip_PININT_ClearIntStatus(LPC_GPIO_PIN_INT, PININTCH0);
+
 	portEND_SWITCHING_ISR(xHigherPriorityWoken);
 }
 
@@ -95,7 +119,8 @@ static void prvSetupHardware(void)
 {
 	SystemCoreClockUpdate();
 	Board_Init();
-
+	// initialize RIT (= enable clocking etc.)
+	Chip_RIT_Init(LPC_RITIMER);
 	Chip_GPIO_Init(LPC_GPIO);
 	Chip_PININT_Init(LPC_GPIO_PIN_INT);
 
@@ -133,39 +158,58 @@ void EnablePinINT_NVIC()
 	NVIC_SetPriority(PIN_INT2_IRQn, configLIBRARY_MAX_SYSCALL_INTERRUPT_PRIORITY + 1 );
 }
 
+static void CommandTask(void *pvParameters)
+{
+	std::string command;
+	std::string countNum;
+	int c = 0;
+	while(1)
+	{
+		if((c = Board_UARTGetChar()) != EOF && c != 13)
+		{
+			if(xSemaphoreTake(mutx, portMAX_DELAY))
+			{
+				Board_UARTPutChar(c); xSemaphoreGive(mutx);
+			}
+
+			if(c > 47 && c < 58)
+			{
+				countNum.push_back(c);
+			}
+			else if( c > 96 && c < 123)
+			{
+				command.push_back(c);
+			}
+		}
+		else if(c == 13 && command == "filter")
+		{
+			if(xSemaphoreTake(mutx, portMAX_DELAY))
+			{
+				Board_UARTPutSTR(countNum.c_str());
+				Board_UARTPutSTR(" sent\r\n");
+				xSemaphoreGive(mutx);
+				tickCounter = std::stoi(countNum);
+				command.clear();
+				countNum.clear();
+			}
+
+		}
+	}
+}
+
 static void Button_Task(void *pvParameters)
 {
 	EnablePinINT_NVIC();
-	int buff = 0;
-	int temp = 0;
-	int cnt = 0;
-	char bt1[] = "Button ";
-	char pr[] = " was pressed ";
-	char tm[] = " times\r\n";
-	bool btnS = false;
-
+	buttonPress receive;
 	while(1)
 	{
-
-		if(xQueueReceive(pinQ, &buff, portMAX_DELAY))
+		if(xQueueReceive(pinQ, &receive, portMAX_DELAY))
 		{
-			if(temp == buff)
-			{
-				cnt++;
-			}
-
-			else
-			{
-
-				Board_UARTPutSTR(bt1); Board_UARTPutSTR(std::to_string(temp).c_str());
-				Board_UARTPutSTR(pr); Board_UARTPutSTR(std::to_string(cnt).c_str()); Board_UARTPutSTR(tm);
-				cnt = 1;
-				temp = buff;
-			}
+			Board_UARTPutSTR(std::to_string(receive.pin).c_str());
+			Board_UARTPutSTR("\r\n");
+			Board_UARTPutSTR(std::to_string(receive.count).c_str());
+			Board_UARTPutSTR("\r\n");
 		}
-
-
-
 	}
 }
 
@@ -194,7 +238,11 @@ int main(void)
 {
 
 	prvSetupHardware();
- 	pinQ = xQueueCreate(20, sizeof(int));
+ 	pinQ = xQueueCreate(20, sizeof(buttonPress));
+
+	xTaskCreate(CommandTask, "CommandTask",
+			configMINIMAL_STACK_SIZE + 128, NULL, (tskIDLE_PRIORITY + 1UL),
+			(TaskHandle_t *) NULL);
 
 	xTaskCreate(Button_Task, "Button_Task",
 			configMINIMAL_STACK_SIZE + 128, NULL, (tskIDLE_PRIORITY + 1UL),
