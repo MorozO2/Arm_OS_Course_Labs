@@ -49,13 +49,10 @@
 /* Sets up system hardware */
 SemaphoreHandle_t mutx(xSemaphoreCreateMutex());
 QueueHandle_t pinQ;
-
-
-volatile uint64_t tickCounter = 50;
-volatile uint32_t cnt = 0;
+volatile uint32_t filterCnt = 50;
 
 struct buttonPress{
-	uint64_t count;
+	uint32_t count;
 	int pin;
 } press, receive;
 
@@ -63,24 +60,15 @@ extern "C" {
 void PIN_INT0_IRQHandler(void)
 {
 	int pinNum = 1;
-	cnt++;
 	// This used to check if a context switch is required
 	portBASE_TYPE xHigherPriorityWoken = pdFALSE;
 	//Chip_PININT_ClearFallStates(LPC_GPIO_PIN_INT, PININTCH0);
-	if(cnt > (Chip_Clock_GetMainClockRate()/10000))
-	{
-		tickCounter++;
-		cnt = 0;
-	}
 
-	if(tickCounter >= 50)
-	{
-		press.count = tickCounter;
-		press.pin = pinNum;
-		xQueueSendFromISR(pinQ, &press, &xHigherPriorityWoken);
-		tickCounter = 0;
-		Chip_PININT_ClearIntStatus(LPC_GPIO_PIN_INT, PININTCH0);
-	}
+	press.count = xTaskGetTickCount();
+	press.pin = pinNum;
+	xQueueSendFromISR(pinQ, &press, &xHigherPriorityWoken);
+
+	Chip_PININT_ClearIntStatus(LPC_GPIO_PIN_INT, PININTCH0);
 
 	// End the ISR and (possibly) do a context switch
 
@@ -90,25 +78,37 @@ void PIN_INT0_IRQHandler(void)
 void PIN_INT1_IRQHandler(void)
 {
 
+	int pinNum = 2;
 	// This used to check if a context switch is required
 	portBASE_TYPE xHigherPriorityWoken = pdFALSE;
 	//Chip_PININT_ClearFallStates(LPC_GPIO_PIN_INT, PININTCH0);
-	int pin = 2;
-	xQueueSendFromISR(pinQ, &pin, &xHigherPriorityWoken);
-	// End the ISR and (possibly) do a context switch
+
+	press.count = xTaskGetTickCount();
+	press.pin = pinNum;
+	xQueueSendFromISR(pinQ, &press, &xHigherPriorityWoken);
+
 	Chip_PININT_ClearIntStatus(LPC_GPIO_PIN_INT, PININTCH1);
+
+	// End the ISR and (possibly) do a context switch
+
 	portEND_SWITCHING_ISR(xHigherPriorityWoken);
 }
 void PIN_INT2_IRQHandler(void)
 {
 
+	int pinNum = 3;
 	// This used to check if a context switch is required
 	portBASE_TYPE xHigherPriorityWoken = pdFALSE;
 	//Chip_PININT_ClearFallStates(LPC_GPIO_PIN_INT, PININTCH0);
-	int pin = 3;
-	xQueueSendFromISR(pinQ, &pin, &xHigherPriorityWoken);
-	// End the ISR and (possibly) do a context switch
+
+	press.count = xTaskGetTickCount();
+	press.pin = pinNum;
+	xQueueSendFromISR(pinQ, &press, &xHigherPriorityWoken);
+
 	Chip_PININT_ClearIntStatus(LPC_GPIO_PIN_INT, PININTCH2);
+
+	// End the ISR and (possibly) do a context switch
+
 	portEND_SWITCHING_ISR(xHigherPriorityWoken);
 }
 
@@ -185,10 +185,11 @@ static void CommandTask(void *pvParameters)
 		{
 			if(xSemaphoreTake(mutx, portMAX_DELAY))
 			{
+				Board_UARTPutSTR("\r\n");
 				Board_UARTPutSTR(countNum.c_str());
 				Board_UARTPutSTR(" sent\r\n");
 				xSemaphoreGive(mutx);
-				tickCounter = std::stoi(countNum);
+				filterCnt = std::stoi(countNum);
 				command.clear();
 				countNum.clear();
 			}
@@ -201,15 +202,28 @@ static void Button_Task(void *pvParameters)
 {
 	EnablePinINT_NVIC();
 	buttonPress receive;
+	uint32_t temp;
+	uint32_t difference;
+	bool received = false;
 	while(1)
 	{
-		if(xQueueReceive(pinQ, &receive, portMAX_DELAY))
+		if(xQueueReceive(pinQ, &receive, portMAX_DELAY) && received == false)
 		{
-			Board_UARTPutSTR(std::to_string(receive.pin).c_str());
-			Board_UARTPutSTR("\r\n");
-			Board_UARTPutSTR(std::to_string(receive.count).c_str());
-			Board_UARTPutSTR("\r\n");
+			if(receive.count != temp)
+			{
+				difference = receive.count - temp;
+				temp = receive.count;
+			}
+			if(difference > filterCnt)
+			{
+				Board_UARTPutSTR(std::to_string(difference).c_str()); Board_UARTPutSTR(" ms ");
+				Board_UARTPutSTR("Button "); Board_UARTPutSTR(std::to_string(receive.pin).c_str());
+				Board_UARTPutSTR("\r\n");
+			}
+
 		}
+
+
 	}
 }
 
