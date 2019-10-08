@@ -1,0 +1,36 @@
+"FreeRTOS Task Aware Debugger for GDB" version 11.0.0 (201905201323)
+(c) 2016-2018 NXP Semiconductors, Inc.
+==================================
+22:04:29.810 INFO: [TadModel] DSF session ID 54 has started.
+22:04:32.628 INFO: [TadState] TAD state changed:  DEBUG_STARTED -> DEBUG_INIT_0 (SUSPENDED, USER_REQUEST)
+22:04:34.102 INFO: [TadState] TAD state changed:  DEBUG_INIT_0 -> DEBUG_INIT_1 (RESUMED, USER_REQUEST)
+22:04:34.191 INFO: [TadState] TAD state changed:  DEBUG_INIT_1 -> DEBUG_SUSPENDED (SUSPENDED, BREAKPOINT)
+22:04:35.687 INFO: [TadState] TAD state changed:  DEBUG_SUSPENDED -> DEBUG_RESUMED (RESUMED, USER_REQUEST)
+22:05:37.03 INFO: [TadState] TAD state changed:  DEBUG_RESUMED -> READY (SUSPENDED, SIGNAL)
+22:05:37.315 INFO: [Benchmark] Loading data for "Determine FreeRTOS version" has started.
+22:05:38.362 ERROR: [VariableReader] Could not read variable expression: "&(FreeRTOSDebugConfig)".
+22:05:38.366 ERROR: [VariableReader] Could not read variable expression: "sizeof(struct TaskControlBlock_t)".
+22:05:38.378 ERROR: [VariableReader] Could not read variable expression: "&(((struct QueueDefinition *) 0)->pcTail)".
+22:05:38.378 INFO: [TadModel] FreeRTOS version has been identified from available FreeRTOS symbols as 10.11.
+22:05:38.378 INFO: [Benchmark] Loading data for "Determine FreeRTOS version" took 1063 ms.
+22:05:38.378 INFO: [Benchmark] Loading data for "Task List" has started.
+22:05:38.385 ERROR: [VariableReader] Could not read variable expression: "sizeof(xQueueRegistry)".
+22:05:38.385 ERROR: [QueueFactory] Queue registry size is zero! Each queue must be registered with vQueueAddToRegistry() and configQUEUE_REGISTRY_SIZE macro 
+must be greater than zero (found in FreeRTOSConfig.h)
+22:05:38.390 ERROR: [VariableReader] Could not read variable expression: "sizeof(pxReadyTasksLists)".
+22:05:38.391 ERROR: [TaskFactory] Could not get size of "pxReadyTasksLists"!
+22:05:38.391 ERROR: [TaskFactory] Cannot display tasks from ready task list!
+22:05:38.398 ERROR: [VariableReader] Could not read variable expression: "pxCurrentTCB".
+22:05:38.398 ERROR: [TadFactory] Reading exception during: "readLongVariableSafely(pxCurrentTCB)"
+22:05:38.404 ERROR: [VariableReader] Could not read variable expression: "ulTotalRunTime".
+22:05:38.404 ERROR: [TaskFactory] ulTotalRunTime not available
+22:05:38.409 ERROR: [VariableReader] Could not read variable expression: "xPendingReadyList.uxNumberOfItems".
+22:05:38.409 ERROR: [TaskFactory] Cannot read information from "xPendingReadyList".
+22:05:38.415 ERROR: [VariableReader] Could not read variable expression: "pxDelayedTaskList.uxNumberOfItems".
+22:05:38.415 ERROR: [TaskFactory] Cannot read information from "pxDelayedTaskList".
+22:05:38.420 ERROR: [VariableReader] Could not read variable expression: "pxOverflowDelayedTaskList.uxNumberOfItems".
+22:05:38.421 ERROR: [TaskFactory] Cannot read information from "pxOverflowDelayedTaskList".
+22:05:38.426 ERROR: [VariableReader] Could not read variable expression: "xSuspendedTaskList.uxNumberOfItems".
+22:05:38.426 ERROR: [TaskFactory] Cannot read information from "xSuspendedTaskList".
+22:05:38.426 INFO: [Benchmark] Loading data for "Task List" took 48 ms.
+22:05:38.430 INFO: [TadModel] DSF session ID 54 has ended.

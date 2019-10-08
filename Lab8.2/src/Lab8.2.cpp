@@ -204,10 +204,10 @@ static void Button_Task(void *pvParameters)
 	buttonPress receive;
 	uint32_t temp;
 	uint32_t difference;
-	bool received = false;
+
 	while(1)
 	{
-		if(xQueueReceive(pinQ, &receive, portMAX_DELAY) && received == false)
+		if(xQueueReceive(pinQ, &receive, portMAX_DELAY))
 		{
 			if(receive.count != temp)
 			{
@@ -222,8 +222,6 @@ static void Button_Task(void *pvParameters)
 			}
 
 		}
-
-
 	}
 }
 

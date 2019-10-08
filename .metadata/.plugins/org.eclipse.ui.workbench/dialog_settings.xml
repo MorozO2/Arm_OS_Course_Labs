@@ -5,15 +5,19 @@
 		<item value="1162" key="dialogWidth"/>
 		<list key="textEntries">
 			<item value="1"/>
+			<item value="1"/>
 		</list>
 		<list key="orderedElements">
 			<item value="org.eclipse.tm.terminal.view.ui.TerminalsView"/>
+			<item value="com.nxp.mcuxpresso.freertos.gdb.tad.taskListView"/>
 		</list>
 		<list key="orderedProviders">
+			<item value="org.eclipse.e4.ui.parts"/>
 			<item value="org.eclipse.e4.ui.parts"/>
 		</list>
 		<list key="textArray">
 			<item value="termin"/>
+			<item value="fre"/>
 		</list>
 	</section>
 	<section name="NewWizardAction">

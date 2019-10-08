@@ -1,0 +1,16 @@
+"FreeRTOS Task Aware Debugger for GDB" version 11.0.0 (201905201323)
+(c) 2016-2018 NXP Semiconductors, Inc.
+==================================
+22:05:41.449 INFO: [TadModel] DSF session ID 55 has started.
+22:05:47.985 INFO: [TadState] TAD state changed:  DEBUG_STARTED -> DEBUG_INIT_0 (SUSPENDED, USER_REQUEST)
+22:05:49.450 INFO: [TadState] TAD state changed:  DEBUG_INIT_0 -> DEBUG_INIT_1 (RESUMED, USER_REQUEST)
+22:05:49.546 INFO: [TadState] TAD state changed:  DEBUG_INIT_1 -> DEBUG_SUSPENDED (SUSPENDED, BREAKPOINT)
+22:05:52.626 INFO: [TadState] TAD state changed:  DEBUG_SUSPENDED -> DEBUG_RESUMED (RESUMED, USER_REQUEST)
+22:05:53.635 INFO: [TadState] TAD state changed:  DEBUG_RESUMED -> READY (SUSPENDED, SIGNAL)
+22:05:54.04 INFO: [Benchmark] Loading data for "Determine FreeRTOS version" has started.
+22:05:54.753 INFO: [TadModel] Heap type (memory allocation scheme) has been identified from FreeRTOSDebugConfig structure as Heap #3. 
+22:05:54.754 INFO: [TadModel] FreeRTOS version has been identified from FreeRTOSDebugConfig structure as 10.2.0.
+22:05:54.754 INFO: [Benchmark] Loading data for "Determine FreeRTOS version" took 750 ms.
+22:05:54.754 INFO: [Benchmark] Loading data for "Task List" has started.
+22:05:57.616 INFO: [Benchmark] Loading data for "Task List" took 2862 ms.
+22:06:44.774 INFO: [TadModel] DSF session ID 55 has ended.

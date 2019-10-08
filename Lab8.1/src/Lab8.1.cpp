@@ -142,30 +142,33 @@ static void Button_Task(void *pvParameters)
 	char bt1[] = "Button ";
 	char pr[] = " was pressed ";
 	char tm[] = " times\r\n";
-	bool btnS = false;
+	bool got = false;
 
 	while(1)
 	{
 
 		if(xQueueReceive(pinQ, &buff, portMAX_DELAY))
 		{
-			if(temp == buff)
+			if(buff != temp)
+			{
+
+				if(got)
+				{
+					Board_UARTPutSTR(bt1); Board_UARTPutSTR(std::to_string(temp).c_str());
+					Board_UARTPutSTR(pr); Board_UARTPutSTR(std::to_string(cnt).c_str()); Board_UARTPutSTR(tm);
+					got = false;
+					cnt = 1;
+				}
+				temp = buff;
+				got = true;
+
+			}
+
+			else if(buff == temp)
 			{
 				cnt++;
 			}
-
-			else
-			{
-
-				Board_UARTPutSTR(bt1); Board_UARTPutSTR(std::to_string(temp).c_str());
-				Board_UARTPutSTR(pr); Board_UARTPutSTR(std::to_string(cnt).c_str()); Board_UARTPutSTR(tm);
-				cnt = 1;
-				temp = buff;
-			}
 		}
-
-
-
 	}
 }
 
@@ -192,6 +195,7 @@ void vConfigureTimerForRunTimeStats( void ) {
  */
 int main(void)
 {
+
 
 	prvSetupHardware();
  	pinQ = xQueueCreate(20, sizeof(int));
